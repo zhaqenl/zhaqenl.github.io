@@ -1,12 +1,27 @@
-Permutation using Backtracking
-==============================
+Permutations using Backtracking
+===============================
 
 
 Introduction
 ------------
 
-A permutation is a rearrangement of a given sequence. For example, in the string sequence `mon`, a
-possible permutation could be `omn` or `mno`.
+A permutation is a rearrangement of a given sequence. The difference between a `permutation` and a
+`combination` lies in the importance of the ordering of its elements. So, in a combination lock, it
+really is not technically correct to be called it that, because, for example, if your lock
+combination is `699`, when someone else punches in `969`, it should work too, because in a
+combination, the order doesn’t matter, but in a permutation, it does.
+
+So, as an example, in the string sequence `mon`, the possible permutations would, lexicographically,
+be:
+
+```
+mon
+mno
+omn
+onm
+nmo
+nom
+```
 
 
 The Code
