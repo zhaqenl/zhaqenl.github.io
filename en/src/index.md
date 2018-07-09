@@ -5,3 +5,4 @@ My Computing Residues
 didn't exist in the first place.</div>
 
 - [Permutations using Backtracking](permutations)
+- [The Surface of Lambda Calculus](lambda)
