@@ -114,13 +114,13 @@ removed, and in `bitmask ^= 1 << i`, in which the changes to `bitmask` through `
 is undone.
 
 Now, what really is the role of `bitmask` in all of this? As you may or may not have already
-noticed, this program makes use of bitwise operators to achieve its goals. Firstly, in `((bitmask >>
-i) & 1)`, it checks whether the current index `i` is the appropriate index of `characters` to be
-inserted to `running`. If satisfied, the `bitmask |= 1 << i` task is run, which essentially `raises`
-the threshold of `bitmask` to changes in `i`, so that, when shifted right by `i` bits in the next
-`permutations()` call, `i` will be forced to change its value (in contrast to the value of `i` in
-the outside `for`), so as to force `i` to move to the next index of `characters` to possibly insert
-to `running`.
+noticed, this program makes use of bitwise operators to achieve its goals. Firstly, in 
+`((bitmask >> i) & 1)`, it checks whether the current index `i` is the appropriate index of 
+`characters` to be inserted to `running`. If satisfied, the `bitmask |= 1 << i` task is run, which 
+essentially `raises` the threshold of `bitmask` to changes in `i`, so that, when shifted right by 
+`i` bits in the next `permutations()` call, `i` will be forced to change its value (in contrast to 
+the value of `i` in the outside `for`), so as to force `i` to move to the next index of `characters` 
+to possibly insert to `running`.
 
 After the selection and exploration, now comes the deselection part, in which we undo the changes we
 made to `bitmask` and `running` to further check if permutations can still be generated. Those are
