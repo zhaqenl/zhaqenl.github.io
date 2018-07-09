@@ -7,4 +7,4 @@ I am Raymund Martinez, and I’ve recently became a fan of
 [Hammock Driven Development](https://www.youtube.com/watch?v=f84n5oFoZBc), but it’ll be _Bed Driven_
 for my case, because I don’t have a hammock. For the sake of throwing fancy words around, I like
 going on spurts of pseudosystematic interval-based mentally stimulating activities, and the residue
-of those stuff goes [here](https://zhaqenl.github.io), hence, _Computing Residues_.
+of those stuff goes [here](/en/), hence, _Computing Residues_.
