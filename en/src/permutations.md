@@ -124,8 +124,8 @@ to possibly insert to `running`.
 
 After the selection and exploration, now comes the deselection part, in which we undo the changes we
 made to `bitmask` and `running` to further check if permutations can still be generated. Those are
-done through `running.pop()` which removes the last element of `running`, and through `bitmask ^= 1
-<< i`.
+done through `running.pop()` which removes the last element of `running`, and through 
+`bitmask ^= 1 << i`.
 
 If after the deselections, the next value of `i` in the `for` loop is still within
 `xrange(len(characters))`, the adventure continues through its incrementation and the possible
