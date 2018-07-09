@@ -25,7 +25,7 @@ This is what a _basic_ function in lambda calculus looks like:
 In lambda calculus, this is what they call an _identity function_ and I'll discuss later a bit of
 what it does and how it works. Let's dissect a bit what is contained within a lambda calculus
 function. The `λ`, which is a greek letter meaning _lambda_, indicates that whatever is after it is
-a function. The letter or symbol after the λ preceding the `.` is the parameter or the name of the
+a function. The letter or symbol after the `λ` preceding the `.` is the parameter or the name of the
 function, and the succeding letter or symbol after the `.` is the body of the function. Symbols that
 reside between the `λ` and `.` are called _bound_ and I'll show you in the next section how these
 _bound_ things behave.
