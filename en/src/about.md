@@ -5,4 +5,4 @@ About
 
 Identity: Raymund Martinez
 
-Hobby: Pseudosystematic mental stimulation 
+Hobby: Pseudosystematic interval-based mental stimulation 
