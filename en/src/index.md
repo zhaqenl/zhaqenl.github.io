@@ -2,6 +2,7 @@ My Computing Residues
 =====================
 
 <img src="/pictures/wood-sun.png" class="banner" alt="wood-sun" />
+_Image by arg81 via_ [wallhaven](https://whvn.cc/672937)
 
 <div class="text-left">An attempt to solve computing problems that won't exist, if computers didn't
 exist in the first place.</div>
