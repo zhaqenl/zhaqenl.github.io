@@ -129,7 +129,7 @@ fit my need the best is the `DO-CMDLINE-OPTIONS` macro:
           ((or (string= name "i") (string= name "interval")) (setf *interval* value))))
 ```
 
-`DO-CMDLINE-OPTIONS` is a macro that evaluates its body with `OPTIONS`, `NAME`, `VALUE`, and
+`DO-CMDLINE-OPTIONS` is a macro that evaluates its body with `OPTION`, `NAME`, `VALUE`, and
 `SOURCE` bound to the return value of the function `GETOPT-CMDLINE`, one of the submethods to
 sequentially acquire the next command-line option. So what actually happens is, in a
 `DO-CMDLINE-OPTIONS`, `GETOPT-CMDLINE` returns four results which would be bound to the previous
