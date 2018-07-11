@@ -1,5 +1,5 @@
-Clon Practical Example
-======================
+Clon Guide
+==========
 
 <img src="/pictures/clon.jpg" class="banner" alt="clon" />
 <div style="text-align: right"> 
