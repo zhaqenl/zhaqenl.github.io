@@ -1,5 +1,5 @@
-Clon Guide
-==========
+A Clon Guide
+============
 
 <img src="/pictures/clon.jpg" class="banner" alt="clon" />
 <div style="text-align: right"> 
@@ -53,7 +53,7 @@ So, fire up your browser or your favorite text editor, then open `pelo.lisp` fro
 put this window beside the one you just opened, and let’s begin Clon’s whittling.
 
 
-The Initialization Phase
+The initialization phase
 ------------------------
 
 This first phase is necessary as it will become the hat that the second one will pull its
@@ -98,7 +98,7 @@ for the harvesting of what the command-line contains, which will essentially be 
 baton from the first phase to the second.
 
 
-The Processing Phase
+The processing phase
 --------------------
 
 The question now, is what snowflake of a baton did the first phase just pass to us? There are two
