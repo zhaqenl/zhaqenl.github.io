@@ -1,6 +1,8 @@
 The Forkbomb
 ============
 
+<div class="center">Last edited: July 9, 2018</div>
+
 In this article, I will clarify how the _Forkbomb_ function works which is written as the following:
 `:(){ :|:&};:`
 

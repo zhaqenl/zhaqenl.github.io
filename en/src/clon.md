@@ -1,6 +1,8 @@
 A Clon Guide
 ============
 
+<div class="center">Last edited: July 11, 2018</div>
+
 <img src="/pictures/clon.jpg" class="banner" alt="clon" />
 <div style="text-align: right"> 
 _Image by Alexis Angelidis via [clon](https://www.lrde.epita.fr/~didier/software/lisp/clon/user.pdf)_ 
