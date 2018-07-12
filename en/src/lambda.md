@@ -3,6 +3,9 @@ The Surface of Lambda Calculus
 
 <div class="center">Last edited: July 12, 2018</div>
 
+<img src="/pictures/half-lambda.png" class="banner" alt="half-lambda" />
+<div style="text-align: right"> _Image by Lapse via [wallhaven](https://whvn.cc/32786)_ </div>
+
 In this short guide, I will discuss how I understood Lambda Calculus through the online journal
 entry of _ebzzry_ titled [A Lambda Calculus Primer](https://ebzzry.io/en/lambda-calculus/).
 
