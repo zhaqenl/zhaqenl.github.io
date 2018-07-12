@@ -158,8 +158,7 @@ non-option arguments located in the command-line:
 Miscellaneous
 -------------
 
-As the `DO-CMDLINE-OPTIONS` is what I consider to be the cleanest part of the code, I owe it to
-where I got the idea from. The idea came from 
+The idea of using the `DO-CMDLINE-OPTIONS` macro came from 
 [pell](https://github.com/ebzzry/pell/blob/master/pell#L85). 
 
 The previous version of _pelo_ didn’t have that structure at first, which lead me to write a lot of
