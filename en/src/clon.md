@@ -1,5 +1,5 @@
-A Clon Guide
-============
+What is Clon and Why You Should Use it
+======================================
 
 <div class="center">Last edited: July 12, 2018</div>
 
