@@ -3,8 +3,11 @@ The Forkbomb
 
 <div class="center">Last edited: July 9, 2018</div>
 
+<img src="/pictures/forkbomb.png" class="banner" alt="forkbomb" />
+<div style="text-align: right"> _Image by Lapse via [walhaven](https://whvn.cc/32961)_ </div>
+
 In this article, I will clarify how the _Forkbomb_ function works which is written as the following:
-`:(){ :|:&};:`
+`:(){ :|:& };:`
 
 
 The walkthrough
