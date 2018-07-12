@@ -1,6 +1,8 @@
 Permutations using Backtracking
 ===============================
 
+<div class="center">Last edited: July 11, 2018</div>
+
 
 Introduction
 ------------
