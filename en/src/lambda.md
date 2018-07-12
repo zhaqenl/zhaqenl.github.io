@@ -1,18 +1,27 @@
 The Surface of Lambda Calculus
 ==============================
 
-In this short documentation, I will discuss how I understood Lambda Calculus through the online
-journal entry of _ebzzry_ titled [A Lambda Calculus Primer](https://ebzzry.io/en/lambda-calculus/).
+In this short guide, I will discuss how I understood Lambda Calculus through the online journal
+entry of _ebzzry_ titled [A Lambda Calculus Primer](https://ebzzry.io/en/lambda-calculus/).
 
 
-What is Lambda Calculus?
-------------------------
+Table of Contents
+-----------------
+
+- [What is Lambda Calculus?](#what)
+- [Where do we start?](#where)
+- [How to apply Lambda Calculus functions](#how)
+- [The Advanced functions](#advanced)
+
+
+<a name="what"></a> What is Lambda Calculus?
+--------------------------------------------
 
 Lambda Calculus, simply, is a _standard_ method of expressing computations.
 
 
-Where do we start?
-------------------
+<a name="where"></a> Where do we start?
+---------------------------------------
 
 Before we proceed to the _meat_ of the topic, we need to define _terms_ that we'll use throughout
 this documentation. A _function_ is a piece of code that when executed or _called_, performs a task.
@@ -31,8 +40,8 @@ reside between the `λ` and `.` are called _bound_ and I'll show you in the next
 _bound_ things behave.
 
 
-How to apply Lambda Calculus functions
---------------------------------------
+<a name="how"></a> How to apply Lambda Calculus functions
+---------------------------------------------------------
 
 We will start with something simple and we'll use the _identity function_ to demonstrate how
 function applications work in lambda calculus.
@@ -99,8 +108,8 @@ after the `.` which will result to:
 ```
 
 
-The Advanced functions
-----------------------
+<a name="advanced"></a> The Advanced functions
+----------------------------------------------
 
 
 ### Successor
@@ -336,4 +345,3 @@ R21
 (λcd.c(d))
 = 1
 ```
-
