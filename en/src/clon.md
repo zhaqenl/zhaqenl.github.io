@@ -15,8 +15,19 @@ suggest you first read the
 Didier Verna suggests you start with the end-user guide.
 
 
-What is Clon?
--------------
+Table of Contents
+-----------------
+
+- [What is Clon?](#what)
+- [Why use Clon?](#why)
+- [Implementation](#implementation)
+- [The initialization phase](#initialization)
+- [The processing phase](#processing)
+- [Miscellaneous](#miscellaneous)
+
+
+<a name="what"></a> What is Clon?
+---------------------------------
 
 I highly suggest reading the guides linked above first, anyway, and I’ll quote the creator–Clon is a
 library for managing command-line options in standalone Common Lisp applications. In comparison to
@@ -25,8 +36,8 @@ options. Python has one, and it’s the _getopt_ module (though later in the dis
 might be thinking, as I am now, while writing this–Doesn’t Python have something like this?).
 
 
-Why use Clon?
--------------
+<a name="why"></a> Why use Clon?
+--------------------------------
 
 Couldn’t I just go ahead with what Common Lisp provides _in-house_ and get away with additional
 _lines_ of code with a bit of compromise in the readability department? You certainly can, but, why
@@ -44,8 +55,8 @@ user to process command-line options, and also equips the user with conveniences
 creation of a _help_ page.
 
 
-Implementation
---------------
+<a name="implementation"></a> Implementation
+--------------------------------------------
 
 The application I’m going to use as the practical example is
 [pelo](https://github.com/zhaqenl/pelo), one of my children. As didierverna mentioned, there will be
@@ -55,8 +66,8 @@ So, fire up your browser or your favorite text editor, then open `pelo.lisp` fro
 put this window beside the one you just opened, and let’s begin Clon’s whittling.
 
 
-The initialization phase
-------------------------
+<a name="initialization"></a> The initialization phase
+------------------------------------------------------
 
 This first phase is necessary as it will become the hat that the second one will pull its
 tricks from. This step requires the creation of two things–the _synopsis_ and the _context._ The
@@ -100,8 +111,8 @@ for the harvesting of what the command-line contains, which will essentially be 
 baton from the first phase to the second.
 
 
-The processing phase
---------------------
+<a name="processing"></a> The processing phase
+----------------------------------------------
 
 The question now, is what snowflake of a baton did the first phase just pass to us? There are two
 different methods we can use to determine that, and in my case, I didn’t have to choose, because I
@@ -155,8 +166,8 @@ non-option arguments located in the command-line:
 ```
 
 
-Miscellaneous
--------------
+<a name="miscellaneous"></a> Miscellaneous
+------------------------------------------
 
 The idea of using the `DO-CMDLINE-OPTIONS` macro came from 
 [pell](https://github.com/ebzzry/pell/blob/master/pell#L85). 
