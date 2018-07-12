@@ -1,6 +1,8 @@
 The Surface of Lambda Calculus
 ==============================
 
+<div class="center">Last edited: July 12, 2018</div>
+
 In this short guide, I will discuss how I understood Lambda Calculus through the online journal
 entry of _ebzzry_ titled [A Lambda Calculus Primer](https://ebzzry.io/en/lambda-calculus/).
 
