@@ -13,11 +13,11 @@ entry of _ebzzry_ titled [A Lambda Calculus Primer](https://ebzzry.io/en/lambda-
 Table of Contents
 -----------------
 
-- [What is Lambda Calculus?](#what)
+- [What is lambda calculus?](#what)
 - [Where do we start?](#where)
-- [How to apply Lambda Calculus functions](#how)
+- [How to apply lambda calculus functions](#how)
 - [Numbers](#numbers)
-- [The Advanced functions](#advanced)
+- [The advanced functions](#advanced)
 - [Successor](#successor)
 - [Addition](#addition)
 - [Multiplication](#multiplication)
