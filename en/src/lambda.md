@@ -16,10 +16,17 @@ Table of Contents
 - [What is Lambda Calculus?](#what)
 - [Where do we start?](#where)
 - [How to apply Lambda Calculus functions](#how)
+- [Numbers](#numbers)
 - [The Advanced functions](#advanced)
+- [Successor](#successor)
+- [Addition](#addition)
+- [Multiplication](#multiplication)
+- [Boolean functions](#boolean)
+- [And or Not?](#aon)
+- [Predecessor](#predecessor)
 
 
-<a name="what"></a> What is Lambda Calculus?
+<a name="what"></a> What is lambda calculus?
 --------------------------------------------
 
 Lambda Calculus, simply, is a _standard_ method of expressing computations.
@@ -45,7 +52,7 @@ reside between the `λ` and `.` are called _bound_ and I'll show you in the next
 _bound_ things behave.
 
 
-<a name="how"></a> How to apply Lambda Calculus functions
+<a name="how"></a> How to apply lambda calculus functions
 ---------------------------------------------------------
 
 We will start with something simple and we'll use the _identity function_ to demonstrate how
@@ -96,7 +103,7 @@ cd
 ```
 
 
-### Numbers
+### <a name="numbers"></a> Numbers
 
 Before we move to the more complicated functions, let's first establish how numbers are expressed as
 functions in lambda calculus. As a basis, the number zero is expressed as:
@@ -113,11 +120,11 @@ after the `.` which will result to:
 ```
 
 
-<a name="advanced"></a> The Advanced functions
+<a name="advanced"></a> The advanced functions
 ----------------------------------------------
 
 
-### Successor
+### <a name="successor"></a> Successor
 
 We'll start first with the Successor function which is defined as:
 
@@ -149,7 +156,7 @@ We now apply the number two function to the `bc` in the function body:
 The result is now the function for number three.
 
 
-### Addition
+### <a name="addition"></a> Addition
 
 To _add_ in lambda calculus, you just need to modify a little your usage of the _successor_
 function. With addition, you position the successor function in between the whole numbers you're
@@ -179,7 +186,7 @@ S2
 ```
 
 
-### Multiplication
+### <a name="multiplication"></a> Multiplication
 
 To _multiply_, instead of putting the function in between the numbers or as an infix, we'll use a
 prefix syntax. The multiplication function is defined as:
@@ -205,7 +212,7 @@ To multiply two and two, we proceed like this:
 ```
 
 
-### Boolean Functions
+### <a name="boolean"></a> Boolean functions
 
 The true and false functions in lambda calculus are pretty simple:
 
@@ -229,7 +236,7 @@ Fsz = (λab.b)sz
 ```
 
 
-### And Or Not?
+### <a name="aon"></a> And or Not?
 
 For these three logical operators, we'll import from the boolean functions:
 
@@ -254,7 +261,7 @@ Let's try the Not function on `F`
 ```
 
 
-### Predecessor
+### <a name="predecessor"></a> Predecessor
 
 The predecessor function is the function _reverse_ of the successor function because instead of
 adding 1, you deduct 1 from the whole number you are applying it to.
