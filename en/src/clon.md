@@ -1,146 +1,186 @@
 What is Clon and Why You Should Use it
 ======================================
 
-<div class="center">Last edited: July 12, 2018</div>
+<div class="center">Last edited: July 13, 2018</div>
 
 <img src="/pictures/clon.jpg" class="banner" alt="clon" />
 <div style="text-align: right"> 
 _Image by Alexis Angelidis via [clon](https://www.lrde.epita.fr/~didier/software/lisp/clon/user.pdf)_ 
 </div>
 
-To gain better _context_ (pun retroactively intended) for the incoming discussion, I strongly
-suggest you first read the 
-[user](https://www.lrde.epita.fr/~didier/software/lisp/clon/user.pdf) and the
-[end-user](https://www.lrde.epita.fr/~didier/software/lisp/clon/enduser.pdf) guides, though
-Didier Verna suggests you start with the end-user guide.
+In our pursuit of creating a Common Lisp successor of [pell](https://github.com/ebzzry/pell), we
+stumbled upon Clon. In hopes of _taste-testing_ Clon, first, we went on to create an experimental
+subsystem of [scripts](https://github.com/ebzzry/scripts) called _mksum_ and towards the end of this
+guide, I will talk a bit about the main differences between that experiment and _pell._
 
 
 Table of Contents
 -----------------
 
+- [Preparation](#preparation)
 - [What is Clon?](#what)
 - [Why use Clon?](#why)
 - [Implementation](#implementation)
-- [The initialization phase](#initialization)
-- [The processing phase](#processing)
-- [Miscellaneous](#miscellaneous)
+- [The initialization step](#initialization)
+- [The processing step](#processing)
+- [The remainder](#remainder)
+- [mksum vs pelo](#vs)
+- [Afternotes](#afternotes)
+
+
+<a name="preparation"></a> Preparation
+--------------------------------------
+
+To experiment with what Clon offers itself, start with the installation of some system dependencies,
+on Debian and NixOS systems, respectively:
+
+```bash
+sudo apt-get install -y sbcl git
+```
+
+```bash
+nix-env -i sbcl git
+```
+
+After fulfilling those, run the following `git clone` command in the ASDF 3 source registry, which
+in my case, would be in `~/common-lisp/`:
+
+```bash
+git clone https://github.com/didierverna/clon.git
+```
 
 
 <a name="what"></a> What is Clon?
 ---------------------------------
 
-I highly suggest reading the guides linked above first, anyway, and I’ll quote the creator–Clon is a
-library for managing command-line options in standalone Common Lisp applications. In comparison to
-Python, Common Lisp doesn't have a built-in _intuitive_ library for handling command-line
-options. Python has one, and it’s the _getopt_ module (though later in the discussion of Clon, one
-might be thinking, as I am now, while writing this–Doesn’t Python have something like this?).
+Clon is an external Common Lisp library whose job is to track command-line options and do stuff with
+them. In comparison, Common Lisp doesn't have a built-in _intuitive_ library for handling
+command-line options, whereas, Python has one called the _getopt_ module.
+
+Though later in the discussion of Clon, one might be thinking, as I am now, while writing
+this–Doesn’t Python have something like this?
 
 
 <a name="why"></a> Why use Clon?
 --------------------------------
 
-Couldn’t I just go ahead with what Common Lisp provides _in-house_ and get away with additional
-_lines_ of code with a bit of compromise in the readability department? You certainly can, but, why
-go through all that pain, when a there’s an available tool whose sole purpose is to help you with
-that?
+One of the main criterias that should be considered while writing code is its readability.
 
-What are the main differences? Without Clon, you’d find yourself manually checking for an object’s
-membership among the arguments of the command-line, and even with decent code abstraction, code
-blocks could significantly be lengthier because of the explicit testings. You also might, as
-previously alluded to, sacrifice a bit of code readability just for the sake of 
-_having the job done._
+Without Clon, in order to get what you need from the command-line, you’ll often be manually checking
+for an object’s membership among the arguments of the command-line, and even with decent code
+abstraction, code blocks could significantly be lengthier because of the explicit testings, and the
+additional code abstractions. You also might sacrifice a bit of code readability just for the sake
+of _having the job done._
 
-With Clon, the user is provided more convenience in creating Common Lisp scripts, that requires the
-user to process command-line options, and also equips the user with conveniences, like the trivial
+With Clon, the user is provided more convenience in creating Common Lisp scripts that requires the
+user to process command-line options. It also equips the user with conveniences, like the trivial
 creation of a _help_ page.
 
 
 <a name="implementation"></a> Implementation
 --------------------------------------------
 
-The application I’m going to use as the practical example is
-[pelo](https://github.com/zhaqenl/pelo), one of my children. As didierverna mentioned, there will be
-2 main phases that one needs to traverse in order to use Clon effectively.
+The process of creating a Clon-powered Common Lisp script involves 2 main steps that needs to be
+done, _sequentially_. The first is the initialization step, and the second one is the processing
+step. 
 
-So, fire up your browser or your favorite text editor, then open `pelo.lisp` from that repository,
-put this window beside the one you just opened, and let’s begin Clon’s whittling.
+### <a name="initialization"></a> The initialization step
 
-
-<a name="initialization"></a> The initialization phase
-------------------------------------------------------
-
-This first phase is necessary as it will become the hat that the second one will pull its
+This first step is necessary as it will become the hat that the second step will pull its
 tricks from. This step requires the creation of two things–the _synopsis_ and the _context._ The
 _synopsis_ will become, sort of, like the Common Lisp return value, but sometimes, what we’re after
-is not the return value itself, but the side effect (like in a _defun_). For example, inside 
-`pelo.lisp`, we accomplished the creation of the _synopsis_ through:
-
-```
-(defsynopsis (:postfix "HOST")
-  (text :contents "Send ICMP ECHO_REQUEST packets to network hosts. Press C-c, while pelo is
-running, to end pelo and show the accumulated stats.
-")
-  (group (:header "Options:")
-         (flag :short-name "h" :long-name "help"
-               :description "Print this help.")
-         (lispobj :short-name "i" :long-name "interval"
-                  :typespec 'fixnum :argument-name "SECONDS"
-                  :description "Ping interval.")
-         (lispobj :short-name "c" :long-name "count"
-                  :typespec 'fixnum :argument-name "NUMBER"
-                  :description "Number of packets to send.")
-         (flag :short-name "b" :long-name "beep-online"
-               :description "Beep if host is up.")
-         (flag :short-name "B" :long-name "beep-offline"
-               :description "Beep if host is down.")))
-```
+is not the return value itself, but the side effect (like in a _defun_, the return value is the name
+of the function defined). 
 
 One of the effects of creating a _synopsis_ is to become the script’s help page. Another one is to
 serve as the basis for where the _context_ comes from. Lastly, it implicitly dictates the bounds of
 our script, like the options our script supports, or if it supports one at all!
 
-After the creation of the synopsis, we now need to create the _context_, but where do we do that?
-Didier Verna mentions that you _cannot_ create a _context_ as a toplevel form, but technically,
-Common Lisp would allow you to do that, but the reason you are being discouraged from doing so is
-because when created as a toplevel form, the _context_ being created would now be in relation to
-when the script is created, not when it will be run, as wanted.
+To walk through those steps in an example, here is a short program that uses Clon:
 
-We create a _context_ through the `MAKE-CONTEXT` function, which you’ll notice inside `pelo.lisp`,
-is only found in `MAIN`, `HOST-PRESENT`, and `GET-OPT`. What `MAKE-CONTEXT` does, is to _prepare_
-for the harvesting of what the command-line contains, which will essentially be the passing of the
-baton from the first phase to the second.
+```
+(in-package :cl-user)
+(require "asdf")
+(asdf:load-system :net.didierverna.clon)
+(use-package :net.didierverna.clon)
+
+(defsynopsis (:postfix "HOST")
+    (text :contents "A short program.")
+  (group (:header "Options:")
+         (flag :short-name "h" :long-name "help"
+               :description "Print this help and exit.")))
+
+(defun main ()
+  "Entry point"
+  (make-context)
+  (when (getopt :short-name "h")
+    (help)
+    (exit)))
+```
+
+The first line is for entering the Common Lisp user package. The second and third lines are for
+loading Clon, to be able to use its functions. The `USE-PACKAGE` function will allow us to use the
+`(MAKE-CONTEXT)` form instead of the longer `(NET.DIDIERVERNA.CLON:MAKE-CONTEXT)`.
+
+After that, we is a `DEFSYNOPSIS` form:
+
+```
+(defsynopsis (:postfix "HOST")
+    (text :contents "A short program.")
+  (group (:header "Options:")
+         (flag :short-name "h" :long-name "help"
+               :description "Print this help and exit.")))
+```
+
+This is one of the conveniences offered by Clon. One of its effect is acting as the program’s
+limiter, dictating the possible options that the program is able to support. Another effect is that
+it serves as the help page of the created script.
+
+Inside `MAIN`: 
+
+```
+(defun main ()
+  "Entry point"
+  (make-context)
+  (when (getopt :short-name "h")
+    (help)
+    (exit)))
+```
+
+the `(MAKE-CONTEXT)` function gets invoked, which works in synergy with the
+`DEFSYNOPSIS` form. What `(MAKE-CONTEXT)` does, is to _prepare_ and to set the scope for the
+harvesting of what the command-line contains.
 
 
-<a name="processing"></a> The processing phase
-----------------------------------------------
+### <a name="processing"></a> The processing step
 
-The question now, is what snowflake of a baton did the first phase just pass to us? There are two
-different methods we can use to determine that, and in my case, I didn’t have to choose, because I
-used them both!
+The question now, is what does the first step have in store for us? There are two different methods
+we can use to determine that.
+
+
+#### Explicit
 
 The first is the _explicit_ method. Here, we _explictly_ check via the `GETOPT` function of Clon,
 whether or not a particular option/flag is provided by the end-user, for example:
 
 ```
-(getopt :short-name "h")
+(defun main ()
+  "Entry point"
+  (make-context)
+  (when (getopt :short-name "h")
+    (help)
+    (exit)))
 ```
 
 In the example above, it checks if the script is given the `-h` flag, which stands for the help
-page. In `pelo.lisp`, I also used it to determine whether or not the end-user requested the help
-page, either through providing the _short-named_ flag `‑h`, or its _long-named_ equivalent `‑‑help`.
+page. 
 
-The second method is the _sequential_ one, which is the one that does more work, in my case. Inside,
-there are three submethods that it provides us with, as a function and as two macros. The one that
-fit my need the best is the `DO-CMDLINE-OPTIONS` macro:
 
-```
-(do-cmdline-options (option name value source)
-    (cond ((or (string= name "b") (string= name "beep-online")) (setf *beep-online* t))
-          ((or (string= name "B") (string= name "beep-offline")) (setf *beep-offline* t))
-          ((or (string= name "c") (string= name "count")) (setf *count-p* t)
-           (setf *count* value))
-          ((or (string= name "i") (string= name "interval")) (setf *interval* value))))
-```
+#### Sequential
+
+The second method is _sequential_, which is the one that does more work. There are three submethods
+that acquires the command-line arguments sequentially, as a function and as two macros, but we’re
+only going to tackle the usage of the `do-cmdline-options` macro.
 
 `DO-CMDLINE-OPTIONS` is a macro that evaluates its body with `OPTION`, `NAME`, `VALUE`, and
 `SOURCE` bound to the return value of the function `GETOPT-CMDLINE`, one of the submethods to
@@ -152,12 +192,37 @@ Next, `DO-CMDLINE-OPTIONS` simply loops `GETOPT-CMDLINE` over all the command-li
 simultaneously binding them), then evaluates its body. The body of `DO-CMDLINE-OPTIONS` will no
 longer be evaluated after the command-line options are exhausted.
 
+For this method, we’re going to use, as an example, a code snippet from
+[pelo](https://github.com/zhaqenl/pelo/blob/master/pelo.lisp#L170), which uses the
+`do-cmdline-options` macro:
+
+```
+(do-cmdline-options (option name value source)
+    (cond ((or (string= name "b") (string= name "beep-online")) (setf *beep-online* t))
+          ((or (string= name "B") (string= name "beep-offline")) (setf *beep-offline* t))
+          ((or (string= name "c") (string= name "count")) (setf *count-p* t)
+           (setf *count* value))
+          ((or (string= name "i") (string= name "interval")) (setf *interval* value))))
+```
+
+The strategy used above is to scour the _context_ for provided command-line options, then change the
+state of the constants, in order to change the behavior of the script.
+
+
+<a name="remainder"></a> The remainder
+--------------------------------------
+
 Finally, remember that I said previously, that the _synopsis_ implicitly dictates what options our
 script can support. The _synopsis_ will also dictate whether our script accepts a non-option
-argument. For example, in `pelo`’s case, it accepts a _host_ argument, to be sent a ping request.
+argument through the value of its `:POSTFIX` argument, if there is one. 
 
-For that, Clon offers us the `REMAINDER` function, that gives us the ability to check for
-non-option arguments located in the command-line:
+For example, in the _synopsis_ definition of `pelo`, a `(:POSTFIX "HOST")` form can be found, which
+means, that aside from supporting options and flags, the script requires one more argument, in our
+case, a `HOST`. 
+
+For that, Clon offers us the `REMAINDER` function, that gives us the ability to check for mandatory
+non-option arguments located in the command-line. In
+[pelo](https://github.com/zhaqenl/pelo/blob/master/pelo.lisp#L76):
 
 ```
 (defun host-present ()
@@ -165,9 +230,35 @@ non-option arguments located in the command-line:
   (remainder :context (make-context)))
 ```
 
+<a name="vs"></a> mksum vs pelo
+-------------------------------
 
-<a name="miscellaneous"></a> Miscellaneous
-------------------------------------------
+As promised, in this section, we’re going to discuss the only difference between _mksum_ and _pelo._
+In `mksum.lisp` of [scripts](https://github.com/ebzzry/scripts), inside the entry-point function, we
+can clearly see the important difference between exclusively utilizing an _explicit_ approach to
+getting the command-line arguments, versus utilizing both _explicit_ and _sequential_ approaches:
+
+```
+(defun mksum (&rest args)
+    "The top-level function"
+    (cond ((and (get-opt "s") (get-opt "t") (remainder)) (print-exit (string-with (remainder))))
+          ((options-everywhere-p args) (print-exit (weird-with args (first-weird args))))
+          ((valued-string-p) (print-preserve #'string-with))
+          ((and (get-opt "s") (remainder)) (print-exit (string-without (remainder))))
+          ((and (get-opt "t") (remainder)) (print-exit (option-with (remainder))))
+          ((remainder) (print-exit (option-without (remainder))))
+          ((string-flag-p) (print-preserve #'string-without))
+          ((list-flag-p) (print-exit (ironclad:list-all-digests)))
+          (t (print-help)))))
+
+```
+
+As I’ve mentioned to earlier, even with code abstractions, the block of code still ends up clunky
+with all the extra tests, and the _coming-up-with_ of all the possible cases.
+
+
+<a name="afternotes"></a> Afternotes
+------------------------------------
 
 The idea of using the `DO-CMDLINE-OPTIONS` macro came from 
 [pell](https://github.com/ebzzry/pell/blob/master/pell#L85). 
@@ -177,11 +268,16 @@ helper functions to _aid_ (though the code back then was still significantly lon
 in readability, and for the explicit checks for the options provided to the script.
 
 The worst part is, inside the entry-point function, I had to come up with every single combination
-of all the existing options in order to cover all the cases, which works, but is very inefficient
-and will give you more unnecessary work, because, if you ever decide to go with that design
-philosophy, and you want to add more supported options to your scripts, well, guess what, you’d have
-a hard time coming up with all the case combinations.
+of all the existing options in order to cover all the cases (similar to what happened in _mksum_),
+which works, but is very inefficient and will give you more unnecessary work, because if you ever
+decide to go with that design philosophy, and you want to add more supported options to your
+scripts, you’d have a hard time coming up with all the case combinations.
 
 That’s when I started playing around with the _sequential_ method of acquiring the command-line
 options, and doing something with them, which _pell_ helped me with to determine what that
 _something_ is.
+
+For a more detailed tutorial of the more advanced features of Clon, I strongly suggest you read the
+[user](https://www.lrde.epita.fr/~didier/software/lisp/clon/user.pdf) and the
+[end-user](https://www.lrde.epita.fr/~didier/software/lisp/clon/enduser.pdf) guides, though Didier
+Verna suggests you start with the end-user guide.
