@@ -10,10 +10,10 @@ _Image by Alexis Angelidis via [clon](https://www.lrde.epita.fr/~didier/software
 
 In my pursuit of creating a Common Lisp successor of [pell](https://github.com/ebzzry/pell), a host
 availability monitor, I stumbled upon
-[Clon](https://www.lrde.epita.fr/~didier/software/lisp/clon.php). In hopes of _taste-testing_ Clon,
-first, I went on to create an experimental subsystem of [scripts](https://github.com/ebzzry/scripts)
-called _mksum_ and towards the end of this guide, I will talk a bit about the main differences
-between that experiment and _pell._
+[Clon](https://www.lrde.epita.fr/~didier/software/lisp/clon.php). In hopes of taste-testing Clon,
+first, I went on to create the mksum subsystem of [scripts](https://github.com/ebzzry/scripts) and
+towards the end of this guide, I will talk a bit about the main differences between that experiment
+and pell._
 
 
 Table of Contents
@@ -59,8 +59,8 @@ git clone https://github.com/didierverna/clon.git
 ---------------------------------
 
 Clon is an external CL library whose job is to track command-line options and do stuff with them. In
-comparison, CL doesn't have a built-in _intuitive_ library for handling command-line options,
-whereas, Python has one called the _getopt_ module.
+comparison, CL doesn't have a built-in intuitive library for handling command-line options, whereas,
+Python has one called the _getopt_ module.
 
 Though, later in the discussion of Clon, one might be thinking, as I am now, while writing
 this:“Doesn’t Python have something like this?”
@@ -73,31 +73,31 @@ One of the main criteria that should be considered while writing code is readabi
 
 Without Clon, in order to get what you need from the command-line, you’ll often be manually checking
 for an object’s membership among the arguments of the command-line, and even with decent code
-abstraction, code blocks could significantly be lengthier because of the explicit testings, and the
+abstraction, code blocks could significantly be lengthier because of the testings, and the
 additional code abstractions. You also might sacrifice a bit of code readability just for the sake
 of _having the job done.™_
 
 With Clon, the user is provided more convenience in creating CL scripts that requires the user to
 process command-line options. It also equips the user with conveniences, like the trivial creation
-of a _help_ page.
+of a help page.
 
 
 <a name="implementation"></a> Implementation
 --------------------------------------------
 
 The process of creating a Clon-powered CL script involves two main steps that needs to be done,
-_sequentially_. The first is the initialization step, and the second one is the processing step.
+sequentially. The first is the initialization step, and the second one is the processing step.
 
 ### <a name="initialization"></a> The initialization step
 
 This first step is necessary as it will become the hat that the second step will pull its tricks
-from. This step requires the creation of two things–the _synopsis_ and the _context._ The _synopsis_
+from. This step requires the creation of two things–the _synopsis_ and the _context._ The synopsis
 will become, sort of, like the CL return value, but sometimes, what we’re after is not the return
 value itself, but the side effect (like in a _defun_, the return value is the name of the function
 defined).
 
-One of the effects of creating a _synopsis_ is to become the script’s help page. Another one is to
-serve as the basis for where the _context_ comes from. Lastly, it implicitly dictates the bounds of
+One of the effects of creating a synopsis is to become the script’s help page. Another one is to
+serve as the basis for where the context comes from. Lastly, it implicitly dictates the bounds of
 our script, like the options our script supports, or if it supports one, at all!
 
 To walk through those steps in an example, here is a short program that uses Clon:
@@ -152,7 +152,7 @@ Inside `MAIN`:
 ```
 
 the `(MAKE-CONTEXT)` function gets invoked, which works in synergy with the
-`DEFSYNOPSIS` form. What `(MAKE-CONTEXT)` does, is to _prepare_ and to set the scope for the
+`DEFSYNOPSIS` form. What `(MAKE-CONTEXT)` does, is to prepare and to set the scope for the
 harvesting of what the command-line contains.
 
 
@@ -164,8 +164,8 @@ we can use to determine that.
 
 #### <a name="explicit"></a> Explicit
 
-The first is the _explicit_ method. Here, we _explictly_ check via the `GETOPT` function of Clon,
-whether or not a particular option/flag is provided by the end-user, for example:
+The first is the _explicit_ method. Here, we check via the `GETOPT` function of Clon, whether or not
+a particular option/flag is provided by the end-user, for example:
 
 ```
 (defun main ()
@@ -209,20 +209,20 @@ For this method, we’re going to use, as an example, a code snippet from
           ((or (string= name "i") (string= name "interval")) (setf *interval* value))))
 ```
 
-The strategy used above is to scour the _context_ for provided command-line options, then change the
+The strategy used above is to scour the context for provided command-line options, then change the
 state of the constants, in order to change the behavior of the script.
 
 
 <a name="remainder"></a> The remainder
 --------------------------------------
 
-Finally, remember that I said previously, that the _synopsis_ implicitly dictates what options our
-script can support. The _synopsis_ will also dictate whether our script accepts a non-option
-argument through the value of its `:POSTFIX` argument, if there is one. 
+Finally, remember that I said previously, that the synopsis implicitly dictates what options our
+script can support. The synopsis will also dictate whether our script accepts a non-option argument
+through the value of its `:POSTFIX` argument, if there is one.
 
-For example, in the _synopsis_ definition of `pelo`, a `(:POSTFIX "HOST")` form can be found, which
+For example, in the synopsis definition of `pelo`, a `(:POSTFIX "HOST")` form can be found, which
 means, that aside from supporting options and flags, the script requires one more argument, in our
-case, a `HOST`. 
+case, a `HOST`.
 
 For that, Clon offers us the `REMAINDER` function, that gives us the ability to check for mandatory
 non-option arguments located in the command-line. In
@@ -237,10 +237,10 @@ non-option arguments located in the command-line. In
 <a name="vs"></a> mksum vs. pelo
 --------------------------------
 
-As promised, in this section, we’re going to discuss the only difference between _mksum_ and _pelo._
-In `mksum.lisp` of [scripts](https://github.com/ebzzry/scripts), inside the entry-point function, we
-can clearly see the important difference between exclusively utilizing an _explicit_ approach to
-getting the command-line arguments, versus utilizing both _explicit_ and _sequential_ approaches:
+As promised, in this section, we’re going to discuss the only difference between mksum and pelo.  In
+`mksum.lisp` of [scripts](https://github.com/zhaqenl/scripts), inside the entry-point function, we
+can clearly see the important difference between exclusively utilizing an explicit approach to
+getting the command-line arguments, versus utilizing both explicit and sequential approaches:
 
 ```
 (defun mksum (&rest args)
@@ -267,19 +267,19 @@ with all the extra tests, and the _coming-up-with_ of all the possible cases.
 The idea of using the `DO-CMDLINE-OPTIONS` macro came from 
 [pell](https://github.com/ebzzry/pell/blob/master/pell#L85). 
 
-The previous version of _pelo_ didn’t have that structure at first, which lead me to write a lot of
-helper functions to _aid_ (though, the code back then was still significantly longer than it is now)
-in readability, and for the explicit checks for the options provided to the script.
+The previous version of pelo didn’t have that structure at first, which lead me to write a lot of
+helper functions to aid (though, the code back then was still significantly longer than it is now)
+in readability, and for the checks for the options provided to the script.
 
 The worst part is, inside the entry-point function, I had to come up with every single combination
-of all the existing options in order to cover all the cases (similar to what happened in _mksum_),
+of all the existing options in order to cover all the cases (similar to what happened in mksum),
 which works, but is very inefficient and will give you more unnecessary work, because if you ever
 decide to go with that design philosophy, and you want to add more supported options to your
 scripts, you’d have a hard time coming up with all the case combinations.
 
-That’s when I started playing around with the _sequential_ method of acquiring the command-line
-options, and doing something with them, which _pell_ helped me with to determine what that
-_something_ is.
+That’s when I started playing around with the sequential method of acquiring the command-line
+options, and doing something with them, which pell helped me with to determine what that something
+is.
 
 For a more detailed tutorial of the more advanced features of Clon, I strongly suggest you read the
 [user](https://www.lrde.epita.fr/~didier/software/lisp/clon/user.pdf) and the
