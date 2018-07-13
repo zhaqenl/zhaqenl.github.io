@@ -8,10 +8,12 @@ What is Clon and Why You Should Use it
 _Image by Alexis Angelidis via [clon](https://www.lrde.epita.fr/~didier/software/lisp/clon/user.pdf)_ 
 </div>
 
-In our pursuit of creating a Common Lisp successor of [pell](https://github.com/ebzzry/pell), we
-stumbled upon Clon. In hopes of _taste-testing_ Clon, first, we went on to create an experimental
-subsystem of [scripts](https://github.com/ebzzry/scripts) called _mksum_ and towards the end of this
-guide, I will talk a bit about the main differences between that experiment and _pell._
+In my pursuit of creating a Common Lisp successor of [pell](https://github.com/ebzzry/pell), a host
+availability monitor, I stumbled upon
+[Clon](https://www.lrde.epita.fr/~didier/software/lisp/clon.php). In hopes of _taste-testing_ Clon,
+first, I went on to create an experimental subsystem of [scripts](https://github.com/ebzzry/scripts)
+called _mksum_ and towards the end of this guide, I will talk a bit about the main differences
+between that experiment and _pell._
 
 
 Table of Contents
@@ -23,6 +25,8 @@ Table of Contents
 - [Implementation](#implementation)
 - [The initialization step](#initialization)
 - [The processing step](#processing)
+- [Explicit](#explicit)
+- [Sequential](#sequential)
 - [The remainder](#remainder)
 - [mksum vs. pelo](#vs)
 - [Afternotes](#afternotes)
@@ -42,8 +46,9 @@ sudo apt-get install -y sbcl git
 nix-env -i sbcl git
 ```
 
-After fulfilling those, run the following `git clone` command in the ASDF 3 source registry, which
-in my case, would be in `~/common-lisp/`:
+After fulfilling those, run the following `git clone` command in the ASDF3 
+[source registry](https://common-lisp.net/project/asdf/asdf/Configuring-ASDF-to-find-your-systems.html), 
+which in my case, would be in `~/common-lisp/`:
 
 ```bash
 git clone https://github.com/didierverna/clon.git
@@ -53,55 +58,54 @@ git clone https://github.com/didierverna/clon.git
 <a name="what"></a> What is Clon?
 ---------------------------------
 
-Clon is an external Common Lisp library whose job is to track command-line options and do stuff with
-them. In comparison, Common Lisp doesn't have a built-in _intuitive_ library for handling
-command-line options, whereas, Python has one called the _getopt_ module.
+Clon is an external CL library whose job is to track command-line options and do stuff with them. In
+comparison, CL doesn't have a built-in _intuitive_ library for handling command-line options,
+whereas, Python has one called the _getopt_ module.
 
-Though later in the discussion of Clon, one might be thinking, as I am now, while writing
-this–Doesn’t Python have something like this?
+Though, later in the discussion of Clon, one might be thinking, as I am now, while writing
+this:“Doesn’t Python have something like this?”
 
 
 <a name="why"></a> Why use Clon?
 --------------------------------
 
-One of the main criterias that should be considered while writing code is its readability.
+One of the main criteria that should be considered while writing code is readability.
 
 Without Clon, in order to get what you need from the command-line, you’ll often be manually checking
 for an object’s membership among the arguments of the command-line, and even with decent code
 abstraction, code blocks could significantly be lengthier because of the explicit testings, and the
 additional code abstractions. You also might sacrifice a bit of code readability just for the sake
-of _having the job done._
+of _having the job done.™_
 
-With Clon, the user is provided more convenience in creating Common Lisp scripts that requires the
-user to process command-line options. It also equips the user with conveniences, like the trivial
-creation of a _help_ page.
+With Clon, the user is provided more convenience in creating CL scripts that requires the user to
+process command-line options. It also equips the user with conveniences, like the trivial creation
+of a _help_ page.
 
 
 <a name="implementation"></a> Implementation
 --------------------------------------------
 
-The process of creating a Clon-powered Common Lisp script involves 2 main steps that needs to be
-done, _sequentially_. The first is the initialization step, and the second one is the processing
-step. 
+The process of creating a Clon-powered CL script involves two main steps that needs to be done,
+_sequentially_. The first is the initialization step, and the second one is the processing step.
 
 ### <a name="initialization"></a> The initialization step
 
-This first step is necessary as it will become the hat that the second step will pull its
-tricks from. This step requires the creation of two things–the _synopsis_ and the _context._ The
-_synopsis_ will become, sort of, like the Common Lisp return value, but sometimes, what we’re after
-is not the return value itself, but the side effect (like in a _defun_, the return value is the name
-of the function defined). 
+This first step is necessary as it will become the hat that the second step will pull its tricks
+from. This step requires the creation of two things–the _synopsis_ and the _context._ The _synopsis_
+will become, sort of, like the CL return value, but sometimes, what we’re after is not the return
+value itself, but the side effect (like in a _defun_, the return value is the name of the function
+defined).
 
 One of the effects of creating a _synopsis_ is to become the script’s help page. Another one is to
 serve as the basis for where the _context_ comes from. Lastly, it implicitly dictates the bounds of
-our script, like the options our script supports, or if it supports one at all!
+our script, like the options our script supports, or if it supports one, at all!
 
 To walk through those steps in an example, here is a short program that uses Clon:
 
 ```
 (in-package :cl-user)
 (require "asdf")
-(asdf:load-system :net.didierverna.clon)
+(asdf:make :net.didierverna.clon)
 (use-package :net.didierverna.clon)
 
 (defsynopsis (:postfix "HOST")
@@ -118,11 +122,11 @@ To walk through those steps in an example, here is a short program that uses Clo
     (exit)))
 ```
 
-The first line is for entering the Common Lisp user package. The second and third lines are for
-loading Clon, to be able to use its functions. The `USE-PACKAGE` function will allow us to use the
+The first line is for entering the CL-USER package. The second and third lines are for loading Clon,
+to be able to use its functions. The `USE-PACKAGE` function will allow us to use the
 `(MAKE-CONTEXT)` form instead of the longer `(NET.DIDIERVERNA.CLON:MAKE-CONTEXT)`.
 
-After that, we is a `DEFSYNOPSIS` form:
+After that, is a `DEFSYNOPSIS` form:
 
 ```
 (defsynopsis (:postfix "HOST")
@@ -158,7 +162,7 @@ The question now, is what does the first step have in store for us? There are tw
 we can use to determine that.
 
 
-#### Explicit
+#### <a name="explicit"></a> Explicit
 
 The first is the _explicit_ method. Here, we _explictly_ check via the `GETOPT` function of Clon,
 whether or not a particular option/flag is provided by the end-user, for example:
@@ -176,7 +180,7 @@ In the example above, it checks if the script is given the `-h` flag, which stan
 page. 
 
 
-#### Sequential
+#### <a name="sequential"></a> Sequential
 
 The second method is _sequential_, which is the one that does more work. There are three submethods
 that acquires the command-line arguments sequentially, as a function and as two macros, but we’re
@@ -264,7 +268,7 @@ The idea of using the `DO-CMDLINE-OPTIONS` macro came from
 [pell](https://github.com/ebzzry/pell/blob/master/pell#L85). 
 
 The previous version of _pelo_ didn’t have that structure at first, which lead me to write a lot of
-helper functions to _aid_ (though the code back then was still significantly longer than it is now)
+helper functions to _aid_ (though, the code back then was still significantly longer than it is now)
 in readability, and for the explicit checks for the options provided to the script.
 
 The worst part is, inside the entry-point function, I had to come up with every single combination
@@ -279,5 +283,5 @@ _something_ is.
 
 For a more detailed tutorial of the more advanced features of Clon, I strongly suggest you read the
 [user](https://www.lrde.epita.fr/~didier/software/lisp/clon/user.pdf) and the
-[end-user](https://www.lrde.epita.fr/~didier/software/lisp/clon/enduser.pdf) guides, though Didier
+[end-user](https://www.lrde.epita.fr/~didier/software/lisp/clon/enduser.pdf) guides, though, Didier
 Verna suggests you start with the end-user guide.
