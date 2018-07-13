@@ -24,7 +24,7 @@ Table of Contents
 - [The initialization step](#initialization)
 - [The processing step](#processing)
 - [The remainder](#remainder)
-- [mksum vs pelo](#vs)
+- [mksum vs. pelo](#vs)
 - [Afternotes](#afternotes)
 
 
@@ -230,8 +230,8 @@ non-option arguments located in the command-line. In
   (remainder :context (make-context)))
 ```
 
-<a name="vs"></a> mksum vs pelo
--------------------------------
+<a name="vs"></a> mksum vs. pelo
+--------------------------------
 
 As promised, in this section, we’re going to discuss the only difference between _mksum_ and _pelo._
 In `mksum.lisp` of [scripts](https://github.com/ebzzry/scripts), inside the entry-point function, we
