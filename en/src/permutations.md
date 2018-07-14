@@ -1,11 +1,22 @@
 Permutations using Backtracking
 ===============================
 
-<div class="center">Last edited: July 11, 2018</div>
+<div class="center">Last edited: July 14, 2018</div>
 
 
-Introduction
-------------
+Table of Contents
+-----------------
+
+- [What are Permutations?](#what)
+- [Python bitmask and bitshift preamble](#preamble)
+- [Generating permutations](#generate)
+- [Variables](#variables)
+- [The function](#function)
+- [The backtracking routine](#backtrack)
+
+
+<a name="what"></a> What are Permutations?
+------------------------------------------
 
 A permutation is a rearrangement of a given sequence. The difference between a _permutation_ and a
 _combination_ lies in the importance of the ordering of its elements. So, in a combination lock, it
@@ -26,11 +37,28 @@ nom
 ```
 
 
-The Code
---------
+<a name="preamble"></a> Python bitmask and bitshift preamble
+------------------------------------------------------------
 
-The following program accomplishes the task of generating all the possible permutations of a given
-string sequence using backtracking:
+In Python, there are things called the *bitshift* operators. These operators act on numbers, but are
+treated as binary ones. For example, `4 >> 1` will become `0b100 >> 1` (the trailing `0b` means it
+is a binary literal), which means to move the _on_ bits to the direction of the bitshift operator,
+which is to the right. Entering that in a Python REPL will output `2` because moving the _on_ bits
+of `0b100` by 1, to the right would yield the `0b010` binary literal, which is `2`.
+
+Another concept we need to discuss is that of *bitmasks*. What they are, is a method to _whittle_
+the bits, through _comparing_ it to a value of a given mask. This is done through the bitwise
+operators `&` (AND), `|` (OR), and `^` (XOR). These bitwise operators are used for different kinds
+of needs, for example, if you want to make sure the third bit from the right of `0b1001` is turned
+on, you use a bitmask value of `0b0100` to align the _off_ bit to the _on_ bit of the given bitmask,
+then perform an _or_ bitwise operator, which is `|` in python, which will now result to `0b1101`.
+
+
+<a name="generate"></a> Generating permutations
+-----------------------------------------------
+
+With that being said, one of the possible applications of the bitshift operators and the usage of a
+bitmask value, is the generation of permutations. An example is be the following Python program:
 
 ```
 def permutations():
@@ -55,6 +83,9 @@ bitmask = 0
 permutations()
 ```
 
+
+### <a name="variables"></a> Variables
+
 The first block of code is the function that we'll be invoking to do our bidding of _generating_ the
 permutations.
 
@@ -67,6 +98,9 @@ hold the _still-to-be-ready_ next permutation, and as the placeholder to determi
 
 Lastly, `BITMASK` will serve as the predictor, whether or not the current index of `CHARACTERS` is
 what we’ll need to append to `RUNNING`, to get closer to our next permutation.
+
+
+### <a name="function"></a> The function
 
 Inside `PERMUTATIONS()`, the first three `GLOBAL` statements are to reference the previously
 mentioned outside variables, inside the function:
@@ -106,6 +140,9 @@ The `FOR` is to iterate over the indexes of `CHARACTERS`. Inside, an `IF` clause
 checks whether the current index `I`, is of the _correct_ index to be appended to `RUNNING`, then
 does the _select, explore, then deselect_ routine, which is the essence of backtracking, to
 accomplish what we need of it, which is to generate the next permutations.
+
+
+#### <a name="backtrack"></a> The backtracking routine
 
 Previously mentioned was the _select, explore, then deselect_ routine or the backtracking
 routine. The selection part happens literally inside `RUNNING.APPEND(CHARACTERS[I])`, in
