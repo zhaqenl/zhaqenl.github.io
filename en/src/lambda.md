@@ -16,14 +16,14 @@ Table of Contents
 - [What is lambda calculus?](#what)
 - [Where do we start?](#where)
 - [How to apply lambda calculus functions](#how)
-- [Numbers](#numbers)
+  + [Numbers](#numbers)
 - [The advanced functions](#advanced)
-- [Successor](#successor)
-- [Addition](#addition)
-- [Multiplication](#multiplication)
-- [Boolean functions](#boolean)
-- [And or Not?](#aon)
-- [Predecessor](#predecessor)
+  + [Successor](#successor)
+  + [Addition](#addition)
+  + [Multiplication](#multiplication)
+  + [Boolean functions](#boolean)
+  + [And or Not?](#aon)
+  + [Predecessor](#predecessor)
 
 
 <a name="what"></a> What is lambda calculus?
