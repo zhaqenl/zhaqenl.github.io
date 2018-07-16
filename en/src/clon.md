@@ -13,7 +13,7 @@ availability monitor, I stumbled upon
 [Clon](https://www.lrde.epita.fr/~didier/software/lisp/clon.php). In hopes of taste-testing Clon,
 first, I went on to create the mksum subsystem of [scripts](https://github.com/ebzzry/scripts) and
 towards the end of this guide, I will talk a bit about the main differences between that experiment
-and pell._
+and pell.
 
 
 Table of Contents
