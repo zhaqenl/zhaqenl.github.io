@@ -1,7 +1,7 @@
 My Computing Residues
 =====================
 
-<div class="center">Last edited: July 12, 2018</div>
+<div class="center">Last updated: July 12, 2018</div>
 
 <img src="/pictures/wood-sun.png" class="banner" alt="wood-sun" />
 <div style="text-align: right"> _Image by arg81 via [wallhaven](https://whvn.cc/672937)_  </div>

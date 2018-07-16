@@ -1,7 +1,7 @@
 The Forkbomb
 ============
 
-<div class="center">Last edited: July 14, 2018</div>
+<div class="center">Last updated: July 14, 2018</div>
 
 <img src="/pictures/forkbomb.png" class="banner" alt="forkbomb" />
 <div style="text-align: right"> _Image by Lapse via [walhaven](https://whvn.cc/32961)_ </div>
