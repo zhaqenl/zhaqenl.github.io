@@ -1,7 +1,7 @@
 The Surface of Lambda Calculus
 ==============================
 
-<div class="center">Last edited: July 12, 2018</div>
+<div class="center">Last updated: July 16, 2018</div>
 
 <img src="/pictures/half-lambda.png" class="banner" alt="half-lambda" />
 <div style="text-align: right"> _Image by Lapse via [wallhaven](https://whvn.cc/32786)_ </div>

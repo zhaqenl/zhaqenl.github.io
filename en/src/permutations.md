@@ -1,7 +1,7 @@
 Permutations using Backtracking
 ===============================
 
-<div class="center">Last edited: July 14, 2018</div>
+<div class="center">Last updated: July 16, 2018</div>
 
 
 Table of Contents
@@ -10,9 +10,9 @@ Table of Contents
 - [What are Permutations?](#what)
 - [Python bitmask and bitshift preamble](#preamble)
 - [Generating permutations](#generate)
-- [Variables](#variables)
-- [The function](#function)
-- [The backtracking routine](#backtrack)
+  + [Variables](#variables)
+  + [The function](#function)
+    * [The backtracking routine](#backtrack)
 
 
 <a name="what"></a> What are Permutations?
