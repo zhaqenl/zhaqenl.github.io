@@ -255,8 +255,8 @@ getting the command-line arguments, versus utilizing both explicit and sequentia
 
 ```
 
-As I’ve mentioned to earlier, even with code abstractions, the block of code still ends up clunky
-with all the extra tests, and the _coming-up-with_ of all the possible cases.
+As I’ve mentioned earlier, even with code abstractions, the block of code still ends up clunky with
+all the extra tests, and the _coming-up-with_ of all the possible cases.
 
 
 <a name="afternotes"></a> Afternotes
