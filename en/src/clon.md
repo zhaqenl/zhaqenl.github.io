@@ -46,12 +46,10 @@ sudo apt-get install -y sbcl git
 nix-env -i sbcl git
 ```
 
-After fulfilling those, run the following `git clone` command in the ASDF3 
-[source registry](https://common-lisp.net/project/asdf/asdf/Configuring-ASDF-to-find-your-systems.html), 
-which in my case, would be in `~/common-lisp/`:
+After fulfilling those, run the following in sbcl:
 
-```bash
-git clone https://github.com/didierverna/clon.git
+```
+(ql:quickload :clon)
 ```
 
 
