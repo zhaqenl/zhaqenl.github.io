@@ -13,7 +13,7 @@ all:
 	$(BUILDER) \
 	  -D "An attempt to solve computer-related problems that won't exist, if computers didn't exist in the first place." \
           -K "zhaqenl, raymund, martinez, raymund martinez, computing residues" \
-          --og-title "My Computing Residues" \
+          --og-title "Computing Residues" \
           --og-type $(OG_TYPE) \
           --og-url "https://zhaqenl.github.io/en/" \
           --og-image $(OG_IMAGE) \

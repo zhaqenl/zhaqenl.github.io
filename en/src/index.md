@@ -1,5 +1,5 @@
-My Computing Residues
-=====================
+Computing Residues
+==================
 
 <div class="center">Last updated: July 12, 2018</div>
 
