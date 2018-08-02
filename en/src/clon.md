@@ -1,7 +1,7 @@
 What is Clon and Why You Should Use it
 ======================================
 
-<div class="center">Last updated: July 16, 2018</div>
+<div class="center">Last updated: August 3, 2018</div>
 
 <img src="/pictures/clon.jpg" class="banner" alt="clon" />
 <div style="text-align: right"> 
