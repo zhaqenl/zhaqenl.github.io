@@ -36,7 +36,7 @@ Table of Contents
 --------------------------------------
 
 To experiment with what Clon offers itself, start with the installation of some system dependencies,
-on Debian and NixOS systems, respectively:
+on APT and Nixpkgs systems, respectively:
 
 ```bash
 sudo apt-get install -y sbcl git
@@ -289,4 +289,4 @@ is.
 For a more detailed tutorial of the more advanced features of Clon, I strongly suggest you read the
 [user](https://www.lrde.epita.fr/~didier/software/lisp/clon/user.pdf) and the
 [end-user](https://www.lrde.epita.fr/~didier/software/lisp/clon/enduser.pdf) guides, though, Didier
-Verna suggests you start with the end-user guide.
+Verna suggests, that you start with the end-user guide.
