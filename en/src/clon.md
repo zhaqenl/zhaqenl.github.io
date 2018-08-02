@@ -46,6 +46,13 @@ sudo apt-get install -y sbcl git
 nix-env -i sbcl git
 ```
 
+Install Quicklisp:
+
+```bash
+curl -O https://beta.quicklisp.org/quicklisp.lisp
+sbcl --load quicklisp.lisp --eval  '(quicklisp-quickstart:install)' --eval '(let ((ql-util::*do-not-prompt* t)) (ql:add-to-init-file) (ql:quickload :cl-launch) (sb-ext:quit))'
+```
+
 After fulfilling those, run the following in sbcl:
 
 ```
