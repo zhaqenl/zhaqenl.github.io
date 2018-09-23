@@ -20,6 +20,7 @@ ANALYTICS="121960562-1"
           $<
 
 all:
+	$(BUILDER) -r
 	$(MAKE) $(MFLAGS) -C en
 	parallel --will-cite "$(MAKE) {/.}.html" ::: $(FILES)
 
