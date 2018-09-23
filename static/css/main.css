@@ -92,14 +92,16 @@ h5 {
     text-align: left;
 }
 
-a,
-a:link,
-a:active,
 a:visited,
 a:hover,
 a:focus {
-    color:           #d30;
-    text-decoration: none;
+ color:           #2cf;
+ text-decoration: none; 
+}
+
+a:link {
+ color:           #d30;
+ text-decoration: none;
 }
 
 a:hover,
