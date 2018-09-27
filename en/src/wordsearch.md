@@ -28,8 +28,8 @@ Table of Contents
       * [convert_to_word](#toWord)
       * [find_base_match](#base)
       * [matched_neighbors](#neighbors)
-      * [complete_line](#complete_line)
-      * [complete_match](#complete_match)
+      * [complete_line](#completeLine)
+      * [complete_match](#completeMatch)
       * [find_matches](#helper)
       * [wordsearch](#main)
 
@@ -409,7 +409,7 @@ If we replace `c` with `a`:
 
 This function returns a list of the adjacent coordinates that match the given character.
 
-##### <a name="complete_line"></a> complete_line
+##### <a name="completeLine"></a> complete_line
 
 ```
 def complete_line(base_coord, targ_coord, word_len, row_length, column_length):
@@ -564,7 +564,7 @@ If we give the function a word length of 4:
 
 it returns an empty list because the last coordinate of the created list went out of bounds.
 
-##### <a name="complete_match"></a> complete_match
+##### <a name="completeMatch"></a> complete_match
 
 ```
 def complete_match(word, matrix, base_matches, word_len, row_length, column_length):
