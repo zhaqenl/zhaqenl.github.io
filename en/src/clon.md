@@ -1,4 +1,4 @@
-What is Clon and Why You Should Use it
+What Is Clon and Why You Should Use It
 ======================================
 
 <div class="center">Last updated: August 3, 2018</div>
