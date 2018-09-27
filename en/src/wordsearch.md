@@ -25,8 +25,8 @@ Table of Contents
     * [Functions](#functions)
       * [matrixify](#matrix)
       * [coord_char](#coordChar)
-      * [convert_to_word](#toWord)
-      * [find_base_match](#base)
+      * [convert‎to‎word](#toWord)
+      * [find‎base‎match](#base)
       * [matched_neighbors](#neighbors)
       * [complete_line](#completeLine)
       * [complete_match](#completeMatch)
@@ -244,7 +244,7 @@ supposedly located in, this function returns the element located at that row and
 'g'
 ```
 
-##### <a name="toWord"></a> convert_to_word
+##### <a name="toWord"></a> convert‎to‎word
 
 ```
 def convert_to_word(coord_matrix, matrix):
@@ -263,7 +263,7 @@ and then uses the `join()` method of strings to return one single string. The `'
 `join()` method is the separator to use in between the strings, but in our case, we want one single
 word so we used an empty string separator.
 
-##### <a name="base"></a> find_base_match
+##### <a name="base"></a> find‎base‎match
 
 ```
 def find_base_match(char, matrix):
