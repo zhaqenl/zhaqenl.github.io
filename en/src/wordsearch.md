@@ -115,19 +115,19 @@ Type the following, then press Enter on your corresponding shell:
 
 Bash:
 
-`export PATH="$PATH:/usr/local/bin/python"`
+    $ export PATH="$PATH:/usr/local/bin/python"
 
 Sh or Ksh:
 
-`PATH="$PATH:/usr/local/bin/python"`
+    $ PATH="$PATH:/usr/local/bin/python"
 
 Csh:
 
-`setenv PATH "$PATH:/usr/local/bin/python"`
+    $ setenv PATH "$PATH:/usr/local/bin/python"
 
 For Windows, open your command prompt then type then enter the following command:
 
-`path %path%;C:\Python`
+    >path %path%;C:\Python
 
 
 <a name="pap"></a> Pen and paper
