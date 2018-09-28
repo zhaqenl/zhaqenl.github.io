@@ -20,18 +20,17 @@ algorithm.
   + [Windows](#windows)
   + [Linux and Unix](#lunix)
 - [Pen and paper](#pap)
-- [Onto the Python code!](#python)
+- [Onto the code!](#python)
   + [Implementing the algorithm](#implement)
-    * [Functions](#functions)
-      * [matrixify](#matrix)
-      * [coord_char](#coordChar)
-      * [convert\_to\_word](#toWord)
-      * [find\_base\_match](#base)
-      * [matched_neighbors](#neighbors)
-      * [complete_line](#completeLine)
-      * [complete_match](#completeMatch)
-      * [find_matches](#helper)
-      * [wordsearch](#main)
+    * [matrixify](#matrix)
+    * [coord_char](#coordChar)
+    * [convert\_to\_word](#toWord)
+    * [find\_base\_match](#base)
+    * [matched_neighbors](#neighbors)
+    * [complete_line](#completeLine)
+    * [complete_match](#completeMatch)
+    * [find_matches](#helper)
+    * [wordsearch](#main)
 - [Closing remarks](#close)
 
 
@@ -203,7 +202,7 @@ Then so far, for the word `dog`, we found 2 matches! After all the neighbors of 
 been checked for a possible match, we then move to the next occurrence of the letter in the grid.
 
 
-<a name="python"></a> Onto the Python code!
+<a name="python"></a> Onto the code!
 -------------------------------------------
 
 
@@ -211,9 +210,6 @@ been checked for a possible match, we then move to the next occurrence of the le
 
 With the basic algorithm in mind, we can now start implementing the algorithm from the
 [previous](#pap) section.
-
-
-#### <a name="functions"></a> Functions
 
 
 ##### <a name="matrix"></a> matrixify
@@ -718,7 +714,7 @@ There are 4 matches of `dog` inside `dogg oogo gogd`!
 ------------------------------------
 
 Remember, it’s never a bad idea to go back to using pen and paper to solve programming
-problems. Sometimes, we express ideas better using our bare hands, and to top it off, a good ’ol
+problems. Sometimes, we express ideas better using our bare hands, and to top it off, a good ol’
 break from the monitor and from the walls of code could just be what you need for a
 breakthrough—just like when I got stuck thinking about how I should implement my
 [complete_line](#completeLine) function!
