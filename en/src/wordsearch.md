@@ -1,7 +1,7 @@
-Word Search Python Implementation
-=================================
+Word Search in Python
+=====================
 
-<div class="center">Last updated: September 27, 2018</div>
+<div class="center">Last updated: September 28, 2018</div>
 
 <img src="/pictures/grid.jpg" class="banner" alt="clon" />
 
@@ -10,18 +10,18 @@ utilize a tool, Python, to try and solve the problem of implementing basic word 
 algorithm.
 
 
-Table of Contents
------------------
+<a name="toc"></a> Table of contents
+------------------------------------
 
-- [What is a Word Search puzzle?](#what)
-- [How and Where Do We Start?](#how_where)
+- [What is Word Search?](#what)
+- [How and where do we start?](#how_where)
 - [Which tool do we use?](#which)
-- [Python Installation](#install)
+- [Python installation](#install)
   + [Windows](#windows)
   + [Linux and Unix](#lunix)
-- [Pen and Paper](#pap)
+- [Pen and paper](#pap)
 - [Onto the Python code!](#python)
-  + [Implementing the Algorithm](#implement)
+  + [Implementing the algorithm](#implement)
     * [Functions](#functions)
       * [matrixify](#matrix)
       * [coord_char](#coordChar)
@@ -32,10 +32,11 @@ Table of Contents
       * [complete_match](#completeMatch)
       * [find_matches](#helper)
       * [wordsearch](#main)
+- [Closing remarks](#close)
 
 
-<a name="what"></a> What is a Word Search puzzle?
--------------------------------------------------
+<a name="what"></a> What is Word Search?
+----------------------------------------
 
 Word search is a puzzle we usually see in newspapers, and in some magazines, located along the
 crossword puzzles. They can be located sometimes in bookstores, around the trivia area, as a
@@ -52,7 +53,7 @@ should contain more than 2 characters, and the grid should have a fixed size of 
 equivalent length and width proportion (which this python implementation doesn’t have).
 
 
-<a name="how_where"></a> How and Where Do We Start?
+<a name="how_where"></a> How and where do we start?
 ---------------------------------------------------
 
 Before going deeper into the computer side of the algorithm, let’s first clarify how we tend to
@@ -79,21 +80,23 @@ There are two main versions of Python—versions 2.x and 3.x. For this project, 
 version 2.7.
 
 
-<a name="install"></a> Python Installation
+<a name="install"></a> Python installation
 ------------------------------------------
 
 For the installation part, we’ll be covering installation instructions for both Windows, Unix, and
 Linux.
 
+
 ### <a name="windows"></a> Windows
 
-First, determine whether you’re running a 32-bit or a 64-bit operating system. To do that, click
-Start, right-click Computer, then click Properties. You should see whether you’re running on 32-bit
-or 64-bit under System type. If you’re running on 32-bit, click on this
+First, determine whether you’re running a 32- or 64-bit operating system. To do that, click Start,
+right-click Computer, then click Properties. You should see whether you’re running on 32-bit or
+64-bit under System type. If you’re running on 32-bit, click on this
 [link](https://www.python.org/ftp/python/2.7.15/python-2.7.15.msi) then start the download; if
-you’re on 64-bit, click on
+you’re on 64-bit, click
 [this one](https://www.python.org/ftp/python/2.7.15/python-2.7.15.amd64.msi). Again, take note that
 we will be utilizing version 2.7 of Python.
+
 
 ### <a name="lunix"></a> Linux and Unix
 
@@ -111,13 +114,16 @@ terminal, let’s make sure that the installed Python files can be located by th
 
 Type the following, then press Enter on your corresponding shell:
 
-Linux bash shell:
+Bash:
+
 `export PATH="$PATH:/usr/local/bin/python"`
 
-sh or ksh shell:
+Sh or Ksh:
+
 `PATH="$PATH:/usr/local/bin/python"`
 
-csh shell:
+Csh:
+
 `setenv PATH "$PATH:/usr/local/bin/python"`
 
 For Windows, open your command prompt then type then enter the following command:
@@ -125,7 +131,7 @@ For Windows, open your command prompt then type then enter the following command
 `path %path%;C:\Python`
 
 
-<a name="pap"></a> Pen and Paper
+<a name="pap"></a> Pen and paper
 --------------------------------
 
 As problems go in software development or in programming in general, it is better to tackle the
@@ -200,12 +206,15 @@ been checked for a possible match, we then move to the next occurrence of the le
 <a name="python"></a> Onto the Python code!
 -------------------------------------------
 
-### <a name="implement"></a> Implementing the Algorithm
+
+### <a name="implement"></a> Implementing the algorithm
 
 With the basic algorithm in mind, we can now start implementing the algorithm from the
 [previous](#pap) section.
 
+
 #### <a name="functions"></a> Functions
+
 
 ##### <a name="matrix"></a> matrixify
 
@@ -226,6 +235,7 @@ column indices:
 'g'
 ```
 
+
 ##### <a name="coordChar"></a> coord_char
 
 ```
@@ -243,6 +253,7 @@ supposedly located in, this function returns the element located at that row and
 >>> coord_char((0, 2), matrix)
 'g'
 ```
+
 
 ##### <a name="toWord"></a> convert\_to\_word
 
@@ -262,6 +273,7 @@ strings using `coord_char`:
 and then uses the `join()` method of strings to return one single string. The `''` before the
 `join()` method is the separator to use in between the strings, but in our case, we want one single
 word so we used an empty string separator.
+
 
 ##### <a name="base"></a> find\_base\_match
 
@@ -339,6 +351,7 @@ The function returns an empty list! This means, that inside the encompassing fun
 if not find_base_match(char, grid):
     pass
 ```
+
 
 ##### <a name="neighbors"></a> matched_neighbors
 
@@ -431,7 +444,7 @@ def complete_line(base_coord, targ_coord, word_len, row_length, column_length):
 We are now at the stage where functions seem a bit hairier to comprehend! I will attempt to discuss
 the thoughts I had before creating this function.
 
-In the [Pen and Paper](#pap) section, after matching the first and second letters of the word inside
+In the [Pen and paper](#pap) section, after matching the first and second letters of the word inside
 the matrix, I mentioned that the next matching steps become narrower. It becomes narrower in the
 sense that, after matching the first and second letters of the word, the only thing you need to do
 after that is to go straight in the direction that the first and second letters created.
@@ -564,6 +577,7 @@ If we give the function a word length of 4:
 
 it returns an empty list because the last coordinate of the created list went out of bounds.
 
+
 ##### <a name="completeMatch"></a> complete_match
 
 ```
@@ -623,6 +637,7 @@ coordinates:
 [[(0, 0), (0, 1), (0, 2)], [(0, 0), (1, 0), (2, 0)], [(0, 0), (1, 1), (2, 2)], [(2, 3), (1, 3), (0, 3)]]
 ```
 
+
 ##### <a name="helper"></a> find_matches
 
 ```
@@ -680,6 +695,7 @@ Given `dog`, the string chain `dogg oogo gogd`, and the `' '` separator as argum
 Voila! This is the list, which contain lists of coordinates where the word `dog` matched inside
 `dogg oogo gogd`!
 
+
 ##### <a name="main"></a> wordsearch
 
 ```
@@ -696,3 +712,13 @@ This function simply returns the number of matches of running
 ```
 
 There are 4 matches of `dog` inside `dogg oogo gogd`!
+
+
+<a name="close"></a> Closing remarks
+------------------------------------
+
+Remember, it’s never a bad idea to go back to using pen and paper to solve programming
+problems. Sometimes, we express ideas better using our bare hands, and to top it off, a good ’ol
+break from the monitor and from the walls of code could just be what you need for a
+breakthrough—just like when I got stuck thinking about how I should implement my
+[complete_line](#completeLine) function!
