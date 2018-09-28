@@ -3,9 +3,9 @@ Word Search in Python
 
 <div class="center">Last updated: September 28, 2018</div>
 
-<img src="/pictures/grid.jpg" class="banner" alt="clon" />
+<img src="/pictures/grid.jpg" class="banner" alt="grid" />
 
-This implementation of word search is, in most part, an experiment. An experiment to see how I
+This implementation of Word Search was, in most part, an experiment. An experiment to see how I
 utilize a tool, Python, to try and solve the problem of implementing basic word search solving
 algorithm.
 
@@ -205,11 +205,11 @@ been checked for a possible match, we then move to the next occurrence of the le
 <a name="python"></a> Onto the code!
 -------------------------------------------
 
-
-### <a name="implement"></a> Implementing the algorithm
-
 With the basic algorithm in mind, we can now start implementing the algorithm from the
 [previous](#pap) section.
+
+
+### <a name="implement"></a> Implementing the algorithm
 
 
 ##### <a name="matrix"></a> matrixify
