@@ -36,7 +36,8 @@ g o g d
     return ''.join&#40;&#91;coord&#95;char&#40;coord, matrix&#41; for coord in coord&#95;matrix&#93;&#41;</code></pre><p>This function will run through a list of coordinates through a <code>for</code> loop and gets the single length strings using <code>coord&#95;char</code>:</p><pre><code>&gt;&gt;&gt; &#91;coord&#95;char&#40;coord, matrix&#41; for coord in &#91;&#40;0, 0&#41;, &#40;0, 1&#41;, &#40;0, 2&#41;&#93;&#93;
 &#91;'d', 'o', 'g'&#93;</code></pre><p>and then uses the <code>join&#40;&#41;</code> method of strings to return one single string. The <code>''</code> before the <code>join&#40;&#41;</code> method is the separator to use in between the strings, but in our case, we want one single word so we used an empty string separator.</p><h5><a name="base"></a> find&#95;base&#95;match</h5><pre><code>def find&#95;base&#95;match&#40;char, matrix&#41;:
     
-    base&#95;matches = &#91;&#40;row&#95;index, column&#95;index&#41; for row&#95;index, row in enumerate&#40;matrix&#41;
+    base&#95;matches = &#91;&#40;row&#95;index, column&#95;index&#41;
+                    for row&#95;index, row in enumerate&#40;matrix&#41;
                     for column&#95;index, column in enumerate&#40;row&#41;
                     if char == column&#93;
 
@@ -66,34 +67,37 @@ d &#40;2, 3&#41;
 </code></pre><p>Giving our function <code>find&#95;base&#95;match</code> the arguments <code>d</code> and <code>grid</code>, respectively, we get the following:</p><pre><code>&gt;&gt;&gt; find&#95;base&#95;match&#40;'d', grid&#41;
 &#91;&#40;0, 0&#41;, &#40;2, 3&#41;&#93;</code></pre><p>As you can see from the previous <code>for</code> loop output, the coordinates output by our function are indeed the coordinates where the character <code>d</code> matched!</p><p>By calling this function, we can determine whether or not to continue with the further steps. If we deliberately give <code>find&#95;base&#95;match</code> a character that is not inside <code>grid</code>, like <code>c</code>:</p><pre><code>&gt;&gt;&gt; find&#95;base&#95;match&#40;'c', grid&#41;
 &#91;&#93;</code></pre><p>The function returns an empty list! This means, that inside the encompassing function that will call <code>find&#95;base&#95;match</code>, one of the conditions could be:</p><pre><code>if not find&#95;base&#95;match&#40;char, grid&#41;:
-    pass</code></pre><h5><a name="neighbors"></a> matched&#95;neighbors</h5><pre><code>def matched&#95;neighbors&#40;coord, second&#95;char, matrix, row&#95;length, column&#95;length&#41;:
-    row&#95;number, column&#95;number = coord
-    neighbors&#95;coordinates = &#91;&#40;row, column&#41; for row in xrange&#40;row&#95;number - 1, row&#95;number + 2&#41;
-                             for column in xrange&#40;column&#95;number - 1, column&#95;number + 2&#41;
-                             if row&#95;length &gt; row &gt;= 0 and column&#95;length &gt; column &gt;= 0
-                             and coord&#95;char&#40;&#40;row, column&#41;, matrix&#41; == second&#95;char
-                             and not &#40;row, column&#41; == coord&#93;
+    pass</code></pre><h5><a name="neighbors"></a> matched&#95;neighbors</h5><pre><code>def matched&#95;neighbors&#40;coord, char, matrix, row&#95;length, col&#95;length&#41;:
+    row&#95;num, col&#95;num = coord
+    neighbors&#95;coords = &#91;&#40;row, column&#41;
+                        for row in xrange&#40;row&#95;num - 1, row&#95;num + 2&#41;
+                        for column in xrange&#40;col&#95;num - 1, col&#95;num + 2&#41;
+                        if row&#95;length &gt; row &gt;= 0
+                        and col&#95;length &gt; column &gt;= 0
+                        and coord&#95;char&#40;&#40;row, column&#41;, matrix&#41; == char
+                        and not &#40;row, column&#41; == coord&#93;
 
-    return neighbors&#95;coordinates
-</code></pre><p>This function finds the adjacent coordinates of the given coordinate, wherein the character of that adjacent coordinate matches the <code>second&#95;char</code> argument!</p><p>Inside <code>neighbors&#95;coordinates</code>, we’re trying to create a list of all the coordinates adjacent the one we gave, but with some conditions to further filter the resulting coordinate:</p><pre><code>&#91;&#40;row, column&#41; for row in xrange&#40;row&#95;number - 1, row&#95;number + 2&#41;
-for column in xrange&#40;column&#95;number - 1, column&#95;number + 2&#41;
-if row&#95;length &gt; row &gt;= 0 and column&#95;length &gt; column &gt;= 0
-and coord&#95;char&#40;&#40;row, column&#41;, matrix&#41; == second&#95;char
+    return neighbors&#95;coords
+</code></pre><p>This function finds the adjacent coordinates of the given coordinate, wherein the character of that adjacent coordinate matches the <code>char</code> argument!</p><p>Inside <code>neighbors&#95;coords</code>, we’re trying to create a list of all the coordinates adjacent the one we gave, but with some conditions to further filter the resulting coordinate:</p><pre><code>&#91;&#40;row, column&#41; for row in xrange&#40;row&#95;num - 1, row&#95;num + 2&#41;
+for column in xrange&#40;col&#95;num - 1, col&#95;num + 2&#41;
+if row&#95;length &gt; row &gt;= 0 and col&#95;length &gt; column &gt;= 0
+and coord&#95;char&#40;&#40;row, column&#41;, matrix&#41; == char
 and not &#40;row, column&#41; == coord&#93;
 </code></pre><p>In the above code snippet, we are creating a list of adjacent coordinates (through <code>&#40;row, column&#41;</code>). Because we want to get the immediate neighbors of a certain coordinate, we deduct 1 from our starting range then add 2 to our end range, so that, if given a row of 0, we will be iterating through <code>xrange&#40;-1, 2&#41;</code>. Remember that the <code>range&#40;&#41;</code> and <code>xrange&#40;&#41;</code> functions is not inclusive of the end range, which means that it doesn’t include the end range in the iteration (hence, the 2 that we add at the end range, not only 1):</p><pre><code>&gt;&gt;&gt; list&#40;xrange&#40;-1, 2&#41;&#41;
 &#91;-1, 0, 1&#93;</code></pre><p>We do the same to the column variable, then later, we filter the contents of the final list through an <code>if</code> clause inside the list comprehension. We do that because we don’t want this function to return coordinates that are out of bounds of the matrix. </p><p>To further hit the nail in the coffin, we also give this function a character as its second argument. That is because we want to further filter the resulting coordinate. We only want a coordinate whose string equivalent matches the second character argument that we give the function!</p><p>If we want to get the neighbors of the coordinate <code>&#40;0, 0&#41;</code>, whose adjacent character in the matrix should be <code>c</code>, call this function with <code>&#40;0, 0&#41;</code> as the first argument, the string <code>c</code> as the second, the matrix itself, and the matrix’s row length and column length, respectively:</p><pre><code>&gt;&gt;&gt; matched&#95;neighbors&#40;&#40;0, 0&#41;, 'c', matrix, 4, 3&#41;
 &#91;&#93;</code></pre><p>Notice that it returns an empty list, because in the neighbors of the coordinate <code>&#40;0, 0&#41;</code>, there is no coordinate in there that has the string <code>c</code> as its string equivalent!</p><p>If we replace <code>c</code> with <code>a</code>:</p><pre><code>&gt;&gt;&gt; matched&#95;neighbors&#40;&#40;0, 0&#41;, 'a', matrix, 4, 3&#41;
-&#91;&#40;0, 1&#41;, &#40;1, 0&#41;, &#40;1, 1&#41;&#93;</code></pre><p>This function returns a list of the adjacent coordinates that match the given character.</p><h5><a name="completeLine"></a> complete&#95;line</h5><pre><code>def complete&#95;line&#40;base&#95;coord, targ&#95;coord, word&#95;len, row&#95;length, column&#95;length&#41;:
+&#91;&#40;0, 1&#41;, &#40;1, 0&#41;, &#40;1, 1&#41;&#93;</code></pre><p>This function returns a list of the adjacent coordinates that match the given character.</p><h5><a name="completeLine"></a> complete&#95;line</h5><pre><code>def complete&#95;line&#40;base&#95;coord, targ&#95;coord, word&#95;len, row&#95;length, col&#95;len&#41;:
     if word&#95;len == 2:
         return base&#95;coord, targ&#95;coord
 
     line = &#91;base&#95;coord, targ&#95;coord&#93;
-    diff&#95;1, diff&#95;2 = targ&#95;coord&#91;0&#93; - base&#95;coord&#91;0&#93;, targ&#95;coord&#91;1&#93; - base&#95;coord&#91;1&#93;
+    diff&#95;1, diff&#95;2 = targ&#95;coord&#91;0&#93; - base&#95;coord&#91;0&#93;,
+                     targ&#95;coord&#91;1&#93; - base&#95;coord&#91;1&#93;
 
     for &#95; in xrange&#40;word&#95;len - 2&#41;:
         line += &#91;&#40;line&#91;-1&#93;&#91;0&#93; + diff&#95;1, line&#91;-1&#93;&#91;1&#93; + diff&#95;2&#41;&#93;
 
-    if  0 &lt;= line&#91;-1&#93;&#91;0&#93; &lt; row&#95;length and 0 &lt;= line&#91;-1&#93;&#91;1&#93; &lt; column&#95;length:
+    if  0 &lt;= line&#91;-1&#93;&#91;0&#93; &lt; row&#95;length and 0 &lt;= line&#91;-1&#93;&#91;1&#93; &lt; col&#95;len:
         return line
 
     return &#91;&#93;
@@ -118,53 +122,57 @@ diff     &#40;-1,-1&#41;&#40;-1, 0&#41;&#40;-1, 1&#41; &#40;0, 1&#41; &#40;1, 1&
 </code></pre><p>After that, I tried adding the values of the <code>diff</code> row to the values of <code>second</code>:</p><pre><code>second    &#40;0, 0&#41; &#40;0, 1&#41; &#40;0, 2&#41; &#40;1, 2&#41; &#40;2, 2&#41; &#40;2, 1&#41; &#40;2, 0&#41; &#40;1, 0&#41;
 diff     &#40;-1,-1&#41;&#40;-1, 0&#41;&#40;-1, 1&#41; &#40;0, 1&#41; &#40;1, 1&#41; &#40;1, 0&#41; &#40;1,-1&#41; &#40;0,-1&#41;
 sum      &#40;-1,-1&#41;&#40;-1, 1&#41;&#40;-1, 3&#41; &#40;1, 3&#41; &#40;3, 3&#41; &#40;3, 1&#41; &#40;3,-1&#41; &#40;1,-1&#41;
-</code></pre><p>If you look closely, the values of the <code>sum</code> row match those of the <code>expected</code> row! To summarize, I get the difference by subracting values of the first coordinate from the values of the second coordinate, then I add the difference to the second coordinate to arrive at the expected third!</p><p>Now, back to the function:</p><pre><code>def complete&#95;line&#40;base&#95;coord, targ&#95;coord, word&#95;len, row&#95;length, column&#95;length&#41;:
+</code></pre><p>If you look closely, the values of the <code>sum</code> row match those of the <code>expected</code> row! To summarize, I get the difference by subracting values of the first coordinate from the values of the second coordinate, then I add the difference to the second coordinate to arrive at the expected third!</p><p>Now, back to the function:</p><pre><code>def complete&#95;line&#40;base&#95;coord, targ&#95;coord, word&#95;len, row&#95;length, col&#95;len&#41;:
     if word&#95;len == 2:
         return base&#95;coord, targ&#95;coord
 
     line = &#91;base&#95;coord, targ&#95;coord&#93;
-    diff&#95;1, diff&#95;2 = targ&#95;coord&#91;0&#93; - base&#95;coord&#91;0&#93;, targ&#95;coord&#91;1&#93; - base&#95;coord&#91;1&#93;
+    diff&#95;1, diff&#95;2 = targ&#95;coord&#91;0&#93; - base&#95;coord&#91;0&#93;,
+                     targ&#95;coord&#91;1&#93; - base&#95;coord&#91;1&#93;
 
     for &#95; in xrange&#40;word&#95;len - 2&#41;:
         line += &#91;&#40;line&#91;-1&#93;&#91;0&#93; + diff&#95;1, line&#91;-1&#93;&#91;1&#93; + diff&#95;2&#41;&#93;
 
-    if  0 &lt;= line&#91;-1&#93;&#91;0&#93; &lt;= row&#95;length and 0 &lt;= line&#91;-1&#93;&#91;1&#93; &lt;= column&#95;length:
+    if  0 &lt;= line&#91;-1&#93;&#91;0&#93; &lt;= row&#95;length and 0 &lt;= line&#91;-1&#93;&#91;1&#93; &lt;= col&#95;len:
         return line
 
     return &#91;&#93;
 </code></pre><p>For this function, however, I decided pass it the length of the word as an argument for mainly two reasons—to check for double length words, and for the length of the final list output. We check for double length words because with words that have lengths of 2, we no longer need to compute for a third coordinate because the word only needs two coordinates to be complete.</p><p>For the second reason, this serves as the quirk of my algorithm. Instead of checking the third coordinate for a match of the third character (and the subsequent ones), I instead create a list of coordinates, forming a straight line in the matrix, whose length is equal to the length of the word.</p><p>I first create the <code>line</code> variable which already contains the coordinates of the first match and the second match of the word. After that, I get the difference of the second coordinates values and the first. Finally, I create a <code>for</code> loop whose loop count is the length of the word minus 2 (because <code>line</code> already has two values inside). Inside the loop, I append to the <code>line</code> list variable a new coordinate by getting <code>line</code>’s last variable values then adding the difference of the second and first match coordinates.</p><p>Finally, to make sure that the created coordinate list can be found inside the matrix, I check the last coordinate of the <code>line</code> variable if it’s within the bounds of the matrix. If it is, I return the newly created coordinate list, and if not, I simply return an empty list.</p><p>Let’s say we want a complete line when given coordinate matches <code>&#40;0, 0&#41;</code> and <code>&#40;1, 1&#41;</code>, and the length of our word is 3:</p><pre><code>&gt;&gt;&gt; core.complete&#95;line&#40;&#40;0, 0&#41;, &#40;1, 1&#41;, 3, 4, 3&#41;
 &#91;&#40;0, 0&#41;, &#40;1, 1&#41;, &#40;2, 2&#41;&#93;</code></pre><p>If we give the function a word length of 4:</p><pre><code>&gt;&gt;&gt; core.complete&#95;line&#40;&#40;0, 0&#41;, &#40;1, 1&#41;, 4, 4, 3&#41;
-&#91;&#93;</code></pre><p>it returns an empty list because the last coordinate of the created list went out of bounds.</p><h5><a name="completeMatch"></a> complete&#95;match</h5><pre><code>def complete&#95;match&#40;word, matrix, base&#95;matches, word&#95;len, row&#95;length, column&#95;length&#41;:
-    match&#95;candidates = &#40;complete&#95;line&#40;base, neighbor, word&#95;len, row&#95;length, column&#95;length&#41;
-                       for base in base&#95;matches
-                       for neighbor in matched&#95;neighbors&#40;base, word&#91;1&#93;, matrix, row&#95;length,
-                                                         column&#95;length&#41;&#41;
+&#91;&#93;</code></pre><p>it returns an empty list because the last coordinate of the created list went out of bounds.</p><h5><a name="completeMatch"></a> complete&#95;match</h5><pre><code>def complete&#95;match&#40;word, matrix, base&#95;match, word&#95;len, row&#95;len, col&#95;len&#41;:
+    new = &#40;complete&#95;line&#40;base, n, word&#95;len, row&#95;len, col&#95;len&#41;
+           for base in base&#95;match
+           for n in matched&#95;neighbors&#40;base, word&#91;1&#93;, matrix, row&#95;len,
+                                      col&#95;len&#41;&#41;
 
-    return &#91;match for match in match&#95;candidates if convert&#95;to&#95;word&#40;match, matrix&#41; == word&#93;
-</code></pre><p>This is the <code>complete&#95;line</code> function on steroids. The goal of this function is to apply <code>complete&#95;line</code> to all the neighbors of the first match. After that, it creates a lists of coordinates whose word equivalent is the same as the word we’re trying to look for inside the matrix.</p><p>For the value of the <code>match&#95;candidates</code> variable, I utilize a generator comprehension. These are like list comprehensions, except, they release their values one by one, only upon request, in contrast to list comprehensions which return all the contents of the list in one go.</p><p>To accomplish the application of <code>complete&#95;line</code> to all the neighbors of the first match, I iterate through all the first matches:</p><pre><code>for base in base&#95;matches</code></pre><p>then inside that <code>for</code> loop, I iterate through all the neighbors that <code>matched&#95;neighbors</code> gave us:</p><pre><code>for neighbor in matched&#95;neighbors&#40;base, word&#91;1&#93;, matrix, row&#95;length, column&#95;length&#41;</code></pre><p>I then put the following statement in the first part of the generator comprehension:</p><pre><code>complete&#95;line&#40;base, neighbor, word&#95;len, row&#95;length, column&#95;length&#41;</code></pre><p>The above generator comprehension is roughly equivalent to:</p><pre><code>for base in base&#95;matches:
-    for neighbor in matched&#95;neighbors&#40;base, word&#91;1&#93;, matrix, row&#95;length, column&#95;length&#41;:
-        yield complete&#95;line&#40;base, neighbor, word&#95;len, row&#95;length, column&#95;length&#41;
-</code></pre><p>After the creation of the <code>match&#95;candidates</code> variable, we now start going through its values one by one:</p><pre><code>&#91;match for match in match&#95;candidates if convert&#95;to&#95;word&#40;match, matrix&#41; == word&#93;</code></pre><p>This list comprehension above will filter the <code>match&#95;candidates</code> and the resulting list will only contain coordinates that, when converted to its word counterpart, match the original word we wanted to find.</p><p>Attempting to find the word <code>dog</code> inside our matrix returns a list of lists containing matched coordinates:</p><pre><code>&gt;&gt;&gt; core.complete&#95;match&#40;'dog', matrix, find&#95;base&#95;match&#40;'dog'&#91;0&#93;, matrix&#41;, 3, 3, 4&#41;
-&#91;&#91;&#40;0, 0&#41;, &#40;0, 1&#41;, &#40;0, 2&#41;&#93;, &#91;&#40;0, 0&#41;, &#40;1, 0&#41;, &#40;2, 0&#41;&#93;, &#91;&#40;0, 0&#41;, &#40;1, 1&#41;, &#40;2, 2&#41;&#93;, &#91;&#40;2, 3&#41;, &#40;1, 3&#41;,
-&#40;0, 3&#41;&#93;&#93;</code></pre><h5><a name="helper"></a> find&#95;matches</h5><pre><code>def find&#95;matches&#40;word, grid, separator='\n'&#41;:
+    return &#91;ero for ero in new if convert&#95;to&#95;word&#40;ero, matrix&#41; == word&#93;
+</code></pre><p>This is the <code>complete&#95;line</code> function on steroids. The goal of this function is to apply <code>complete&#95;line</code> to all the neighbors of the first match. After that, it creates a lists of coordinates whose word equivalent is the same as the word we’re trying to look for inside the matrix.</p><p>For the value of the <code>new</code> variable, I utilize a generator comprehension. These are like list comprehensions, except, they release their values one by one, only upon request, in contrast to list comprehensions which return all the contents of the list in one go.</p><p>To accomplish the application of <code>complete&#95;line</code> to all the neighbors of the first match, I iterate through all the first matches:</p><pre><code>for base in base&#95;match</code></pre><p>then inside that <code>for</code> loop, I iterate through all the neighbors that <code>matched&#95;neighbors</code> gave us:</p><pre><code>for n in matched&#95;neighbors&#40;base, word&#91;1&#93;, matrix, row&#95;len, col&#95;len&#41;</code></pre><p>I then put the following statement in the first part of the generator comprehension:</p><pre><code>complete&#95;line&#40;base, n, word&#95;len, row&#95;len, column&#95;len&#41;</code></pre><p>The above generator comprehension is roughly equivalent to:</p><pre><code>for base in base&#95;match:
+    for n in matched&#95;neighbors&#40;base, word&#91;1&#93;, matrix, row&#95;len, col&#95;len&#41;:
+        yield complete&#95;line&#40;base, n, word&#95;len, row&#95;len, col&#95;len&#41;
+</code></pre><p>After the creation of the <code>new</code> variable, we now start going through its values one by one:</p><pre><code>&#91;ero for ero in new if convert&#95;to&#95;word&#40;ero, matrix&#41; == word&#93;</code></pre><p>This list comprehension above will filter the <code>new</code> and the resulting list will only contain coordinates that, when converted to its word counterpart, match the original word we wanted to find.</p><p>Attempting to find the word <code>dog</code> inside our matrix returns a list of lists containing matched coordinates:</p><pre><code>&gt;&gt;&gt; base&#95;match = find&#95;base&#95;match&#40;'dog'&#91;0&#93;, matrix&#41;
+&gt;&gt;&gt; core.complete&#95;match&#40;'dog', matrix, base&#95;match, 3, 3, 4&#41;
+&#91;&#91;&#40;0, 0&#41;, &#40;0, 1&#41;, &#40;0, 2&#41;&#93;, &#91;&#40;0, 0&#41;, &#40;1, 0&#41;, &#40;2, 0&#41;&#93;,
+&#91;&#40;0, 0&#41;, &#40;1, 1&#41;, &#40;2, 2&#41;&#93;, &#91;&#40;2, 3&#41;, &#40;1, 3&#41;, &#40;0, 3&#41;&#93;&#93;
+</code></pre><h5><a name="helper"></a> find&#95;matches</h5><pre><code>def find&#95;matches&#40;word, grid, separator='\n'&#41;:
     word&#95;len = len&#40;word&#41;
     matrix = matrixify&#40;grid, separator&#41;
-    row&#95;length, column&#95;length = len&#40;matrix&#41;, len&#40;matrix&#91;0&#93;&#41;
+    row&#95;len, column&#95;len = len&#40;matrix&#41;, len&#40;matrix&#91;0&#93;&#41;
     base&#95;matches = find&#95;base&#95;match&#40;word&#91;0&#93;, matrix&#41;
 
-    if column&#95;length &lt; word&#95;len &gt; row&#95;length or not base&#95;matches:
+    if column&#95;len &lt; word&#95;len &gt; row&#95;len or not base&#95;matches:
         return &#91;&#93;
     elif word&#95;len == 1:
         return base&#95;matches
 
-    return complete&#95;match&#40;word, matrix, base&#95;matches, word&#95;len, row&#95;length, column&#95;length&#41;
-</code></pre><p>This function will serve as the helper of our main function. Its ultimate goal is to output a list containing the coordinates of all the possible matches of <code>word</code> inside <code>grid</code>. For general purposes, I defined four variables:</p><ul><li>The <code>word&#95;len</code> variable whose value is the length of the <code>word</code> argument, which will generally be  useful throughout the script</li><li>The <code>matrix</code> variable whose value we get through giving  <code>grid</code> to our <code>matrixify</code> function, which will allow us to later be able to index contents of the  matrix through its row and column indices. </li><li>The <code>row&#95;length</code> and the <code>column&#95;length</code> variable of <code>matrix</code></li><li><code>base&#95;matches</code> which contain the coordinates of all the first letter matches of <code>word</code></li></ul><p>After the variables, we will do some sanity checks:</p><pre><code>if column&#95;length &lt; word&#95;len &gt; row&#95;length or not base&#95;matches:
+    return complete&#95;match&#40;word, matrix, base&#95;matches, word&#95;len, row&#95;len,
+                          column&#95;len&#41;
+</code></pre><p>This function will serve as the helper of our main function. Its ultimate goal is to output a list containing the coordinates of all the possible matches of <code>word</code> inside <code>grid</code>. For general purposes, I defined four variables:</p><ul><li>The <code>word&#95;len</code> variable whose value is the length of the <code>word</code> argument, which will generally be  useful throughout the script</li><li>The <code>matrix</code> variable whose value we get through giving  <code>grid</code> to our <code>matrixify</code> function, which will allow us to later be able to index contents of the  matrix through its row and column indices. </li><li>The <code>row&#95;len</code> and the <code>column&#95;len</code> variable of <code>matrix</code></li><li><code>base&#95;matches</code> which contain the coordinates of all the first letter matches of <code>word</code></li></ul><p>After the variables, we will do some sanity checks:</p><pre><code>if column&#95;len &lt; word&#95;len &gt; row&#95;len or not base&#95;matches:
         return &#91;&#93;
 elif word&#95;len == 1:
         return base&#95;matches
-</code></pre><p>The above <code>if elif</code> statement will check if the length of <code>word</code> is longer than both the <code>column&#95;length</code> and <code>row&#95;length</code> and also checks if <code>base&#95;matches</code> returns an empty list. If that condition is not satisfied, it means that <code>word</code> can fit inside the matrix, and <code>base&#95;matches</code> found a match! However, if the length of <code>word</code> is 1, we simply return <code>base&#95;matches</code>.</p><p>If the word is longer than 1, we then pass the local variables to <code>complete&#95;match</code> for further processing.</p><p>Given <code>dog</code>, the string chain <code>dogg oogo gogd</code>, and the <code>' '</code> separator as arguments:</p><pre><code>&gt;&gt;&gt; find&#95;matches&#40;'dog', 'dogg oogo gogd', ' '&#41;
-&#91;&#91;&#40;0, 0&#41;, &#40;0, 1&#41;, &#40;0, 2&#41;&#93;, &#91;&#40;0, 0&#41;, &#40;1, 0&#41;, &#40;2, 0&#41;&#93;, &#91;&#40;0, 0&#41;, &#40;1, 1&#41;, &#40;2, 2&#41;&#93;, &#91;&#40;2, 3&#41;, &#40;1, 3&#41;,
-&#40;0, 3&#41;&#93;&#93;
+</code></pre><p>The above <code>if elif</code> statement will check if the length of <code>word</code> is longer than both the <code>column&#95;len</code> and <code>row&#95;len</code> and also checks if <code>base&#95;matches</code> returns an empty list. If that condition is not satisfied, it means that <code>word</code> can fit inside the matrix, and <code>base&#95;matches</code> found a match! However, if the length of <code>word</code> is 1, we simply return <code>base&#95;matches</code>.</p><p>If the word is longer than 1, we then pass the local variables to <code>complete&#95;match</code> for further processing.</p><p>Given <code>dog</code>, the string chain <code>dogg oogo gogd</code>, and the <code>' '</code> separator as arguments:</p><pre><code>&gt;&gt;&gt; find&#95;matches&#40;'dog', 'dogg oogo gogd', ' '&#41;
+&#91;&#91;&#40;0, 0&#41;, &#40;0, 1&#41;, &#40;0, 2&#41;&#93;, &#91;&#40;0, 0&#41;, &#40;1, 0&#41;, &#40;2, 0&#41;&#93;,
+&#91;&#40;0, 0&#41;, &#40;1, 1&#41;, &#40;2, 2&#41;&#93;, &#91;&#40;2, 3&#41;, &#40;1, 3&#41;, &#40;0, 3&#41;&#93;&#93;
 </code></pre><p>Voila! This is the list, which contain lists of coordinates where the word <code>dog</code> matched inside <code>dogg oogo gogd</code>!</p><h5><a name="main"></a> wordsearch</h5><pre><code>def wordsearch&#40;word, string&#95;grid, separator='\n'&#41;:
     return len&#40;find&#95;matches&#40;word, string&#95;grid, separator&#41;&#41;</code></pre><p>This function simply returns the number of matches of running</p><pre><code>find&#95;matches&#40;word, string&#95;grid, separator='\n'&#41;:</code></pre><pre><code>&gt;&gt;&gt; wordsearch&#40;'dog', 'dogg oogo gogd', ' '&#41;
 4</code></pre><p>There are 4 matches of <code>dog</code> inside <code>dogg oogo gogd</code>!</p><h2><a name="close"></a> Closing remarks</h2><p>Remember, it’s never a bad idea to go back to using pen and paper to solve programming problems. Sometimes, we express ideas better using our bare hands, and to top it off, a good ol’ break from the monitor and from the walls of code could just be what you need for a breakthrough—just like when I got stuck thinking about how I should implement my <a href='#completeLine'>complete_line</a> function!</p><hr/><div class="footer"><p><div class="text-small"> <a href='/en'>Home</a> · <a href='/en/about'>About</a> · <a href='https://github.com/zhaqenl/zhaqenl.github.io'>Source</a> </div> <div class="text-x-small"> Created with <a href='https://github.com/ebzzry/emem'>emem</a> <div></p><p><div class="text-x-small"> <a rel="license" href="https://creativecommons.org/publicdomain/zero/1.0/deed.en"><img alt="CC0 1.0 Universal (CC0 1.0) Public Domain Dedication" class="cc" src="/pictures/cc0-88x31.png" /></a><br> This work is in the <a rel="license" href="https://creativecommons.org/publicdomain/zero/1.0/deed.en">public domain.</a><br> </div></p><p></div></p></div><script src="/static/js/highlight.pack.js"></script><script>hljs.initHighlightingOnLoad();</script><script>(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)})(window,document,'script','https://www.google-analytics.com/analytics.js','ga');ga('create', 'UA-121960562-1', 'auto');ga('send', 'pageview');</script></body></html>

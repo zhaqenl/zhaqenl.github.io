@@ -274,7 +274,8 @@ word so we used an empty string separator.
 ```
 def find_base_match(char, matrix):
     
-    base_matches = [(row_index, column_index) for row_index, row in enumerate(matrix)
+    base_matches = [(row_index, column_index)
+                    for row_index, row in enumerate(matrix)
                     for column_index, column in enumerate(row)
                     if char == column]
 
@@ -344,28 +345,30 @@ The function returns an empty list! This means, that inside the encompassing fun
 ##### <a name="neighbors"></a> matched\_neighbors
 
 ```
-def matched_neighbors(coord, second_char, matrix, row_length, column_length):
-    row_number, column_number = coord
-    neighbors_coordinates = [(row, column) for row in xrange(row_number - 1, row_number + 2)
-                             for column in xrange(column_number - 1, column_number + 2)
-                             if row_length > row >= 0 and column_length > column >= 0
-                             and coord_char((row, column), matrix) == second_char
-                             and not (row, column) == coord]
+def matched_neighbors(coord, char, matrix, row_length, col_length):
+    row_num, col_num = coord
+    neighbors_coords = [(row, column)
+                        for row in xrange(row_num - 1, row_num + 2)
+                        for column in xrange(col_num - 1, col_num + 2)
+                        if row_length > row >= 0
+                        and col_length > column >= 0
+                        and coord_char((row, column), matrix) == char
+                        and not (row, column) == coord]
 
-    return neighbors_coordinates
+    return neighbors_coords
 ```
 
 This function finds the adjacent coordinates of the given coordinate, wherein the character of that
-adjacent coordinate matches the `second_char` argument!
+adjacent coordinate matches the `char` argument!
 
-Inside `neighbors_coordinates`, we’re trying to create a list of all the coordinates adjacent the
-one we gave, but with some conditions to further filter the resulting coordinate:
+Inside `neighbors_coords`, we’re trying to create a list of all the coordinates adjacent the one we
+gave, but with some conditions to further filter the resulting coordinate:
 
 ```
-[(row, column) for row in xrange(row_number - 1, row_number + 2)
-for column in xrange(column_number - 1, column_number + 2)
-if row_length > row >= 0 and column_length > column >= 0
-and coord_char((row, column), matrix) == second_char
+[(row, column) for row in xrange(row_num - 1, row_num + 2)
+for column in xrange(col_num - 1, col_num + 2)
+if row_length > row >= 0 and col_length > column >= 0
+and coord_char((row, column), matrix) == char
 and not (row, column) == coord]
 ```
 
@@ -408,17 +411,18 @@ This function returns a list of the adjacent coordinates that match the given ch
 ##### <a name="completeLine"></a> complete\_line
 
 ```
-def complete_line(base_coord, targ_coord, word_len, row_length, column_length):
+def complete_line(base_coord, targ_coord, word_len, row_length, col_len):
     if word_len == 2:
         return base_coord, targ_coord
 
     line = [base_coord, targ_coord]
-    diff_1, diff_2 = targ_coord[0] - base_coord[0], targ_coord[1] - base_coord[1]
+    diff_1, diff_2 = targ_coord[0] - base_coord[0],
+                     targ_coord[1] - base_coord[1]
 
     for _ in xrange(word_len - 2):
         line += [(line[-1][0] + diff_1, line[-1][1] + diff_2)]
 
-    if  0 <= line[-1][0] < row_length and 0 <= line[-1][1] < column_length:
+    if  0 <= line[-1][0] < row_length and 0 <= line[-1][1] < col_len:
         return line
 
     return []
@@ -507,17 +511,18 @@ coordinate, then I add the difference to the second coordinate to arrive at the 
 Now, back to the function:
 
 ```
-def complete_line(base_coord, targ_coord, word_len, row_length, column_length):
+def complete_line(base_coord, targ_coord, word_len, row_length, col_len):
     if word_len == 2:
         return base_coord, targ_coord
 
     line = [base_coord, targ_coord]
-    diff_1, diff_2 = targ_coord[0] - base_coord[0], targ_coord[1] - base_coord[1]
+    diff_1, diff_2 = targ_coord[0] - base_coord[0],
+                     targ_coord[1] - base_coord[1]
 
     for _ in xrange(word_len - 2):
         line += [(line[-1][0] + diff_1, line[-1][1] + diff_2)]
 
-    if  0 <= line[-1][0] <= row_length and 0 <= line[-1][1] <= column_length:
+    if  0 <= line[-1][0] <= row_length and 0 <= line[-1][1] <= col_len:
         return line
 
     return []
@@ -560,13 +565,13 @@ it returns an empty list because the last coordinate of the created list went ou
 ##### <a name="completeMatch"></a> complete\_match
 
 ```
-def complete_match(word, matrix, base_matches, word_len, row_length, column_length):
-    match_candidates = (complete_line(base, neighbor, word_len, row_length, column_length)
-                       for base in base_matches
-                       for neighbor in matched_neighbors(base, word[1], matrix, row_length,
-                                                         column_length))
+def complete_match(word, matrix, base_match, word_len, row_len, col_len):
+    new = (complete_line(base, n, word_len, row_len, col_len)
+           for base in base_match
+           for n in matched_neighbors(base, word[1], matrix, row_len,
+                                      col_len))
 
-    return [match for match in match_candidates if convert_to_word(match, matrix) == word]
+    return [ero for ero in new if convert_to_word(ero, matrix) == word]
 ```
 
 This is the `complete_line` function on steroids. The goal of this function is to apply
@@ -574,46 +579,47 @@ This is the `complete_line` function on steroids. The goal of this function is t
 coordinates whose word equivalent is the same as the word we’re trying to look for inside the
 matrix.
 
-For the value of the `match_candidates` variable, I utilize a generator comprehension. These are
-like list comprehensions, except, they release their values one by one, only upon request, in
-contrast to list comprehensions which return all the contents of the list in one go.
+For the value of the `new` variable, I utilize a generator comprehension. These are like list
+comprehensions, except, they release their values one by one, only upon request, in contrast to list
+comprehensions which return all the contents of the list in one go.
 
 To accomplish the application of `complete_line` to all the neighbors of the first match, I iterate
 through all the first matches:
 
-    for base in base_matches
+    for base in base_match
 
 then inside that `for` loop, I iterate through all the neighbors that `matched_neighbors` gave us:
 
-    for neighbor in matched_neighbors(base, word[1], matrix, row_length, column_length)
+    for n in matched_neighbors(base, word[1], matrix, row_len, col_len)
 
 I then put the following statement in the first part of the generator comprehension:
 
-    complete_line(base, neighbor, word_len, row_length, column_length)
+    complete_line(base, n, word_len, row_len, column_len)
 
 The above generator comprehension is roughly equivalent to:
 
 ```
-for base in base_matches:
-    for neighbor in matched_neighbors(base, word[1], matrix, row_length, column_length):
-        yield complete_line(base, neighbor, word_len, row_length, column_length)
+for base in base_match:
+    for n in matched_neighbors(base, word[1], matrix, row_len, col_len):
+        yield complete_line(base, n, word_len, row_len, col_len)
 ```
 
-After the creation of the `match_candidates` variable, we now start going through its values one by
-one:
+After the creation of the `new` variable, we now start going through its values one by one:
 
-    [match for match in match_candidates if convert_to_word(match, matrix) == word]
+    [ero for ero in new if convert_to_word(ero, matrix) == word]
 
-This list comprehension above will filter the `match_candidates` and the resulting list will only
-contain coordinates that, when converted to its word counterpart, match the original word we wanted
-to find.
+This list comprehension above will filter the `new` and the resulting list will only contain
+coordinates that, when converted to its word counterpart, match the original word we wanted to find.
 
 Attempting to find the word `dog` inside our matrix returns a list of lists containing matched
 coordinates:
 
-    >>> core.complete_match('dog', matrix, find_base_match('dog'[0], matrix), 3, 3, 4)
-    [[(0, 0), (0, 1), (0, 2)], [(0, 0), (1, 0), (2, 0)], [(0, 0), (1, 1), (2, 2)], [(2, 3), (1, 3),
-    (0, 3)]]
+```
+>>> base_match = find_base_match('dog'[0], matrix)
+>>> core.complete_match('dog', matrix, base_match, 3, 3, 4)
+[[(0, 0), (0, 1), (0, 2)], [(0, 0), (1, 0), (2, 0)],
+[(0, 0), (1, 1), (2, 2)], [(2, 3), (1, 3), (0, 3)]]
+```
 
 
 ##### <a name="helper"></a> find\_matches
@@ -622,15 +628,16 @@ coordinates:
 def find_matches(word, grid, separator='\n'):
     word_len = len(word)
     matrix = matrixify(grid, separator)
-    row_length, column_length = len(matrix), len(matrix[0])
+    row_len, column_len = len(matrix), len(matrix[0])
     base_matches = find_base_match(word[0], matrix)
 
-    if column_length < word_len > row_length or not base_matches:
+    if column_len < word_len > row_len or not base_matches:
         return []
     elif word_len == 1:
         return base_matches
 
-    return complete_match(word, matrix, base_matches, word_len, row_length, column_length)
+    return complete_match(word, matrix, base_matches, word_len, row_len,
+                          column_len)
 ```
 
 This function will serve as the helper of our main function. Its ultimate goal is to output a list
@@ -642,20 +649,20 @@ purposes, I defined four variables:
 - The `matrix` variable whose value we get through giving
   `grid` to our `matrixify` function, which will allow us to later be able to index contents of the
   matrix through its row and column indices. 
-- The `row_length` and the `column_length` variable of `matrix`
+- The `row_len` and the `column_len` variable of `matrix`
 - `base_matches` which contain the coordinates of all the first letter matches of `word`
 
 After the variables, we will do some sanity checks:
 
 ```
-if column_length < word_len > row_length or not base_matches:
+if column_len < word_len > row_len or not base_matches:
         return []
 elif word_len == 1:
         return base_matches
 ```
 
 The above `if elif` statement will check if the length of `word` is longer than both the
-`column_length` and `row_length` and also checks if `base_matches` returns an empty list. If that
+`column_len` and `row_len` and also checks if `base_matches` returns an empty list. If that
 condition is not satisfied, it means that `word` can fit inside the matrix, and `base_matches` found
 a match! However, if the length of `word` is 1, we simply return `base_matches`.
 
@@ -666,8 +673,8 @@ Given `dog`, the string chain `dogg oogo gogd`, and the `' '` separator as argum
 
 ```
 >>> find_matches('dog', 'dogg oogo gogd', ' ')
-[[(0, 0), (0, 1), (0, 2)], [(0, 0), (1, 0), (2, 0)], [(0, 0), (1, 1), (2, 2)], [(2, 3), (1, 3),
-(0, 3)]]
+[[(0, 0), (0, 1), (0, 2)], [(0, 0), (1, 0), (2, 0)],
+[(0, 0), (1, 1), (2, 2)], [(2, 3), (1, 3), (0, 3)]]
 ```
 
 Voila! This is the list, which contain lists of coordinates where the word `dog` matched inside
