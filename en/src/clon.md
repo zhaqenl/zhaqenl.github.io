@@ -250,16 +250,19 @@ getting the command-line arguments, versus utilizing both explicit and sequentia
 ```
 (defun mksum (&rest args)
     "The top-level function"
-    (cond ((and (get-opt "s") (get-opt "t") (remainder)) (print-exit (string-with (remainder))))
-          ((options-everywhere-p args) (print-exit (weird-with args (first-weird args))))
+    (cond ((and (get-opt "s") (get-opt "t") (remainder))
+           (print-exit (string-with (remainder))))
+          ((options-everywhere-p args)
+           (print-exit (weird-with args (first-weird args))))
           ((valued-string-p) (print-preserve #'string-with))
-          ((and (get-opt "s") (remainder)) (print-exit (string-without (remainder))))
-          ((and (get-opt "t") (remainder)) (print-exit (option-with (remainder))))
+          ((and (get-opt "s") (remainder))
+           (print-exit (string-without (remainder))))
+          ((and (get-opt "t") (remainder))
+           (print-exit (option-with (remainder))))
           ((remainder) (print-exit (option-without (remainder))))
           ((string-flag-p) (print-preserve #'string-without))
           ((list-flag-p) (print-exit (ironclad:list-all-digests)))
-          (t (print-help)))))
-
+          (t (print-help))))
 ```
 
 As I’ve mentioned earlier, even with code abstractions, the block of code still ends up clunky with
