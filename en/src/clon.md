@@ -50,7 +50,9 @@ Install Quicklisp:
 
 ```bash
 curl -O https://beta.quicklisp.org/quicklisp.lisp
-sbcl --load quicklisp.lisp --eval  '(quicklisp-quickstart:install)' --eval '(let ((ql-util::*do-not-prompt* t)) (ql:add-to-init-file) (ql:quickload :cl-launch) (sb-ext:quit))'
+sbcl --load quicklisp.lisp --eval  '(quicklisp-quickstart:install)'
+     --eval '(let ((ql-util::*do-not-prompt* t)) (ql:add-to-init-file)
+                   (ql:quickload :cl-launch) (sb-ext:quit))'
 ```
 
 After fulfilling those, run the following in sbcl:
@@ -207,11 +209,14 @@ For this method, we’re going to use, as an example, a code snippet from
 
 ```
 (do-cmdline-options (option name value source)
-    (cond ((or (string= name "b") (string= name "beep-online")) (setf *beep-online* t))
-          ((or (string= name "B") (string= name "beep-offline")) (setf *beep-offline* t))
-          ((or (string= name "c") (string= name "count")) (setf *count-p* t)
-           (setf *count* value))
-          ((or (string= name "i") (string= name "interval")) (setf *interval* value))))
+    (cond ((or (string= name "b") (string= name "beep-online"))
+           (setf *beep-online* t))
+          ((or (string= name "B") (string= name "beep-offline"))
+           (setf *beep-offline* t))
+          ((or (string= name "c") (string= name "count"))
+           (setf *count-p* t) (setf *count* value))
+          ((or (string= name "i") (string= name "interval"))
+           (setf *interval* value))))
 ```
 
 The strategy used above is to scour the context for provided command-line options, then change the
