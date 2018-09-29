@@ -113,15 +113,11 @@ terminal, let’s make sure that the installed Python files can be located by th
 
 Type the following, then press Enter on your corresponding shell:
 
-Bash:
+Bash, Sh, Zsh, Ash, or Ksh:
 
     $ export PATH="$PATH:/usr/local/bin/python"
 
-Sh or Ksh:
-
-    $ PATH="$PATH:/usr/local/bin/python"
-
-Csh:
+Csh or Tcsh:
 
     $ setenv PATH "$PATH:/usr/local/bin/python"
 
