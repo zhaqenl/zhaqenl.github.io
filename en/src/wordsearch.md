@@ -121,10 +121,6 @@ Csh or Tcsh:
 
     $ setenv PATH "$PATH:/usr/local/bin/python"
 
-For Windows, open your command prompt then type then enter the following command:
-
-    >path %path%;C:\Python
-
 
 <a name="pap"></a> Pen and paper
 --------------------------------
