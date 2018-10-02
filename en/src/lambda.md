@@ -45,11 +45,11 @@ This is what a _basic_ function in lambda calculus looks like:
 
 In lambda calculus, this is what they call an _identity function_ and I'll discuss later a bit of
 what it does and how it works. Let's dissect a bit what is contained within a lambda calculus
-function. The `λ`, which is a greek letter meaning _lambda_, indicates that whatever is after it is
+function. The `λ`, which is a Greek letter meaning _lambda_, indicates that whatever is after it is
 a function. The letter or symbol after the `λ` preceding the `.` is the parameter or the name of the
-function, and the succeding letter or symbol after the `.` is the body of the function. Symbols that
-reside between the `λ` and `.` are called _bound_ and I'll show you in the next section how these
-_bound_ things behave.
+function, and the succeeding letter or symbol after the `.` is the body of the function. Symbols
+that reside between the `λ` and `.` are called _bound_ and I'll show you in the next section how
+these _bound_ things behave.
 
 
 <a name="how"></a> How to apply lambda calculus functions
@@ -74,9 +74,9 @@ small step forward to attempt to possibly clarify this _application_.
 ```
 
 In the snippet above, we will apply the function `(λba.b)` to `r` and I won't tell you the output
-yet so let's walk through the process. The symbols before the `.` and after the `λ` are _bound_
-but our higher concern is the symbol immediately succeding the `λ` symbol which is `b` because that
-is what we will be substituting `r` for. We now substitute `r` for the bound variable `b`, therefore
+yet so let's walk through the process. The symbols before the `.` and after the `λ` are _bound_ but
+our higher concern is the symbol immediately succeeding the `λ` symbol which is `b` because that is
+what we will be substituting `r` for. We now substitute `r` for the bound variable `b`, therefore
 consuming it, then we also substitute `r` for every occurrence of the bound variable we substituted
 inside the function body, which will result to:
 

@@ -18,7 +18,7 @@ algorithm.
 - [Which tool do we use?](#which)
 - [Python installation](#install)
   + [Windows](#windows)
-  + [Linux and Unix](#lunix)
+  + [Linux and Unix](#linux)
 - [Pen and paper](#pap)
 - [Onto the code!](#python)
   + [Implementing the algorithm](#implement)
@@ -97,7 +97,7 @@ you’re on 64-bit, click
 we will be utilizing version 2.7 of Python.
 
 
-### <a name="lunix"></a> Linux and Unix
+### <a name="linux"></a> Linux and Unix
 
 Download this [file](https://www.python.org/ftp/python/2.7.15/Python-2.7.15.tgz) then extract. After
 extraction, go inside the extracted directory then run the following:
@@ -171,8 +171,8 @@ letter. In this case, we will check the letter directly above `o` for the third 
       d
 ```
 
-This means that we don’t have a match, and we should be progressing along the grid through going to
-the next occurrenct of the first letter. If the asterisk is replaced by the correct missing letter:
+This means that we don’t have a match, and we should be going to the next occurrence of the first
+letter, inside the grid. If the asterisk is replaced by the correct missing letter:
 
 ```
       g
@@ -497,7 +497,7 @@ sum      (-1,-1)(-1, 1)(-1, 3) (1, 3) (3, 3) (3, 1) (3,-1) (1,-1)
 ```
 
 If you look closely, the values of the `sum` row match those of the `expected` row! To summarize, I
-get the difference by subracting values of the first coordinate from the values of the second
+get the difference by subtracting values of the first coordinate from the values of the second
 coordinate, then I add the difference to the second coordinate to arrive at the expected third!
 
 Now, back to the function:

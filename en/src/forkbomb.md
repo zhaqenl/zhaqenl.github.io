@@ -4,7 +4,7 @@ The Forkbomb
 <div class="center">Last updated: July 14, 2018</div>
 
 <img src="/pictures/forkbomb.png" class="banner" alt="forkbomb" />
-<div style="text-align: right"> _Image by Lapse via [walhaven](https://whvn.cc/32961)_ </div>
+<div style="text-align: right"> _Image by Lapse via [wallhaven](https://whvn.cc/32961)_ </div>
 
 In this article, I will clarify how the harmless-looking _Forkbomb_ function works.
 
