@@ -1,5 +1,5 @@
 html {
-    color: #333;
+    color: #DDD;
     font-size: 1em;
     font-family: Georgia, Cambria, Palatino, "Palatino Linotype", "Times New Roman", Times, serif;
     line-height: 1.45;
@@ -13,6 +13,7 @@ html {
 body {
     border-top: hidden;
     border-bottom: hidden;
+    background-color: #2A2A2E;
     padding: 0 1.5em 1em 1.5em;
     margin: 0;
 }
@@ -26,7 +27,7 @@ body {
 code {
     font-size: 0.9em;
     font-family: "DejaVu Sans Mono", "Bitstream Vera Sans Mono", "Lucida Console", "Courier New", Courier, monospace;
-    color: black;
+    color: #FFF;
     display: inline-block;
     font-weight: bold;
 }
@@ -66,19 +67,19 @@ h1, h2, h3, h4, h5, h6 {
 h1 {
     font-size: 2.5em;
     text-align: center;
-    border-bottom: 6px solid black;
+    border-bottom: 6px solid #DDD;
 }
 
 h2 {
     font-size: 2.0em;
     text-align: left;
-    border-bottom: 2px solid black;
+    border-bottom: 2px solid #DDD;
 }
 
 h3 {
     font-size: 1.6em;
     text-align: left;
-    border-bottom: 1px solid lightgrey;
+    border-bottom: 1px solid #7F7F7F;
 }
 
 h4 {
@@ -89,6 +90,23 @@ h4 {
 h5 {
     font-size: 1.3em;
     text-align: left;
+}
+
+a:visited,
+a:hover,
+a:focus {
+ color:           #2cf;
+ text-decoration: none; 
+}
+
+a:link {
+ color:           #d30;
+ text-decoration: none;
+}
+
+a:hover,
+a:focus {
+    text-decoration: underline;
 }
 
 ul, ol {

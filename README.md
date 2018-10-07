@@ -22,6 +22,11 @@ If you use Nixpkgs, instead run:
 
     nix-shell --pure --run make
     
+If you want to switch the CSS to day mode, remove the `-k` flag from the `BUILDER` variable inside
+`en/Makefile`:
+
+    BUILDER=java -jar ~/bin/emem.jar -k
+    
 
 Credits
 -------

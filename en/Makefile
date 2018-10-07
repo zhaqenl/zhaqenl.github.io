@@ -1,7 +1,7 @@
 .PHONY: all clean
 
 FILES=$(filter-out src/footer.md src/index.md, $(wildcard src/*.md))
-BUILDER=emem
+BUILDER=java -jar ~/bin/emem.jar -k
 
 OG_TITLE="$$(head -1 $<)"
 OG_TYPE="article"

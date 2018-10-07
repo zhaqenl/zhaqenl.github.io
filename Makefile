@@ -1,7 +1,7 @@
 .PHONY: all clean rebuild
 
 FILES=$(wildcard src/*.md)
-BUILDER=emem
+BUILDER=java -jar ~/bin/emem.jar
 
 OG_TITLE="$$(head -1 $<)"
 OG_TYPE="article"
