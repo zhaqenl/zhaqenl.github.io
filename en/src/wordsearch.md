@@ -520,10 +520,10 @@ def complete_line(base_coord, targ_coord, word_len, row_length, col_len):
     return []
 ```
 
-For this function, however, I decided pass it the length of the word as an argument for mainly two
-reasons—to check for double length words, and for the length of the final list output. We check for
-double length words because with words that have lengths of 2, we no longer need to compute for a
-third coordinate because the word only needs two coordinates to be complete.
+For this function, I passed the length of the word as an argument for two main reasons—to check for
+words with a length of two, and for the length of the final list output. We check for double length
+words because with words that have lengths of 2, we no longer need to compute for a third coordinate
+because the word only needs two coordinates to be complete.
 
 For the second reason, this serves as the quirk of my algorithm. Instead of checking the third
 coordinate for a match of the third character (and the subsequent ones), I instead create a list of
