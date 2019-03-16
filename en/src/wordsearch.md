@@ -1,13 +1,12 @@
 Word Search in Python
 =====================
 
-<div class="center">Last updated: September 28, 2018</div>
+<div class="center">Last updated: March 16, 2019</div>
 
 <img src="/pictures/grid.jpg" class="banner" alt="grid" />
 
-This implementation of Word Search was, in most part, an experiment. An experiment to see how I
-utilize a tool, Python, to try and solve the problem of implementing basic word search solving
-algorithm.
+This implementation of Word Search was, in most part, an experiment—to see how I utilize a tool,
+Python, to try and solve the problem of implementing basic word search solving algorithm.
 
 
 <a name="toc"></a> Table of contents
@@ -77,6 +76,8 @@ language known for having a syntax similar to pseudo-code—Python.
 
 There are two main versions of Python—versions 2.x and 3.x. For this project, we would be utilizing
 version 2.7.
+
+To make this run under Python 3.X, replace all instances of `xrange` with `range`.
 
 
 <a name="install"></a> Python installation
@@ -247,13 +248,14 @@ supposedly located in, this function returns the element located at that row and
 
 
     def convert_to_word(coord_matrix, matrix):
-        return ''.join([coord_char(coord, matrix) for coord in coord_matrix])
+        return ''.join([coord_char(coord, matrix)
+                       for coord in coord_matrix])
 
 
 This function will run through a list of coordinates through a `for` loop and gets the single length
 strings using `coord_char`:
 
-    >>> [coord_char(coord, matrix) for coord in [(0, 0), (0, 1), (0, 2)]]
+    >>> [coord_char(coord, matrix) for coord in [(0, 0),(0, 1),(0, 2)]]
     ['d', 'o', 'g']
 
 and then uses the `join()` method of strings to return one single string. The `''` before the
@@ -340,11 +342,13 @@ The function returns an empty list! This means, that inside the encompassing fun
 def matched_neighbors(coord, char, matrix, row_length, col_length):
     row_num, col_num = coord
     neighbors_coords = [(row, column)
-                        for row in xrange(row_num - 1, row_num + 2)
-                        for column in xrange(col_num - 1, col_num + 2)
+                        for row in xrange(row_num - 1, 
+                                          row_num + 2)
+                        for column in xrange(col_num - 1,
+                                             col_num + 2)
                         if row_length > row >= 0
                         and col_length > column >= 0
-                        and coord_char((row, column), matrix) == char
+                        and coord_char((row,column),matrix) == char
                         and not (row, column) == coord]
 
     return neighbors_coords
@@ -357,11 +361,15 @@ Inside `neighbors_coords`, we’re trying to create a list of all the coordinate
 gave, but with some conditions to further filter the resulting coordinate:
 
 ```
-[(row, column) for row in xrange(row_num - 1, row_num + 2)
-for column in xrange(col_num - 1, col_num + 2)
-if row_length > row >= 0 and col_length > column >= 0
-and coord_char((row, column), matrix) == char
-and not (row, column) == coord]
+[(row, column)
+  for row in xrange(row_num - 1, 
+                    row_num + 2)
+  for column in xrange(col_num - 1,
+                       col_num + 2)
+  if row_length > row >= 0
+  and col_length > column >= 0
+  and coord_char((row, column),matrix) == char
+  and not (row, column) == coord]
 ```
 
 In the above code snippet, we are creating a list of adjacent coordinates (through `(row, column)`).
@@ -403,7 +411,8 @@ This function returns a list of the adjacent coordinates that match the given ch
 ##### <a name="completeLine"></a> complete\_line
 
 ```
-def complete_line(base_coord, targ_coord, word_len, row_length, col_len):
+def complete_line(base_coord, targ_coord, word_len, row_length,
+                  col_len):
     if word_len == 2:
         return base_coord, targ_coord
 
@@ -414,7 +423,8 @@ def complete_line(base_coord, targ_coord, word_len, row_length, col_len):
     for _ in xrange(word_len - 2):
         line += [(line[-1][0] + diff_1, line[-1][1] + diff_2)]
 
-    if  0 <= line[-1][0] < row_length and 0 <= line[-1][1] < col_len:
+    if  0 <= line[-1][0] < row_length
+        and 0 <= line[-1][1] < col_len:
         return line
 
     return []
@@ -503,7 +513,8 @@ coordinate, then I add the difference to the second coordinate to arrive at the 
 Now, back to the function:
 
 ```
-def complete_line(base_coord, targ_coord, word_len, row_length, col_len):
+def complete_line(base_coord, targ_coord, word_len, row_length,
+                  col_len):
     if word_len == 2:
         return base_coord, targ_coord
 
@@ -514,7 +525,8 @@ def complete_line(base_coord, targ_coord, word_len, row_length, col_len):
     for _ in xrange(word_len - 2):
         line += [(line[-1][0] + diff_1, line[-1][1] + diff_2)]
 
-    if  0 <= line[-1][0] <= row_length and 0 <= line[-1][1] <= col_len:
+    if  0 <= line[-1][0] <= row_length
+        and 0 <= line[-1][1] <= col_len:
         return line
 
     return []
@@ -557,13 +569,15 @@ it returns an empty list because the last coordinate of the created list went ou
 ##### <a name="completeMatch"></a> complete\_match
 
 ```
-def complete_match(word, matrix, base_match, word_len, row_len, col_len):
+def complete_match(word, matrix, base_match, word_len, row_len,
+                   col_len):
     new = (complete_line(base, n, word_len, row_len, col_len)
            for base in base_match
-           for n in matched_neighbors(base, word[1], matrix, row_len,
-                                      col_len))
+           for n in matched_neighbors(base, word[1], matrix,
+                                      row_len, col_len))
 
-    return [ero for ero in new if convert_to_word(ero, matrix) == word]
+    return [ero for ero in new
+            if convert_to_word(ero, matrix) == word]
 ```
 
 This is the `complete_line` function on steroids. The goal of this function is to apply
@@ -592,7 +606,8 @@ The above generator comprehension is roughly equivalent to:
 
 ```
 for base in base_match:
-    for n in matched_neighbors(base, word[1], matrix, row_len, col_len):
+    for n in matched_neighbors(base, word[1], matrix, row_len,
+                               col_len):
         yield complete_line(base, n, word_len, row_len, col_len)
 ```
 
@@ -628,8 +643,8 @@ def find_matches(word, grid, separator='\n'):
     elif word_len == 1:
         return base_matches
 
-    return complete_match(word, matrix, base_matches, word_len, row_len,
-                          column_len)
+    return complete_match(word, matrix, base_matches, word_len,
+                          row_len, column_len)
 ```
 
 This function will serve as the helper of our main function. Its ultimate goal is to output a list
