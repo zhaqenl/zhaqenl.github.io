@@ -5,8 +5,8 @@ Word Search in Python
 
 <img src="/pictures/grid.jpg" class="banner" alt="grid" />
 
-This implementation of Word Search was, in most part, an experiment—to see how I utilize a tool,
-Python, to try and solve the problem of implementing basic word search solving algorithm.
+This implementation of Word Search was, in most part, an experiment—to observe how I utilize Python
+to try and solve the problem of implementing a basic word search solving algorithm.
 
 
 <a name="toc"></a> Table of contents
