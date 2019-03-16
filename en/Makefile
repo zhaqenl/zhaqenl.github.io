@@ -11,9 +11,9 @@ ANALYTICS="121960562-1"
 all:
 	parallel --will-cite "$(MAKE) {/.}.html" ::: $(FILES)
 	$(BUILDER) \
-	  -D "An attempt to solve computer-related problems that won't exist, if computers didn't exist in the first place." \
-          -K "zhaqenl, raymund, martinez, raymund martinez, computing residues" \
-          --og-title "Computing Residues" \
+	  -D "Augmenting an inherently flawful object is stacking books on top of a marble in hopes of achieving a flat top." \
+          -K "zhaqenl, raymund, martinez, raymund martinez, polymathist abstractions" \
+          --og-title "Polymathist Abstractions" \
           --og-type $(OG_TYPE) \
           --og-url "https://zhaqenl.github.io/en/" \
           --og-image $(OG_IMAGE) \
