@@ -1,7 +1,7 @@
 .PHONY: all clean rebuild
 
 FILES=$(wildcard src/*.md)
-BUILDER=emem
+BUILDER=java -jar ~/bin/emem.jar
 
 OG_TITLE="$$(head -1 $<)"
 OG_TYPE="article"
@@ -10,14 +10,14 @@ ANALYTICS="121960562-1"
 
 %.html: src/%.md
 	$(BUILDER) \
-          --og-title $(OG_TITLE) --og-type $(OG_TYPE) \
-          -D $(OG_TITLE) \
-          -K "zhaqenl, raymund, martinez, raymund martinez" \
-          --og-url "https://zhaqenl.github.io/$$(basename $< .md).html" \
-          --og-image $(OG_IMAGE) \
-          --analytics $(ANALYTICS) \
-          -RFiamuo "$$(basename $< .md).html" \
-          $<
+	  --og-title $(OG_TITLE) --og-type $(OG_TYPE) \
+	  -D $(OG_TITLE) \
+	  -K "zhaqenl, raymund, martinez, raymund martinez" \
+	  --og-url "https://zhaqenl.github.io/$$(basename $< .md).html" \
+	  --og-image $(OG_IMAGE) \
+	  --analytics $(ANALYTICS) \
+	  -RFiamuo "$$(basename $< .md).html" \
+	  $<
 
 all:
 	$(BUILDER) -r
