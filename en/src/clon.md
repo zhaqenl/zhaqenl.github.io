@@ -1,11 +1,11 @@
 What Is Clon and Why You Should Use It
 ======================================
 
-<div class="center">Last updated: August 3, 2018</div>
+<div class="center">Last updated: August 20, 2019</div>
 
 <img src="/pictures/clon.jpg" class="banner" alt="clon" />
-<div style="text-align: right"> 
-_Image by Alexis Angelidis via [clon](https://www.lrde.epita.fr/~didier/software/lisp/clon/user.pdf)_ 
+<div style="text-align: right">
+_Image by Alexis Angelidis via [clon](https://www.lrde.epita.fr/~didier/software/lisp/clon/user.pdf)_
 </div>
 
 In my pursuit of creating a Common Lisp successor of [pell](https://github.com/ebzzry/pell), a host
@@ -147,7 +147,7 @@ This is one of the conveniences offered by Clon. One of its effect is acting as 
 limiter, dictating the possible options that the program is able to support. Another effect is that
 it serves as the help page of the created script.
 
-Inside `MAIN`: 
+Inside `MAIN`:
 
 ```
 (defun main ()
@@ -184,7 +184,7 @@ a particular option/flag is provided by the end-user, for example:
 ```
 
 In the example above, it checks if the script is given the `-h` flag, which stands for the help
-page. 
+page.
 
 
 #### <a name="sequential"></a> Sequential
@@ -247,7 +247,7 @@ non-option arguments located in the command-line. In
 <a name="vs"></a> mksum vs. pelo
 --------------------------------
 
-As promised, in this section, we’re going to discuss the only difference between mksum and pelo.  In
+As promised, in this section, we’re going to discuss the only difference between mksum and pelo. In
 `mksum.lisp` of [scripts](https://github.com/zhaqenl/scripts), inside the entry-point function, we
 can clearly see the important difference between exclusively utilizing an explicit approach to
 getting the command-line arguments, versus utilizing both explicit and sequential approaches:
@@ -277,8 +277,8 @@ all the extra tests, and the _coming-up-with_ of all the possible cases.
 <a name="afternotes"></a> Afternotes
 ------------------------------------
 
-The idea of using the `DO-CMDLINE-OPTIONS` macro came from 
-[pell](https://github.com/ebzzry/pell/blob/master/pell#L85). 
+The idea of using the `DO-CMDLINE-OPTIONS` macro came from
+[pell](https://github.com/ebzzry/pell/blob/master/pell#L85).
 
 The previous version of pelo didn’t have that structure at first, which lead me to write a lot of
 helper functions to aid (though, the code back then was still significantly longer than it is now)
@@ -286,7 +286,7 @@ in readability, and for the checks for the options provided to the script.
 
 The worst part is, inside the entry-point function, I had to come up with every single combination
 of all the existing options in order to cover all the cases (similar to what happened in mksum),
-which works, but is very inefficient and will give you more unnecessary work, because if you ever
+which works, but is inefficient and will give you more unnecessary work, because if you ever
 decide to go with that design philosophy, and you want to add more supported options to your
 scripts, you’d have a hard time coming up with all the case combinations.
 

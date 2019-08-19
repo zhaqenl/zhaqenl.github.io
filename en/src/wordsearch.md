@@ -1,7 +1,7 @@
 Word Search in Python
 =====================
 
-<div class="center">Last updated: March 16, 2019</div>
+<div class="center">Last updated: August 20, 2019</div>
 
 <img src="/pictures/grid.jpg" class="banner" alt="grid" />
 
@@ -47,7 +47,7 @@ diagonally, and also inversely in the previously mentioned directions. After all
 found, the remaining letters of the grid expose a secret message.
 
 In some word search puzzles, a limitation exists in the length of the hidden words, in that it
-should contain more than 2 characters, and the grid should have a fixed size of 10 x 10, or an
+should contain more than 2 characters, and the grid should have a fixed size of 10 × 10, or an
 equivalent length and width proportion (which this python implementation doesn’t have).
 
 
@@ -155,7 +155,7 @@ grid, then the next steps are literally straightforward. For example:
 
 ```
       *
-      o 
+      o
       d
 ```
 
@@ -168,7 +168,7 @@ letter. In this case, we will check the letter directly above `o` for the third 
 
 ```
       d
-      o 
+      o
       d
 ```
 
@@ -177,7 +177,7 @@ letter, inside the grid. If the asterisk is replaced by the correct missing lett
 
 ```
       g
-      o 
+      o
       d
 ```
 
@@ -187,7 +187,7 @@ For example, if we are presented with the following grid:
 
 ```
   g   g
-    o o 
+    o o
       d
 ```
 
@@ -267,7 +267,7 @@ word so we used an empty string separator.
 
 ```
 def find_base_match(char, matrix):
-    
+
     base_matches = [(row_index, column_index)
                     for row_index, row in enumerate(matrix)
                     for column_index, column in enumerate(row)
@@ -342,7 +342,7 @@ The function returns an empty list! This means, that inside the encompassing fun
 def matched_neighbors(coord, char, matrix, row_length, col_length):
     row_num, col_num = coord
     neighbors_coords = [(row, column)
-                        for row in xrange(row_num - 1, 
+                        for row in xrange(row_num - 1,
                                           row_num + 2)
                         for column in xrange(col_num - 1,
                                              col_num + 2)
@@ -362,7 +362,7 @@ gave, but with some conditions to further filter the resulting coordinate:
 
 ```
 [(row, column)
-  for row in xrange(row_num - 1, 
+  for row in xrange(row_num - 1,
                     row_num + 2)
   for column in xrange(col_num - 1,
                        col_num + 2)
@@ -384,7 +384,7 @@ we add at the end range, not only 1):
 
 We do the same to the column variable, then later, we filter the contents of the final list through
 an `if` clause inside the list comprehension. We do that because we don’t want this function to
-return coordinates that are out of bounds of the matrix. 
+return coordinates that are out of bounds of the matrix.
 
 To further hit the nail in the coffin, we also give this function a character as its second
 argument. That is because we want to further filter the resulting coordinate. We only want a
@@ -441,8 +441,8 @@ after that is to go straight in the direction that the first and second letters 
 For example:
 
 ```
-      
-      o 
+
+      o
       d
 ```
 
@@ -452,7 +452,7 @@ from the first letter `d` to the second letter `o`, then take the direction that
 
 ```
       * <- Check this next.
-      o 
+      o
       d
 ```
 
@@ -477,7 +477,7 @@ With that being said, I wanted a function to give me all the coordinates forming
 when given two coordinates.
 
 The first problem I had to solve was—Given two coordinates, how do I compute the coordinate of the
-third one, which will later form a straight line in the matrix? 
+third one, which will later form a straight line in the matrix?
 
 To solve this problem, I tried plotting all the expected goal coordinates, if for example, the first
 coordinate match is `(1, 1)` and the second coordinate match is `(0, 0)`:
@@ -647,15 +647,15 @@ def find_matches(word, grid, separator='\n'):
                           row_len, column_len)
 ```
 
-This function will serve as the helper of our main function. Its ultimate goal is to output a list
-containing the coordinates of all the possible matches of `word` inside `grid`. For general
-purposes, I defined four variables:
+This function will serve as the helper of our main function. Its goal is to
+output a list containing the coordinates of all the possible matches of `word`
+inside `grid`. For general purposes, I defined four variables:
 
 - The `word_len` variable whose value is the length of the `word` argument, which will generally be
   useful throughout the script
 - The `matrix` variable whose value we get through giving
   `grid` to our `matrixify` function, which will allow us to later be able to index contents of the
-  matrix through its row and column indices. 
+  matrix through its row and column indices.
 - The `row_len` and the `column_len` variable of `matrix`
 - `base_matches` which contain the coordinates of all the first letter matches of `word`
 
