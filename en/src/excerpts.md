@@ -1,9 +1,9 @@
 Excerpts
 ========
 
-<div class="center">September 2, 2019</div>
+<div class="center">October 11, 2019</div>
 
-The page consists of excerpts from readings that just hit home.
+The page consists of excerpts from readings and people alike that just hit home.
 
 
 - If you manage your illusions wisely, you might get what you want, but you
@@ -38,3 +38,6 @@ The page consists of excerpts from readings that just hit home.
 
 - You need to accept that life is hard and your frustrated efforts are a
   valuable guide to identifying what you can’t change.<br>–Michael Bennet; Sarah Bennet
+
+
+- The grass is greener on the other side, until you see the crap in it.<br>–Rico Santos

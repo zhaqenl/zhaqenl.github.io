@@ -1,7 +1,7 @@
 Polymathist Abstractions
 ========================
 
-<div class="center">Last updated: September 2, 2019</div>
+<div class="center">Last updated: October 11, 2019</div>
 
 <img src="/pictures/wood-sun.png" class="banner" alt="wood-sun" />
 <div style="text-align: right"> _Image by arg81 via [wallhaven](https://whvn.cc/672937)_  </div>
