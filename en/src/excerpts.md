@@ -1,7 +1,7 @@
 Excerpts
 ========
 
-<div class="center">October 11, 2019</div>
+<div class="center">October 18, 2019</div>
 
 The page consists of excerpts from readings and people alike that just hit home.
 
@@ -41,3 +41,8 @@ The page consists of excerpts from readings and people alike that just hit home.
 
 
 - The grass is greener on the other side, until you see the crap in it.<br>–Rico Santos
+
+
+- You think that because you understand “one” that you must therefore understand
+  “two” because one and one make two. But you forget that you must also
+  understand “and.”<br>–Rumi
