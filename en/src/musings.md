@@ -1,7 +1,7 @@
 Musings
 =======
 
-<div class="center">September 2, 2019</div>
+<div class="center">October 19, 2019</div>
 
 The page consists of musings I come up with, more often than not, during
 lightbulb moments.
@@ -22,3 +22,6 @@ lightbulb moments.
 
 - The difference between these modes of communication lie in the proportion
   between viscerality and accountability.<br>
+
+
+- The human condition is the human predicament.<br>
