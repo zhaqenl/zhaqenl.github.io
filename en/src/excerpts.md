@@ -1,7 +1,7 @@
 Excerpts
 ========
 
-<div class="center">October 18, 2019</div>
+<div class="center">October 28, 2019</div>
 
 The page consists of excerpts from readings and people alike that just hit home.
 
@@ -46,3 +46,7 @@ The page consists of excerpts from readings and people alike that just hit home.
 - You think that because you understand “one” that you must therefore understand
   “two” because one and one make two. But you forget that you must also
   understand “and.”<br>–Rumi
+
+
+- Perfection is achieved not when there is nothing more to add, but when there
+  is nothing left to subtract.<br>–Antoine de Saint-Exupéry
