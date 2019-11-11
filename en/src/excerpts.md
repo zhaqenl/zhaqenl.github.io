@@ -1,7 +1,7 @@
 Excerpts
 ========
 
-<div class="center">October 28, 2019</div>
+<div class="center">November 11, 2019</div>
 
 The page consists of excerpts from readings and people alike that just hit home.
 
@@ -50,3 +50,6 @@ The page consists of excerpts from readings and people alike that just hit home.
 
 - Perfection is achieved not when there is nothing more to add, but when there
   is nothing left to subtract.<br>–Antoine de Saint-Exupéry
+
+
+- Perfect is the enemy of good.<br>–François-Marie Arouet
