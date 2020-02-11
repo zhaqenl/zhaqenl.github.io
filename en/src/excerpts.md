@@ -1,7 +1,7 @@
 Excerpts
 ========
 
-<div class="center">Last updated: November 11, 2019</div>
+<div class="center">Last updated: February 11, 2020</div>
 
 The page consists of excerpts from readings and people alike that just hit home.
 
@@ -53,3 +53,7 @@ The page consists of excerpts from readings and people alike that just hit home.
 
 
 - Perfect is the enemy of good.<br>–François-Marie Arouet
+
+
+- The hottest place in Hell is reserved for those who in time of crisis remain
+  neutral.<br>–Dante Alighieri[?](https://quoteinvestigator.com/2015/01/14/hottest/)
