@@ -1,7 +1,7 @@
 Excerpts
 ========
 
-<div class="center">Last updated: February 11, 2020</div>
+<div class="center">Last updated: February 18, 2020</div>
 
 The page consists of excerpts from readings and people alike that just hit home.
 
@@ -57,3 +57,6 @@ The page consists of excerpts from readings and people alike that just hit home.
 
 - The hottest place in Hell is reserved for those who in time of crisis remain
   neutral.<br>–Dante Alighieri[?](https://quoteinvestigator.com/2015/01/14/hottest/)
+
+
+- Rational thought produces beliefs which are themselves evidence.<br>–Eliezer Yudkowsky
