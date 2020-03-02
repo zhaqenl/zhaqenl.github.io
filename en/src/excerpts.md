@@ -1,7 +1,7 @@
 Excerpts
 ========
 
-<div class="center">Last updated: February 18, 2020</div>
+<div class="center">Last updated: March 2, 2020</div>
 
 The page consists of excerpts from readings and people alike that just hit home.
 
@@ -60,3 +60,7 @@ The page consists of excerpts from readings and people alike that just hit home.
 
 
 - Rational thought produces beliefs which are themselves evidence.<br>–Eliezer Yudkowsky
+
+
+- If you’re offered a seat on a rocket, don't ask what seat. Just get
+  on.<br>–Sheryl Sandberg
