@@ -1,7 +1,7 @@
 Excerpts
 ========
 
-<div class="center">Last updated: March 2, 2020</div>
+<div class="center">Last updated: March 4, 2020</div>
 
 The page consists of excerpts from readings and people alike that just hit home.
 
@@ -64,3 +64,6 @@ The page consists of excerpts from readings and people alike that just hit home.
 
 - If you’re offered a seat on a rocket, don't ask what seat. Just get
   on.<br>–Sheryl Sandberg
+
+
+- Mystery is a property of questions, not answers.<br>–Eliezer Yudkowsky
