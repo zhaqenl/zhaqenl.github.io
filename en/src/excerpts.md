@@ -1,7 +1,7 @@
 Excerpts
 ========
 
-<div class="center">Last updated: March 4, 2020</div>
+<div class="center">Last updated: March 5, 2020</div>
 
 The page consists of excerpts from readings and people alike that just hit home.
 
@@ -67,3 +67,8 @@ The page consists of excerpts from readings and people alike that just hit home.
 
 
 - Mystery is a property of questions, not answers.<br>–Eliezer Yudkowsky
+
+
+- It is far better to say “magic”, than “complexity” or “emergence”; the latter
+  words create an illusion of understanding. Wiser to say “magic”, and leave
+  yourself a placeholder, a reminder of work you will have to do later.<br>–Eliezer Yudkowsky
