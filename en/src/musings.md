@@ -1,10 +1,9 @@
 Musings
 =======
 
-<div class="center">Last updated: October 19, 2019</div>
+<div class="center">Last updated: March 13, 2020</div>
 
-The page consists of musings I come up with, more often than not, during
-lightbulb moments.
+Musings I come up with, more often than not, during random moments.
 
 - Chance ignorance is episodic bliss, directed ignorance is consummate freedom.<br>
 
