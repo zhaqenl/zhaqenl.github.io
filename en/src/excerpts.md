@@ -23,6 +23,18 @@ The page consists of excerpts from readings and people alike that just hit home.
   yourself a placeholder, a reminder of work you will have to do later.
 
 
+- If you don’t have enough experience to regenerate beliefs when they are
+  deleted, then do you have enough experience to connect that belief to anything
+  at all?
+
+
+##### Wittgenstein
+
+
+- A wheel that can be turned though nothing else moves with it, is not part of
+  the mechanism.
+
+
 ##### Scott Adams
 
 
@@ -37,7 +49,7 @@ The page consists of excerpts from readings and people alike that just hit home.
   become a monster.
 
 
-##### Michael Bennet; Sarah Bennet
+##### Michael Bennet & Sarah Bennet
 
 
 - The only book that can actually teach you how to change how others think is a
