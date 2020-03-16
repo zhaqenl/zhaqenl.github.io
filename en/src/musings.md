@@ -1,7 +1,7 @@
 Musings
 =======
 
-<div class="center">Last updated: March 13, 2020</div>
+<div class="center">Last updated: March 16, 2020</div>
 
 Musings I come up with, more often than not, during random moments.
 
@@ -24,3 +24,6 @@ Musings I come up with, more often than not, during random moments.
 
 
 - The human condition is the human predicament.<br>
+
+
+- As interesting as the “why” is the “why not.”

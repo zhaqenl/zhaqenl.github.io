@@ -18,8 +18,8 @@ The page consists of excerpts from readings and people alike that just hit home.
 - Mystery is a property of questions, not answers.
 
 
-- It is far better to say “magic”, than “complexity” or “emergence”; the latter
-  words create an illusion of understanding. Wiser to say “magic”, and leave
+- It is far better to say “magic,” than “complexity” or “emergence”; the latter
+  words create an illusion of understanding. Wiser to say “magic,” and leave
   yourself a placeholder, a reminder of work you will have to do later.
 
 
