@@ -1,7 +1,7 @@
 Excerpts
 ========
 
-<div class="center">Last updated: March 13, 2020</div>
+<div class="center">Last updated: March 18, 2020</div>
 
 The page consists of excerpts from readings and people alike that just hit home.
 
@@ -26,6 +26,12 @@ The page consists of excerpts from readings and people alike that just hit home.
 - If you don’t have enough experience to regenerate beliefs when they are
   deleted, then do you have enough experience to connect that belief to anything
   at all?
+
+
+##### Alberto Brandolini
+
+
+- It’s the assumption of the developers that goes to production.
 
 
 ##### Wittgenstein
