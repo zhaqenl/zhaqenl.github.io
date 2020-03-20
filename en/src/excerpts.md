@@ -30,14 +30,16 @@ The page consists of excerpts from readings and people alike that just hit home.
 
 ##### Luke Muehlhauser
 
+
 - You are not a Bayesian homunculus whose reasoning is “corrupted” by cognitive
-  biases. You just _are_ cognitive biases.
+  biases. You just *are* cognitive biases.
 
 
-##### Alberto Brandolini
+##### Pooh-Bah, in Gilbert and Sullivan’s *The Mikado*
 
 
-- It’s the assumption of the developers that goes to production.
+- Merely corroborative detail, intended to give artistic verisimilitude to an
+  otherwise bald and unconvincing narrative . . .
 
 
 ##### Wittgenstein
@@ -45,6 +47,12 @@ The page consists of excerpts from readings and people alike that just hit home.
 
 - A wheel that can be turned though nothing else moves with it, is not part of
   the mechanism.
+
+
+##### Alberto Brandolini
+
+
+- It’s the assumption of the developers that goes to production.
 
 
 ##### Scott Adams
