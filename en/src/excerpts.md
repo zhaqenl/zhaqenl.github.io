@@ -1,7 +1,7 @@
 Excerpts
 ========
 
-<div class="center">Last updated: March 18, 2020</div>
+<div class="center">Last updated: March 20, 2020</div>
 
 The page consists of excerpts from readings and people alike that just hit home.
 
@@ -26,6 +26,12 @@ The page consists of excerpts from readings and people alike that just hit home.
 - If you don’t have enough experience to regenerate beliefs when they are
   deleted, then do you have enough experience to connect that belief to anything
   at all?
+
+
+##### Luke Muehlhauser
+
+- You are not a Bayesian homunculus whose reasoning is “corrupted” by cognitive
+  biases. You just _are_ cognitive biases.
 
 
 ##### Alberto Brandolini
