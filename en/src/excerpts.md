@@ -1,7 +1,7 @@
 Excerpts
 ========
 
-<div class="center">Last updated: March 20, 2020</div>
+<div class="center">Last updated: March 23, 2020</div>
 
 The page consists of excerpts from readings and people alike that just hit home.
 
@@ -26,6 +26,11 @@ The page consists of excerpts from readings and people alike that just hit home.
 - If you don’t have enough experience to regenerate beliefs when they are
   deleted, then do you have enough experience to connect that belief to anything
   at all?
+
+
+- To be humble is to take specific actions in anticipation of your own
+  errors. To confess your fallibility and then do nothing about it is not
+  humble; it is boasting of your modesty.
 
 
 ##### Luke Muehlhauser
