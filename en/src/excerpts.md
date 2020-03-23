@@ -40,6 +40,17 @@ The page consists of excerpts from readings and people alike that just hit home.
   biases. You just *are* cognitive biases.
 
 
+##### Robin Hanson
+
+
+- You are never entitled to your opinion. Ever! You are not even entitled to “I
+  don’t know.” You are entitled to your desires, and sometimes to your
+  choices. You might own a choice, and if you can choose your preferences, you
+  may have the right to do so. But your beliefs are not about you; beliefs are
+  about the world. Your beliefs should be your best available estimate of the
+  way things are; anything else is a lie.
+
+
 ##### Pooh-Bah, in Gilbert and Sullivan’s *The Mikado*
 
 
