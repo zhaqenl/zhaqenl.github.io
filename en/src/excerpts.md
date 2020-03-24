@@ -1,7 +1,7 @@
 Excerpts
 ========
 
-<div class="center">Last updated: March 23, 2020</div>
+<div class="center">Last updated: March 24, 2020</div>
 
 The page consists of excerpts from readings and people alike that just hit home.
 
@@ -21,6 +21,11 @@ The page consists of excerpts from readings and people alike that just hit home.
 - It is far better to say “magic,” than “complexity” or “emergence”; the latter
   words create an illusion of understanding. Wiser to say “magic,” and leave
   yourself a placeholder, a reminder of work you will have to do later.
+
+
+- There are some mental searches that we secretly wish would fail; and when the
+  prospect of success is uncomfortable, people take the earliest possible excuse
+  to give up.
 
 
 - If you don’t have enough experience to regenerate beliefs when they are
