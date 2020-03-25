@@ -1,7 +1,7 @@
 Excerpts
 ========
 
-<div class="center">Last updated: March 24, 2020</div>
+<div class="center">Last updated: March 26, 2020</div>
 
 The page consists of excerpts from readings and people alike that just hit home.
 
@@ -38,11 +38,24 @@ The page consists of excerpts from readings and people alike that just hit home.
   humble; it is boasting of your modesty.
 
 
+- That which I cannot *eliminate* may be well worth *reducing*.
+
+
 ##### Luke Muehlhauser
 
 
 - You are not a Bayesian homunculus whose reasoning is “corrupted” by cognitive
   biases. You just *are* cognitive biases.
+
+
+##### Marc Stiegler
+
+
+- The Sophisticate: “The world isn’t black and white. No one does pure good or
+  pure bad. It’s all gray. Therefore, no one is better than anyone else.”<br><br>The
+  Zetet: “Knowing only gray, you conclude that all grays are the same shade. You
+  mock the simplicity of the two-color view, yet you replace it with a one-color
+  view . . .”
 
 
 ##### Robin Hanson
