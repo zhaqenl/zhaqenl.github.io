@@ -1,7 +1,7 @@
 Excerpts
 ========
 
-<div class="center">Last updated: March 26, 2020</div>
+<div class="center">Last updated: March 27, 2020</div>
 
 The page consists of excerpts from readings and people alike that just hit home.
 
@@ -81,6 +81,12 @@ The page consists of excerpts from readings and people alike that just hit home.
 
 - A wheel that can be turned though nothing else moves with it, is not part of
   the mechanism.
+
+
+##### [Nibble Stew](https://nibblestew.blogspot.com/2020/03/its-not-what-programming-languages-do.html)
+
+
+- It’s not what programming languages do, it’s what they shepherd you to.
 
 
 ##### Alberto Brandolini
