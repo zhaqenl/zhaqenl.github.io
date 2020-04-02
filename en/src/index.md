@@ -1,5 +1,5 @@
-Polymathist Abstractions
-========================
+Sporadic Abstractions
+=====================
 
 <div class="center">Last updated: [March 27, 2020](excerpts)</div>
 
