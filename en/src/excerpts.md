@@ -1,7 +1,7 @@
 Excerpts
 ========
 
-<div class="center">Last updated: March 27, 2020</div>
+<div class="center">Last updated: April 4, 2020</div>
 
 The page consists of excerpts from readings and people alike that just hit home.
 
@@ -39,6 +39,12 @@ The page consists of excerpts from readings and people alike that just hit home.
 
 
 - That which I cannot *eliminate* may be well worth *reducing*.
+
+
+- So long as Lady Justice is investigating a *single*, strictly *factual*
+  question, with a *binary* answer space, a set of scales would be an
+  appropriate tool. If Justitia must consider any more complex issue, she should
+  relinquish her scales or relinquish her sword.
 
 
 ##### Luke Muehlhauser
