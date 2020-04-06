@@ -1,7 +1,7 @@
 Excerpts
 ========
 
-<div class="center">Last updated: April 4, 2020</div>
+<div class="center">Last updated: April 6, 2020</div>
 
 The page consists of excerpts from readings and people alike that just hit home.
 
@@ -45,6 +45,14 @@ The page consists of excerpts from readings and people alike that just hit home.
   question, with a *binary* answer space, a set of scales would be an
   appropriate tool. If Justitia must consider any more complex issue, she should
   relinquish her scales or relinquish her sword.
+
+
+- Reversed stupidity is not intelligence.
+
+
+- Your instinctive willingness to believe something will change along with your
+  willingness to *affiliate* with people who are known for believing it—quite
+  apart from whether the belief is actually *true*.
 
 
 ##### Luke Muehlhauser
