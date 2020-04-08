@@ -1,7 +1,7 @@
 Excerpts
 ========
 
-<div class="center">Last updated: April 6, 2020</div>
+<div class="center">Last updated: April 8, 2020</div>
 
 The page consists of excerpts from readings and people alike that just hit home.
 
@@ -70,6 +70,14 @@ The page consists of excerpts from readings and people alike that just hit home.
   Zetet: “Knowing only gray, you conclude that all grays are the same shade. You
   mock the simplicity of the two-color view, yet you replace it with a one-color
   view . . .”
+
+
+##### Jerry Cleaver
+
+
+- What does you in is not failure to apply some high-level, intricate,
+  complicated technique. It’s overlooking the basics. Not keeping your eye on
+  the ball.
 
 
 ##### Robin Hanson
