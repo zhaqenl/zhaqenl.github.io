@@ -1,5 +1,5 @@
-Sporadic Abstractions
-=====================
+Sporadic Sciolisms
+==================
 
 <div class="center">Last updated: [April 8, 2020](excerpts)</div>
 
