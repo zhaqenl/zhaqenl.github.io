@@ -1,7 +1,7 @@
 Excerpts
 ========
 
-<div class="center">Last updated: April 8, 2020</div>
+<div class="center">Last updated: April 10, 2020</div>
 
 The page consists of excerpts from readings and people alike that just hit home.
 
@@ -53,6 +53,12 @@ The page consists of excerpts from readings and people alike that just hit home.
 - Your instinctive willingness to believe something will change along with your
   willingness to *affiliate* with people who are known for believing it—quite
   apart from whether the belief is actually *true*.
+
+
+- In all human history, every great leap forward has been driven by a new
+  clarity of thought. Except for a few natural catastrophes, every great woe has
+  been driven by a stupidity. Our last enemy is ourselves; and this is a war,
+  and we are soldiers.
 
 
 ##### Luke Muehlhauser
