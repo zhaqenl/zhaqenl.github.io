@@ -1,7 +1,7 @@
 Excerpts
 ========
 
-<div class="center">Last updated: April 10, 2020</div>
+<div class="center">Last updated: April 13, 2020</div>
 
 The page consists of excerpts from readings and people alike that just hit home.
 
@@ -59,6 +59,10 @@ The page consists of excerpts from readings and people alike that just hit home.
   clarity of thought. Except for a few natural catastrophes, every great woe has
   been driven by a stupidity. Our last enemy is ourselves; and this is a war,
   and we are soldiers.
+
+
+- You cannot “rationalize” what is not already rational. It is as if “lying”
+  were called “truthization.”
 
 
 ##### Luke Muehlhauser
