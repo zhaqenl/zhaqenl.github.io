@@ -1,7 +1,7 @@
 Excerpts
 ========
 
-<div class="center">Last updated: April 13, 2020</div>
+<div class="center">Last updated: April 14, 2020</div>
 
 The page consists of excerpts from readings and people alike that just hit home.
 
@@ -115,10 +115,13 @@ The page consists of excerpts from readings and people alike that just hit home.
   the mechanism.
 
 
-##### [Nibble Stew](https://nibblestew.blogspot.com/2020/03/its-not-what-programming-languages-do.html)
+##### [Nibble Stew](https://nibblestew.blogspot.com)
 
 
 - It’s not what programming languages do, it’s what they shepherd you to.
+
+
+- Being right is easy. Being relevant is extremely difficult.
 
 
 ##### Alberto Brandolini
