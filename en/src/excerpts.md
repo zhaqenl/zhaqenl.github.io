@@ -1,7 +1,7 @@
 Excerpts
 ========
 
-<div class="center">Last updated: April 14, 2020</div>
+<div class="center">Last updated: April 16, 2020</div>
 
 The page consists of excerpts from readings and people alike that just hit home.
 
@@ -113,6 +113,12 @@ The page consists of excerpts from readings and people alike that just hit home.
 
 - A wheel that can be turned though nothing else moves with it, is not part of
   the mechanism.
+
+
+##### Tom Scott
+
+
+- [Entropy will get us all in the end.](https://youtu.be/BxV14h0kFs0?t=555)
 
 
 ##### [Nibble Stew](https://nibblestew.blogspot.com)
