@@ -1,12 +1,17 @@
 Excerpts
 ========
 
-<div class="center">Last updated: April 16, 2020</div>
+<div class="center">Last updated: April 21, 2020</div>
 
 The page consists of excerpts from readings and people alike that just hit home.
 
 
 ##### Eliezer Yudkowsky
+
+
+- No matter how many days go by in blissful ignorance, it only takes a single
+  mistake to undo a human life, to outweigh every penny you picked up from the
+  railroad tracks of stupidity.
 
 
 - [The hottest place in Hell is reserved for those who in time of crisis remain neutral.](https://quoteinvestigator.com/2015/01/14/hottest/)
