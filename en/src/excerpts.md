@@ -228,3 +228,9 @@ The page consists of excerpts from readings and people alike that just hit home.
 
 - If you’re offered a seat on a rocket, don't ask what seat. Just get
   on.
+
+
+##### Deadmau5
+
+
+- [There are more lawyers in Disney than animators.](https://youtu.be/OZ9jjyDp0Ko?t=54)
