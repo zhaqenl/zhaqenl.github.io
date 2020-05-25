@@ -1,7 +1,7 @@
 Excerpts
 ========
 
-<div class="center">Last updated: May 18, 2020</div>
+<div class="center">Last updated: May 25, 2020</div>
 
 The page consists of excerpts from readings and people alike that just hit home.
 
@@ -73,6 +73,10 @@ The page consists of excerpts from readings and people alike that just hit home.
 - Science has heroes, but no gods. The great Names are not our superiors, or
   even our rivals; they are passed milestones on our road. And the most
   important milestone is the hero yet to come.
+
+
+- It is the *resolution* of doubts, not the mere act of doubting, which drives
+  the ratchet of rationality forward.
 
 
 ##### Luke Muehlhauser
