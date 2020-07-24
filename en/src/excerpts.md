@@ -1,7 +1,7 @@
 Excerpts
 ========
 
-<div class="center">Last updated: May 25, 2020</div>
+<div class="center">Last updated: July 25, 2020</div>
 
 The page consists of excerpts from readings and people alike that just hit home.
 
@@ -234,3 +234,10 @@ The page consists of excerpts from readings and people alike that just hit home.
 
 
 - [There are more lawyers in Disney than animators.](https://youtu.be/OZ9jjyDp0Ko?t=54)
+
+
+##### C. J. Cherryh
+
+
+- Your sword has no blade. It has only your intention. When that goes astray you
+  have no weapon.
