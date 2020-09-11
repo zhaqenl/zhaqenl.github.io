@@ -1,9 +1,42 @@
 Excerpts
 ========
 
-<div class="center">Last updated: July 25, 2020</div>
+<div class="center">Last updated: September 12, 2020</div>
 
 The page consists of excerpts from readings and people alike that just hit home.
+
+
+##### Alberto Brandolini
+
+
+- It’s the assumption of the developers that goes to production.
+
+
+##### Antoine de Saint-Exupéry
+
+
+- Perfection is achieved not when there is nothing more to add, but when there
+  is nothing left to subtract.
+
+
+##### C. J. Cherryh
+
+
+- Your sword has no blade. It has only your intention. When that goes astray you
+  have no weapon.
+
+
+##### Carl Sagan
+
+
+- One of the saddest lessons of history is this: If we’ve been bamboozled long
+  enough, we tend to reject any evidence of the bamboozle.
+
+
+##### Deadmau5
+
+
+- [There are more lawyers in Disney than animators.](https://youtu.be/OZ9jjyDp0Ko?t=54)
 
 
 ##### Eliezer Yudkowsky
@@ -79,6 +112,27 @@ The page consists of excerpts from readings and people alike that just hit home.
   the ratchet of rationality forward.
 
 
+##### François-Marie Arouet
+
+
+- Perfect is the enemy of good.
+
+
+##### Friedrich Nietzche
+
+
+- Whoever fights monsters should see to it, that in the process, he does not
+  become a monster.
+
+
+##### Jerry Cleaver
+
+
+- What does you in is not failure to apply some high-level, intricate,
+  complicated technique. It’s overlooking the basics. Not keeping your eye on
+  the ball.
+
+
 ##### Luke Muehlhauser
 
 
@@ -96,72 +150,11 @@ The page consists of excerpts from readings and people alike that just hit home.
   view . . .”
 
 
-##### Jerry Cleaver
+##### Mark Manson
 
 
-- What does you in is not failure to apply some high-level, intricate,
-  complicated technique. It’s overlooking the basics. Not keeping your eye on
-  the ball.
-
-
-##### Robin Hanson
-
-
-- You are never entitled to your opinion. Ever! You are not even entitled to “I
-  don’t know.” You are entitled to your desires, and sometimes to your
-  choices. You might own a choice, and if you can choose your preferences, you
-  may have the right to do so. But your beliefs are not about you; beliefs are
-  about the world. Your beliefs should be your best available estimate of the
-  way things are; anything else is a lie.
-
-
-##### Pooh-Bah, in Gilbert and Sullivan’s *The Mikado*
-
-
-- Merely corroborative detail, intended to give artistic verisimilitude to an
-  otherwise bald and unconvincing narrative . . .
-
-
-##### Wittgenstein
-
-
-- A wheel that can be turned though nothing else moves with it, is not part of
-  the mechanism.
-
-
-##### Tom Scott
-
-
-- [Entropy will get us all in the end.](https://youtu.be/BxV14h0kFs0?t=555)
-
-
-##### [Nibble Stew](https://nibblestew.blogspot.com)
-
-
-- It’s not what programming languages do, it’s what they shepherd you to.
-
-
-- Being right is easy. Being relevant is extremely difficult.
-
-
-##### Alberto Brandolini
-
-
-- It’s the assumption of the developers that goes to production.
-
-
-##### Scott Adams
-
-
-- If you manage your illusions wisely, you might get what you want, but you
-  won’t necessarily understand why it worked.
-
-
-##### Friedrich Nietzche
-
-
-- Whoever fights monsters should see to it, that in the process, he does not
-  become a monster.
+- ...it is impossible to become someone new without first grieving the loss of
+  who you used to be.
 
 
 ##### Michael Bennet & Sarah Bennet
@@ -180,17 +173,45 @@ The page consists of excerpts from readings and people alike that just hit home.
   valuable guide to identifying what you can’t change.
 
 
-##### Carl Sagan
+##### [Nibble Stew](https://nibblestew.blogspot.com)
 
 
-- One of the saddest lessons of history is this: If we’ve been bamboozled long
-  enough, we tend to reject any evidence of the bamboozle.
+- It’s not what programming languages do, it’s what they shepherd you to.
+
+
+- Being right is easy. Being relevant is extremely difficult.
+
+
+##### Pooh-Bah, in Gilbert and Sullivan’s *The Mikado*
+
+
+- Merely corroborative detail, intended to give artistic verisimilitude to an
+  otherwise bald and unconvincing narrative . . .
 
 
 ##### Robert Wright
 
 
 - The human species is the human predicament.
+
+
+##### Robin Hanson
+
+
+- You are never entitled to your opinion. Ever! You are not even entitled to “I
+  don’t know.” You are entitled to your desires, and sometimes to your
+  choices. You might own a choice, and if you can choose your preferences, you
+  may have the right to do so. But your beliefs are not about you; beliefs are
+  about the world. Your beliefs should be your best available estimate of the
+  way things are; anything else is a lie.
+
+
+##### Rumi
+
+
+- You think that because you understand “one” that you must therefore understand
+  “two” because one and one make two. But you forget that you must also
+  understand “and.”
 
 
 ##### Samuel Smiles
@@ -202,25 +223,11 @@ The page consists of excerpts from readings and people alike that just hit home.
   servile thoughts.
 
 
-##### Rumi
+##### Scott Adams
 
 
-- You think that because you understand “one” that you must therefore understand
-  “two” because one and one make two. But you forget that you must also
-  understand “and.”
-
-
-##### Antoine de Saint-Exupéry
-
-
-- Perfection is achieved not when there is nothing more to add, but when there
-  is nothing left to subtract.
-
-
-##### François-Marie Arouet
-
-
-- Perfect is the enemy of good.
+- If you manage your illusions wisely, you might get what you want, but you
+  won’t necessarily understand why it worked.
 
 
 ##### Sheryl Sandberg
@@ -230,14 +237,14 @@ The page consists of excerpts from readings and people alike that just hit home.
   on.
 
 
-##### Deadmau5
+##### Tom Scott
 
 
-- [There are more lawyers in Disney than animators.](https://youtu.be/OZ9jjyDp0Ko?t=54)
+- [Entropy will get us all in the end.](https://youtu.be/BxV14h0kFs0?t=555)
 
 
-##### C. J. Cherryh
+##### Wittgenstein
 
 
-- Your sword has no blade. It has only your intention. When that goes astray you
-  have no weapon.
+- A wheel that can be turned though nothing else moves with it, is not part of
+  the mechanism.
