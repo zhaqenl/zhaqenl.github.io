@@ -1,7 +1,7 @@
 Excerpts
 ========
 
-<div class="center">Last updated: September 12, 2020</div>
+<div class="center">Last updated: September 20, 2020</div>
 
 The page consists of excerpts from readings and people alike that just hit home.
 
@@ -241,6 +241,13 @@ The page consists of excerpts from readings and people alike that just hit home.
 
 
 - [Entropy will get us all in the end.](https://youtu.be/BxV14h0kFs0?t=555)
+
+
+##### Walter Kotschnig
+
+
+- Let us keep our minds open, by all means... But don’t keep your minds so open
+  that your brains fall out!
 
 
 ##### Wittgenstein
