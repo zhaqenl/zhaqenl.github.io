@@ -1,9 +1,16 @@
 Excerpts
 ========
 
-<div class="center">Last updated: September 20, 2020</div>
+<div class="center">Last updated: October 13, 2020</div>
 
 The page consists of excerpts from readings and people alike that just hit home.
+
+
+##### Albert Einstein
+
+
+- As our circle of knowledge expands, so does the circumference of darkness
+  surrounding it.
 
 
 ##### Alberto Brandolini
