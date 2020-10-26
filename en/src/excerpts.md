@@ -1,7 +1,7 @@
 Excerpts
 ========
 
-<div class="center">Last updated: October 13, 2020</div>
+<div class="center">Last updated: October 26, 2020</div>
 
 The page consists of excerpts from readings and people alike that just hit home.
 
@@ -130,6 +130,13 @@ The page consists of excerpts from readings and people alike that just hit home.
 
 - Whoever fights monsters should see to it, that in the process, he does not
   become a monster.
+
+
+##### Jason Stoddard
+
+
+- Don’t suck by pricing things at what the market will bear, rather than what is
+  fair based on your cost of production.
 
 
 ##### Jerry Cleaver
