@@ -1,7 +1,7 @@
 Excerpts
 ========
 
-<div class="center">Last updated: December 9, 2020</div>
+<div class="center">Last updated: December 10, 2020</div>
 
 The page consists of excerpts from readings and people alike that just hit home.
 
@@ -46,7 +46,7 @@ The page consists of excerpts from readings and people alike that just hit home.
 - [There are more lawyers in Disney than animators.](https://youtu.be/OZ9jjyDp0Ko?t=54)
 
 
-##### Eliezer Yudkowsky
+##### Eliezer Yudkowsky (Rationality: From AI to Zombies)
 
 
 - No matter how many days go by in blissful ignorance, it only takes a single
@@ -145,6 +145,14 @@ The page consists of excerpts from readings and people alike that just hit home.
 - What does you in is not failure to apply some high-level, intricate,
   complicated technique. It’s overlooking the basics. Not keeping your eye on
   the ball.
+
+
+##### Kevin Simler, Robin Hanson (The Elephant in the Brain)
+
+
+- Just as camouflage is useful when facing an adversary with eyes,
+  self-deception can be useful when facing an adversary with mind-reading
+  powers.
 
 
 ##### Luke Muehlhauser
