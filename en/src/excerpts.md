@@ -119,6 +119,16 @@ The page consists of excerpts from readings and people alike that just hit home.
   the ratchet of rationality forward.
 
 
+##### Feng Chen Wang
+
+
+- ([On Deconstructing Stereotypes](https://youtu.be/sVCIhaAT83M?t=85)) A
+  definition is just an arbitrary word. It doesn’t necessarily exist. I think
+  definitions are just waiting to be shattered.<br><br>Take fashion for
+  example. We often segment clothes by season or gender out of habit. That just
+  begs to be deconstructed.
+
+
 ##### François-Marie Arouet
 
 
