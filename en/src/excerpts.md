@@ -147,7 +147,7 @@ The page consists of excerpts from readings and people alike that just hit home.
   the ball.
 
 
-##### Kevin Simler, Robin Hanson (The Elephant in the Brain)
+##### Kevin Simler & Robin Hanson (The Elephant in the Brain)
 
 
 - Just as camouflage is useful when facing an adversary with eyes,
@@ -179,7 +179,7 @@ The page consists of excerpts from readings and people alike that just hit home.
   who you used to be.
 
 
-##### Michael Bennet & Sarah Bennet
+##### Michael Bennet & Sarah Bennet (F*ck Feelings)
 
 
 - The only book that can actually teach you how to change how others think is a
