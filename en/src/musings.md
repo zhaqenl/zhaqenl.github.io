@@ -26,9 +26,6 @@ Musings I come up with, more often than not, during random moments.
   between viscerality and accountability.<br>
 
 
-- The human condition is the human predicament.<br>
-
-
 - As interesting as the “why” is the “why not.”<br>
 
 
