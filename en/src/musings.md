@@ -1,9 +1,12 @@
 Musings
 =======
 
-<div class="center">Last updated: March 19, 2020</div>
+<div class="center">Last updated: December 10, 2020</div>
 
 Musings I come up with, more often than not, during random moments.
+
+- Work is the easy part.<br>
+
 
 - Chance ignorance is episodic bliss, directed ignorance is consummate freedom.<br>
 

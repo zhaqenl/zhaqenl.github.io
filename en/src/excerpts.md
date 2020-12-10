@@ -1,7 +1,7 @@
 Excerpts
 ========
 
-<div class="center">Last updated: October 26, 2020</div>
+<div class="center">Last updated: December 9, 2020</div>
 
 The page consists of excerpts from readings and people alike that just hit home.
 
@@ -201,6 +201,13 @@ The page consists of excerpts from readings and people alike that just hit home.
 
 - Merely corroborative detail, intended to give artistic verisimilitude to an
   otherwise bald and unconvincing narrative . . .
+
+
+##### Ralph Waldo Emerson
+
+
+- Every man alone is sincere. At the entrance of a second person, hypocrisy
+  begins.
 
 
 ##### Robert Wright
