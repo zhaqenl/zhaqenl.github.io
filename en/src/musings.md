@@ -1,9 +1,13 @@
 Musings
 =======
 
-<div class="center">Last updated: December 10, 2020</div>
+<div class="center">Last updated: December 11, 2020</div>
 
 Musings I come up with, more often than not, during random moments.
+
+- (On making things happen) If you can’t even picture it in your head, you’re
+  not even at the starting line.
+
 
 - Work is the easy part.<br>
 
