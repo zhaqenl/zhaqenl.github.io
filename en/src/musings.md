@@ -6,7 +6,9 @@ Musings
 Musings I come up with, more often than not, during random moments.
 
 - (On making things happen) If you can’t even picture it in your head, you’re
-  not even at the starting line.
+  not even at the starting line.<br><br>That being said, this might be one of
+  the markers if you have a natural inclination towards making something happen
+  or being able to participate in it.
 
 
 - Work is the easy part.<br>
