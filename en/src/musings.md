@@ -5,7 +5,7 @@ Musings
 
 Musings I come up with, more often than not, during random moments.
 
-- You might have read the book, but you weren’t able to read the author.<br>
+- You might have read the book, but did you listen to the author.<br>
 
 
 - (On making things happen) If you can’t even picture it in your head, you’re
