@@ -1,9 +1,13 @@
 Musings
 =======
 
-<div class="center">Last updated: December 12, 2020</div>
+<div class="center">Last updated: December 13, 2020</div>
 
 Musings I come up with, more often than not, during random moments.
+
+- Consequences are not only for those making mistakes, but also for those
+  avoiding them.
+
 
 - You might have read the book, but did you listen to the author.<br>
 
