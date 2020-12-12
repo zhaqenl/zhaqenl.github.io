@@ -1,9 +1,12 @@
 Musings
 =======
 
-<div class="center">Last updated: December 11, 2020</div>
+<div class="center">Last updated: December 12, 2020</div>
 
 Musings I come up with, more often than not, during random moments.
+
+- You might have read the book, but you weren’t able to read the author.<br>
+
 
 - (On making things happen) If you can’t even picture it in your head, you’re
   not even at the starting line.<br><br>That being said, this might be one of
