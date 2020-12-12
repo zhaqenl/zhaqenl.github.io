@@ -1,7 +1,7 @@
 Excerpts
 ========
 
-<div class="center">Last updated: December 10, 2020</div>
+<div class="center">Last updated: December 12, 2020</div>
 
 The page consists of excerpts from readings and people alike that just hit home.
 
@@ -140,6 +140,12 @@ The page consists of excerpts from readings and people alike that just hit home.
 
 - Whoever fights monsters should see to it, that in the process, he does not
   become a monster.
+
+
+##### [u/igetasticker](https://www.reddit.com/user/igetasticker/)
+
+
+- [(On free food and shelter) We give these things to prisoners because they are considered basic human rights. Makes you wonder why we don’t provide them to everyone else.](https://www.reddit.com/r/Showerthoughts/comments/kbemzj/you_get_given_free_food_and_shelter_for_life_for/gfh7yvm?utm_source=share&utm_medium=web2x&context=3)
 
 
 ##### Jason Stoddard
