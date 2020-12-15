@@ -1,7 +1,7 @@
 Excerpts
 ========
 
-<div class="center">Last updated: December 12, 2020</div>
+<div class="center">Last updated: December 15, 2020</div>
 
 The page consists of excerpts from readings and people alike that just hit home.
 
@@ -266,6 +266,12 @@ The page consists of excerpts from readings and people alike that just hit home.
   action and self-denial. But he must be ever armed against the temptation of
   low indulgences, and must not defile his body by sensuality, nor his mind by
   servile thoughts.
+
+
+##### Scott ?
+
+
+- It’s the first time in my life that I had more alcohol on me than in me.
 
 
 ##### Scott Adams
