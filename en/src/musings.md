@@ -1,12 +1,16 @@
 Musings
 =======
 
-<div class="center">Last updated: December 13, 2020</div>
+<div class="center">Last updated: December 15, 2020</div>
 
 Musings I come up with, more often than not, during random moments.
 
+- Playing fairly in a place where injustice is one of the rules, you’ll always
+  get beaten.<br>
+
+
 - Consequences are not only for those making mistakes, but also for those
-  avoiding them.
+  avoiding them.<br>
 
 
 - You might have read the book, but did you listen to the author.<br>
