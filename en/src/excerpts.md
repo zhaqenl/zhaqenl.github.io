@@ -1,7 +1,7 @@
 Excerpts
 ========
 
-<div class="center">Last updated: December 15, 2020</div>
+<div class="center">Last updated: December 29, 2020</div>
 
 The page consists of excerpts from readings and people alike that just hit home.
 
@@ -153,6 +153,13 @@ The page consists of excerpts from readings and people alike that just hit home.
 
 - Don’t suck by pricing things at what the market will bear, rather than what is
   fair based on your cost of production.
+
+
+##### Jayne Goheen
+
+
+- You have to have darkness to see light. Often times we experience beauty
+  because we can put that against recognizing ugliness.
 
 
 ##### Jerry Cleaver
