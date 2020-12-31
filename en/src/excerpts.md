@@ -1,7 +1,7 @@
 Excerpts
 ========
 
-<div class="center">Last updated: December 29, 2020</div>
+<div class="center">Last updated: December 31, 2020</div>
 
 The page consists of excerpts from readings and people alike that just hit home.
 
@@ -176,6 +176,12 @@ The page consists of excerpts from readings and people alike that just hit home.
 - Just as camouflage is useful when facing an adversary with eyes,
   self-deception can be useful when facing an adversary with mind-reading
   powers.
+
+
+- In general, we prefer explanations that make us look good, whether as
+  individuals, families, communities, or nations. When it comes to our rivals,
+  we’re perfectly happy to entertain unflattering theories about their behavior,
+  as long as the mud we fling at them doesn’t spatter too much back at us.
 
 
 ##### Luke Muehlhauser
