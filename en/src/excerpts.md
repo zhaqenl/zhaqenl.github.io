@@ -1,7 +1,7 @@
 Excerpts
 ========
 
-<div class="center">Last updated: December 31, 2020</div>
+<div class="center">Last updated: January 6, 2021</div>
 
 The page consists of excerpts from readings and people alike that just hit home.
 
@@ -171,6 +171,9 @@ The page consists of excerpts from readings and people alike that just hit home.
 
 
 ##### Kevin Simler & Robin Hanson (The Elephant in the Brain)
+
+
+- Judge freely, and accept that you too will be judged.
 
 
 - Just as camouflage is useful when facing an adversary with eyes,
