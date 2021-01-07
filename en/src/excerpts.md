@@ -142,6 +142,9 @@ The page consists of excerpts from readings and people alike that just hit home.
   become a monster.
 
 
+- But the worst enemy you can meet will always be yourself.
+
+
 ##### [u/igetasticker](https://www.reddit.com/user/igetasticker/)
 
 
