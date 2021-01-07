@@ -1,7 +1,7 @@
 Excerpts
 ========
 
-<div class="center">Last updated: January 6, 2021</div>
+<div class="center">Last updated: January 7, 2021</div>
 
 The page consists of excerpts from readings and people alike that just hit home.
 
@@ -265,6 +265,12 @@ The page consists of excerpts from readings and people alike that just hit home.
   may have the right to do so. But your beliefs are not about you; beliefs are
   about the world. Your beliefs should be your best available estimate of the
   way things are; anything else is a lie.
+
+
+##### Rommel MARTINEZ
+
+
+- News is never a source of knowledge—it’s sweets for the mind.
 
 
 ##### Rumi
