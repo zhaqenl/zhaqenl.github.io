@@ -1,7 +1,7 @@
 Excerpts
 ========
 
-<div class="center">Last updated: January 7, 2021</div>
+<div class="center">Last updated: January 8, 2021</div>
 
 The page consists of excerpts from readings and people alike that just hit home.
 
@@ -174,6 +174,10 @@ The page consists of excerpts from readings and people alike that just hit home.
 
 
 ##### Kevin Simler & Robin Hanson (The Elephant in the Brain)
+
+
+- The deeper logic of many of our strangest and most unique behaviors may lie in
+  their value as signals.
 
 
 - Judge freely, and accept that you too will be judged.
