@@ -1,7 +1,7 @@
 Excerpts
 ========
 
-<div class="center">Last updated: January 8, 2021</div>
+<div class="center">Last updated: May 7, 2021</div>
 
 The page consists of excerpts from readings and people alike that just hit home.
 
@@ -297,10 +297,11 @@ The page consists of excerpts from readings and people alike that just hit home.
   servile thoughts.
 
 
-##### Scott ?
+##### Scott
 
 
-- It’s the first time in my life that I had more alcohol on me than in me.
+- (On COVID) It’s the first time in my life that I had more alcohol on me than
+  in me.
 
 
 ##### Scott Adams
@@ -315,6 +316,12 @@ The page consists of excerpts from readings and people alike that just hit home.
 
 - If you’re offered a seat on a rocket, don't ask what seat. Just get
   on.
+
+
+##### Teddy Baldassarre
+
+
+- [There’s minimalism as a pursuit, and then there’s minimalism as a way of absence of thought, so it’s not intended minimalism, it’s just minimalism based on the fact that there is no thought going into the design...](https://youtu.be/M27ZJx4B994?t=942)
 
 
 ##### Tom Scott
