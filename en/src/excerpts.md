@@ -1,7 +1,7 @@
 Excerpts
 ========
 
-<div class="center">Last updated: May 7, 2021</div>
+<div class="center">Last updated: May 8, 2021</div>
 
 The page consists of excerpts from readings and people alike that just hit home.
 
@@ -322,6 +322,9 @@ The page consists of excerpts from readings and people alike that just hit home.
 
 
 - [There’s minimalism as a pursuit, and then there’s minimalism as a way of absence of thought, so it’s not intended minimalism, it’s just minimalism based on the fact that there is no thought going into the design...](https://youtu.be/M27ZJx4B994?t=942)
+
+
+- [The world lies to you all the time, I don’t think it’s ever a good idea to lie to yourself...](https://youtu.be/PFjYt66h_i4?t=1510)
 
 
 ##### Tom Scott
