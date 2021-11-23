@@ -1,7 +1,7 @@
 Excerpts
 ========
 
-<div class="center">Last updated: May 8, 2021</div>
+<div class="center">Last updated: November 23, 2021</div>
 
 The page consists of excerpts from readings and people alike that just hit home.
 
@@ -248,6 +248,15 @@ The page consists of excerpts from readings and people alike that just hit home.
 
 - Merely corroborative detail, intended to give artistic verisimilitude to an
   otherwise bald and unconvincing narrative . . .
+
+
+##### Quentin Crisp
+
+
+- Fashion is what you adopt when you don’t know who you are.
+
+
+- If there were no applause and no criticism, who would you be?
 
 
 ##### Ralph Waldo Emerson

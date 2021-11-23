@@ -11,7 +11,7 @@ ANALYTICS="121960562-1"
 all:
 	parallel --will-cite "$(MAKE) {/.}.html" ::: $(FILES)
 	$(BUILDER) \
-	  -D "Enhancing an inherently flawful object is stacking books on top of a marble in hopes of achieving a flat top." \
+	  -D "Enhancing an inherently flawful object is stacking books on top of a ball in hopes of achieving a flat top." \
 	  -K "zhaqenl, raymund, martinez, raymund martinez, sporadic sciolisms" \
 	  --og-title "Sporadic Sciolisms" \
 	  --og-type $(OG_TYPE) \
