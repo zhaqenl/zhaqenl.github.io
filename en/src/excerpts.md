@@ -1,7 +1,7 @@
 Excerpts
 ========
 
-<div class="center">Last updated: November 23, 2021</div>
+<div class="center">Last updated: November 25, 2021</div>
 
 The page consists of excerpts from readings and people alike that just hit home.
 
@@ -354,3 +354,9 @@ The page consists of excerpts from readings and people alike that just hit home.
 
 - A wheel that can be turned though nothing else moves with it, is not part of
   the mechanism.
+
+
+##### ???
+
+
+- It is not a justice system, it is a legal system.
