@@ -1,7 +1,7 @@
 Excerpts
 ========
 
-<div class="center">Last updated: November 25, 2021</div>
+<div class="center">Last updated: December 1, 2021</div>
 
 The page consists of excerpts from readings and people alike that just hit home.
 
@@ -31,6 +31,13 @@ The page consists of excerpts from readings and people alike that just hit home.
 
 - Your sword has no blade. It has only your intention. When that goes astray you
   have no weapon.
+
+
+##### Carl Jung
+
+
+- Everyone carries a shadow, and the less it is embodied in the individual’s
+  conscious life, the blacker and denser it is.
 
 
 ##### Carl Sagan
