@@ -1,7 +1,7 @@
 Excerpts
 ========
 
-<div class="center">Last updated: December 1, 2021</div>
+<div class="center">Last updated: January 23, 2022</div>
 
 The page consists of excerpts from readings and people alike that just hit home.
 
@@ -341,6 +341,12 @@ The page consists of excerpts from readings and people alike that just hit home.
 
 
 - [The world lies to you all the time, I don’t think it’s ever a good idea to lie to yourself...](https://youtu.be/PFjYt66h_i4?t=1510)
+
+
+##### The I Ching
+
+
+- Chaos—where brilliant dreams are born.
 
 
 ##### Tom Scott
