@@ -1,7 +1,7 @@
 Excerpts
 ========
 
-<div class="center">Last updated: January 23, 2022</div>
+<div class="center">Last updated: January 27, 2022</div>
 
 The page consists of excerpts from readings and people alike that just hit home.
 
@@ -271,6 +271,13 @@ The page consists of excerpts from readings and people alike that just hit home.
 
 - Every man alone is sincere. At the entrance of a second person, hypocrisy
   begins.
+
+
+##### Robert Greene
+
+
+- To waste your time in battles not of your choosing is more than just a
+  mistake, it is stupidity of the highest order.
 
 
 ##### Robert Wright

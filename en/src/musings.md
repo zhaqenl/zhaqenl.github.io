@@ -1,7 +1,7 @@
 Musings
 =======
 
-<div class="center">Last updated: January 18, 2021</div>
+<div class="center">Last updated: January 27, 2022</div>
 
 Musings I come up with, more often than not, during random moments.
 
@@ -50,3 +50,7 @@ Musings I come up with, more often than not, during random moments.
 
 
 - No big fish grows on clear waters–the big fish, however, ended up in a skillet.
+
+
+- It should have never been “You can’t please everyone”, but instead “You should
+  not please everyone”. As an adage says—“If you please everyone, you please no one.”
