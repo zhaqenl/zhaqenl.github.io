@@ -1,7 +1,7 @@
 Excerpts
 ========
 
-<div class="center">Last updated: January 27, 2022</div>
+<div class="center">Last updated: February 1, 2022</div>
 
 The page consists of excerpts from readings and people alike that just hit home.
 
@@ -271,6 +271,9 @@ The page consists of excerpts from readings and people alike that just hit home.
 
 - Every man alone is sincere. At the entrance of a second person, hypocrisy
   begins.
+
+
+- The years teach much which the days never know.
 
 
 ##### Robert Greene
