@@ -1,7 +1,7 @@
 Excerpts
 ========
 
-<div class="center">Last updated: February 1, 2022</div>
+<div class="center">Last updated: February 24, 2022</div>
 
 The page consists of excerpts from readings and people alike that just hit home.
 
@@ -145,6 +145,10 @@ The page consists of excerpts from readings and people alike that just hit home.
 ##### Friedrich Nietzche
 
 
+- Madness is something rare in individuals—but in groups, parties, peoples, and
+  ages, it is the rule.
+
+
 - Whoever fights monsters should see to it, that in the process, he does not
   become a monster.
 
@@ -257,6 +261,12 @@ The page consists of excerpts from readings and people alike that just hit home.
   otherwise bald and unconvincing narrative . . .
 
 
+##### Pericles
+
+
+- What I fear is not the enemy’s strategy, but our own mistakes.
+
+
 ##### Quentin Crisp
 
 
@@ -342,6 +352,12 @@ The page consists of excerpts from readings and people alike that just hit home.
 
 - If you’re offered a seat on a rocket, don't ask what seat. Just get
   on.
+
+
+##### Stefan Zweig
+
+
+- Darkness must fall before we are aware of the majesty of the stars above our heads.
 
 
 ##### Teddy Baldassarre
