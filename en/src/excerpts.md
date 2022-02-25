@@ -1,7 +1,7 @@
 Excerpts
 ========
 
-<div class="center">Last updated: February 24, 2022</div>
+<div class="center">Last updated: February 25, 2022</div>
 
 The page consists of excerpts from readings and people alike that just hit home.
 
@@ -17,6 +17,12 @@ The page consists of excerpts from readings and people alike that just hit home.
 
 
 - It’s the assumption of the developers that goes to production.
+
+
+##### Andrew Huberman
+
+
+- Addiction is a progressive narrowing of the things that bring you pleasure.
 
 
 ##### Antoine de Saint-Exupéry
