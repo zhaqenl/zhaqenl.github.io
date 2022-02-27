@@ -366,6 +366,12 @@ The page consists of excerpts from readings and people alike that just hit home.
 - Darkness must fall before we are aware of the majesty of the stars above our heads.
 
 
+##### Susan Plummer (The Equalizer)
+
+
+- Sometimes, we make the wrong choices to get to the right place.
+
+
 ##### Teddy Baldassarre
 
 
