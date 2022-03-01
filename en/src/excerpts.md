@@ -1,7 +1,7 @@
 Excerpts
 ========
 
-<div class="center">Last updated: February 25, 2022</div>
+<div class="center">Last updated: March 1, 2022</div>
 
 The page consists of excerpts from readings and people alike that just hit home.
 
@@ -57,6 +57,12 @@ The page consists of excerpts from readings and people alike that just hit home.
 
 
 - [There are more lawyers in Disney than animators.](https://youtu.be/OZ9jjyDp0Ko?t=54)
+
+
+##### Denzel Washington
+
+
+- When you pray for rain, you gotta deal with the mud too.
 
 
 ##### Eliezer Yudkowsky (Rationality: From AI to Zombies)
