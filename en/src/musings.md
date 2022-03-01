@@ -1,7 +1,7 @@
 Musings
 =======
 
-<div class="center">Last updated: January 27, 2022</div>
+<div class="center">Last updated: March 1, 2022</div>
 
 Musings I come up with, more often than not, during random moments.
 
@@ -54,3 +54,6 @@ Musings I come up with, more often than not, during random moments.
 
 - It should have never been “You can’t please everyone”, but instead “You should
   not please everyone”. As an adage says—“If you please everyone, you please no one.”
+
+
+- Our addictions have always been the result of chasing a certain hormonal profile.
