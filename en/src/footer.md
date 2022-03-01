@@ -2,8 +2,13 @@
 <div class="footer">
 
 <div class="text-small">
-[Home](/en) · [Excerpts](/en/excerpts) · [Musings](/en/musings) · [About](/en/about) · [Source](https://github.com/zhaqenl/zhaqenl.github.io)
+[Home](/en) · [Excerpts](/en/excerpts) · [Musings](/en/musings) · [Books](/en/books) · [About](/en/about)
 </div>
+
+<div class="text-small">
+[Source](https://github.com/zhaqenl/zhaqenl.github.io)
+</div>
+
 <div class="text-x-small">
 Created with [emem](https://github.com/ebzzry/emem) and [skeleton](https://github.com/ebzzry/skeleton)
 <div>
