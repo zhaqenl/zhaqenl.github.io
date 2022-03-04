@@ -1,7 +1,7 @@
 Books
 =====
 
-<div class="center">Last updated: March 2, 2022</div>
+<div class="center">Last updated: March 4, 2022</div>
 
 Here’s a long-overdue list of book recommendations from yours truly.
 
@@ -12,3 +12,6 @@ Here’s a long-overdue list of book recommendations from yours truly.
 
 
 - [The Elephant in the Brain: Hidden Motives in Everyday Life, by Kevin Simler, Robin Hanson](https://www.goodreads.com/book/show/28820444-the-elephant-in-the-brain)
+
+
+- [The Shallows, by Nicholas Carr](https://www.nicholascarr.com/?page_id=16)
