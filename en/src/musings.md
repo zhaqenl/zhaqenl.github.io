@@ -1,7 +1,7 @@
 Musings
 =======
 
-<div class="center">Last updated: March 1, 2022</div>
+<div class="center">Last updated: March 7, 2022</div>
 
 Musings I come up with, more often than not, during random moments.
 
@@ -57,3 +57,6 @@ Musings I come up with, more often than not, during random moments.
 
 
 - Our addictions have always been the result of chasing a certain hormonal profile.
+
+
+- Having too early of a dominance robs the fun out of it, even undermines it.
