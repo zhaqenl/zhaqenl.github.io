@@ -1,7 +1,7 @@
 Excerpts
 ========
 
-<div class="center">Last updated: March 1, 2022</div>
+<div class="center">Last updated: March 7, 2022</div>
 
 The page consists of excerpts from readings and people alike that just hit home.
 
@@ -264,6 +264,12 @@ The page consists of excerpts from readings and people alike that just hit home.
 
 
 - Being right is easy. Being relevant is extremely difficult.
+
+
+##### Oscar Wilde
+
+
+- Everything in moderation, including moderation.
 
 
 ##### Pooh-Bah, in Gilbert and Sullivan’s *The Mikado*
