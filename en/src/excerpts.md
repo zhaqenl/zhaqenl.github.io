@@ -138,6 +138,12 @@ The page consists of excerpts from readings and people alike that just hit home.
   the ratchet of rationality forward.
 
 
+##### Ellsworth “Bumpy” Johnson
+
+
+- That’s the way it is now: You can’t find the heart of anything to stick the knife.
+
+
 ##### Feng Chen Wang
 
 
