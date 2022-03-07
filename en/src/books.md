@@ -1,7 +1,7 @@
 Books
 =====
 
-<div class="center">Last updated: March 4, 2022</div>
+<div class="center">Last updated: March 7, 2022</div>
 
 Here’s a long-overdue list of book recommendations from yours truly.
 
@@ -15,3 +15,6 @@ Here’s a long-overdue list of book recommendations from yours truly.
 
 
 - [The Shallows, by Nicholas Carr](https://www.nicholascarr.com/?page_id=16)
+
+
+- [Rationality: From AI to Zombies, by Eliezer Yudkowsky](https://intelligence.org/rationality-ai-zombies/)
