@@ -1,7 +1,7 @@
 Musings
 =======
 
-<div class="center">Last updated: March 7, 2022</div>
+<div class="center">Last updated: March 19, 2022</div>
 
 Musings I come up with, more often than not, during random moments.
 
@@ -60,3 +60,9 @@ Musings I come up with, more often than not, during random moments.
 
 
 - Having too early of a dominance robs the fun out of it, even undermines it.
+
+
+- Change lives, business follows.
+
+
+- We’re not always the good guys.
