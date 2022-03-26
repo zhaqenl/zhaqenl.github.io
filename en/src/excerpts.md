@@ -1,7 +1,7 @@
 Excerpts
 ========
 
-<div class="center">Last updated: March 7, 2022</div>
+<div class="center">Last updated: March 26, 2022</div>
 
 The page consists of excerpts from readings and people alike that just hit home.
 
@@ -355,6 +355,14 @@ The page consists of excerpts from readings and people alike that just hit home.
   action and self-denial. But he must be ever armed against the temptation of
   low indulgences, and must not defile his body by sensuality, nor his mind by
   servile thoughts.
+
+
+##### Scientific Principles of Strength Training
+
+
+- Because specificity and variation are in many ways mirror-images of each
+  other, over-applications of specificity may be under-applications of variation
+  and vice-versa.
 
 
 ##### Scott
