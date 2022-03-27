@@ -1,7 +1,7 @@
 Musings
 =======
 
-<div class="center">Last updated: March 19, 2022</div>
+<div class="center">Last updated: March 27, 2022</div>
 
 Musings I come up with, more often than not, during random moments.
 
@@ -66,3 +66,15 @@ Musings I come up with, more often than not, during random moments.
 
 
 - We’re not always the good guys.
+
+
+- Tell me ‘how’ and ‘when’ you spike your dopamine, and I’ll tell you who you are.
+
+
+- Over-application of one thing tends to imply under-application of another, and
+  vice-versa.
+
+
+- To Andrew Huberman’s “Addiction is a progressive narrowing of the things that
+  bring you pleasure.”, I say instead—“Addiction is a progressive narrowing
+  **and layering** of the things that bring you pleasure.”
