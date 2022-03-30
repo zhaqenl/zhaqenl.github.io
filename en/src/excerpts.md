@@ -1,7 +1,7 @@
 Excerpts
 ========
 
-<div class="center">Last updated: March 27, 2022</div>
+<div class="center">Last updated: March 30, 2022</div>
 
 The page consists of excerpts from readings and people alike that just hit home.
 
@@ -70,6 +70,13 @@ The page consists of excerpts from readings and people alike that just hit home.
 
 
 - When you pray for rain, you gotta deal with the mud too.
+
+
+##### Dopamine Nation: Finding Balance in the Age of Indulgence
+
+
+- An expected reward that fails to materialize is worse than a reward that was
+  never anticipated in the first place.
 
 
 ##### Eliezer Yudkowsky (Rationality: From AI to Zombies)
