@@ -39,6 +39,12 @@ The page consists of excerpts from readings and people alike that just hit home.
   is nothing left to subtract.
 
 
+##### Bryce Krawczyk
+
+
+- You need to **earn** the right to have **high expectations** of yourself.
+
+
 ##### C. J. Cherryh
 
 
