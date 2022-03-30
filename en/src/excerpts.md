@@ -42,7 +42,10 @@ The page consists of excerpts from readings and people alike that just hit home.
 ##### Bryce Krawczyk
 
 
-- You need to **earn** the right to have **high expectations** of yourself.
+- You need to **earn** the right to have **high expectations** of
+  yourself. Expectations have to be **realistic**—so you need to invest in the
+  process and details of your training and recovery, before you get to expect
+  big things from yourself.
 
 
 ##### C. J. Cherryh
