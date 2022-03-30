@@ -5,19 +5,19 @@ Books
 
 Here’s a long-overdue list of book recommendations from yours truly.
 
+- [Breath: The New Science of a Lost Art](https://www.goodreads.com/en/book/show/48890486-breath)
+
+
 - [Dopamine Nation: Finding Balance in the Age of Indulgence](https://www.penguinrandomhouse.com/books/624957/dopamine-nation-by-anna-lembke-md/)
 
 
-- [The Daily Laws, by Robert Greene](https://www.penguinrandomhouse.com/books/673666/the-daily-laws-by-robert-greene/)
+- [Rationality: From AI to Zombies](https://intelligence.org/rationality-ai-zombies/)
 
 
-- [Breath: The New Science of a Lost Art, by James Nestor](https://www.goodreads.com/en/book/show/48890486-breath)
+- [The Daily Laws](https://www.penguinrandomhouse.com/books/673666/the-daily-laws-by-robert-greene/)
 
 
-- [The Elephant in the Brain: Hidden Motives in Everyday Life, by Kevin Simler, Robin Hanson](https://www.goodreads.com/book/show/28820444-the-elephant-in-the-brain)
+- [The Elephant in the Brain: Hidden Motives in Everyday Life](https://www.goodreads.com/book/show/28820444-the-elephant-in-the-brain)
 
 
-- [The Shallows, by Nicholas Carr](https://www.nicholascarr.com/?page_id=16)
-
-
-- [Rationality: From AI to Zombies, by Eliezer Yudkowsky](https://intelligence.org/rationality-ai-zombies/)
+- [The Shallows](https://www.nicholascarr.com/?page_id=16)
