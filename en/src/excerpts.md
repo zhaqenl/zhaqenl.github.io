@@ -1,7 +1,7 @@
 Excerpts
 ========
 
-<div class="center">Last updated: March 30, 2022</div>
+<div class="center">Last updated: April 5, 2022</div>
 
 The page consists of excerpts from readings and people alike that just hit home.
 
@@ -223,6 +223,16 @@ The page consists of excerpts from readings and people alike that just hit home.
 - What does you in is not failure to apply some high-level, intricate,
   complicated technique. It’s overlooking the basics. Not keeping your eye on
   the ball.
+
+
+##### John F. Kennedy
+
+
+- The great enemy of truth is very often not the lie—deliberate, contrived and
+  dishonest—but the myth—persistent, persuasive and unrealistic. Too often we
+  hold fast to the cliches of our forebears. We subject all facts to a
+  prefabricated set of interpretations. We enjoy the comfort of opinion without
+  the discomfort of thought.
 
 
 ##### Kevin Simler & Robin Hanson (The Elephant in the Brain)

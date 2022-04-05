@@ -1,7 +1,7 @@
 Sporadic Sciolisms
 ==================
 
-<div class="center">Last updated: [March 30, 2022](excerpts)</div>
+<div class="center">Last updated: [April 5, 2022](excerpts)</div>
 
 <img src="/pictures/wood-sun.png" class="banner" alt="wood-sun" />
 <div style="text-align: right"> _Image by arg81 via [wallhaven](https://whvn.cc/672937)_  </div>
