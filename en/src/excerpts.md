@@ -1,7 +1,7 @@
 Excerpts
 ========
 
-<div class="center">Last updated: April 5, 2022</div>
+<div class="center">Last updated: April 8, 2022</div>
 
 The page consists of excerpts from readings and people alike that just hit home.
 
@@ -444,6 +444,13 @@ The page consists of excerpts from readings and people alike that just hit home.
 
 
 - Chaos—where brilliant dreams are born.
+
+
+##### The Molecule of More
+
+
+- Violence can give us domination, but to be successful, it must come from the
+  cold circuits of control dopamine.
 
 
 ##### Tom Scott
