@@ -1,7 +1,7 @@
 Excerpts
 ========
 
-<div class="center">Last updated: April 8, 2022</div>
+<div class="center">Last updated: April 22, 2022</div>
 
 The page consists of excerpts from readings and people alike that just hit home.
 
@@ -464,6 +464,12 @@ The page consists of excerpts from readings and people alike that just hit home.
 
 - Let us keep our minds open, by all means... But don’t keep your minds so open
   that your brains fall out!
+
+
+##### William Plomer
+
+
+- Creativity is the power to connect the seemingly unconnected.
 
 
 ##### Wittgenstein
