@@ -1,7 +1,7 @@
 Excerpts
 ========
 
-<div class="center">Last updated: April 22, 2022</div>
+<div class="center">Last updated: April 27, 2022</div>
 
 The page consists of excerpts from readings and people alike that just hit home.
 
@@ -201,6 +201,12 @@ The page consists of excerpts from readings and people alike that just hit home.
 
 
 - [(On free food and shelter) We give these things to prisoners because they are considered basic human rights. Makes you wonder why we don’t provide them to everyone else.](https://www.reddit.com/r/Showerthoughts/comments/kbemzj/you_get_given_free_food_and_shelter_for_life_for/gfh7yvm?utm_source=share&utm_medium=web2x&context=3)
+
+
+##### Janina Vela
+
+
+- [The retelling of the oppression of the Marcoses does not negate the oppression from any other political family.<br><br>The fight for #NeverAgain, #NeverForget is not about the condemnation of one family, nor the glorification of another. This is about the fight for the justice that Filipinos never got.](https://www.youtube.com/watch?v=1Wjnbl2hzJo)
 
 
 ##### Jason Stoddard
