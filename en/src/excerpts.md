@@ -1,7 +1,7 @@
 Excerpts
 ========
 
-<div class="center">Last updated: April 27, 2022</div>
+<div class="center">Last updated: May 1, 2022</div>
 
 The page consists of excerpts from readings and people alike that just hit home.
 
@@ -260,6 +260,12 @@ The page consists of excerpts from readings and people alike that just hit home.
   individuals, families, communities, or nations. When it comes to our rivals,
   we’re perfectly happy to entertain unflattering theories about their behavior,
   as long as the mud we fling at them doesn’t spatter too much back at us.
+
+
+##### Lord Acton
+
+
+- Power tends to corrupt, and absolute power corrupts absolutely.
 
 
 ##### Luke Muehlhauser
