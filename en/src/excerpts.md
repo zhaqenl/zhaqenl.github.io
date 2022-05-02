@@ -1,7 +1,7 @@
 Excerpts
 ========
 
-<div class="center">Last updated: May 1, 2022</div>
+<div class="center">Last updated: May 2, 2022</div>
 
 The page consists of excerpts from readings and people alike that just hit home.
 
@@ -67,6 +67,12 @@ The page consists of excerpts from readings and people alike that just hit home.
 
 - One of the saddest lessons of history is this: If we’ve been bamboozled long
   enough, we tend to reject any evidence of the bamboozle.
+
+
+##### Catherynne M. Valente
+
+
+- ...the beginning is where the end gets born.
 
 
 ##### Deadmau5
