@@ -1,7 +1,7 @@
 Excerpts
 ========
 
-<div class="center">Last updated: May 2, 2022</div>
+<div class="center">Last updated: May 10, 2022</div>
 
 The page consists of excerpts from readings and people alike that just hit home.
 
@@ -171,6 +171,13 @@ The page consists of excerpts from readings and people alike that just hit home.
 
 
 - That’s the way it is now: You can’t find the heart of anything to stick the knife.
+
+
+##### Elwyn Brooks White
+
+
+- I get up every morning determined to both change the world and have one hell
+  of a good time. Sometimes this makes planning my day difficult.
 
 
 ##### Feng Chen Wang
