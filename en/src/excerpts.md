@@ -1,7 +1,7 @@
 Excerpts
 ========
 
-<div class="center">Last updated: May 10, 2022</div>
+<div class="center">Last updated: June 4, 2022</div>
 
 The page consists of excerpts from readings and people alike that just hit home.
 
@@ -210,12 +210,6 @@ The page consists of excerpts from readings and people alike that just hit home.
 - But the worst enemy you can meet will always be yourself.
 
 
-##### [u/igetasticker](https://www.reddit.com/user/igetasticker/)
-
-
-- [(On free food and shelter) We give these things to prisoners because they are considered basic human rights. Makes you wonder why we don’t provide them to everyone else.](https://www.reddit.com/r/Showerthoughts/comments/kbemzj/you_get_given_free_food_and_shelter_for_life_for/gfh7yvm?utm_source=share&utm_medium=web2x&context=3)
-
-
 ##### Janina Vela
 
 
@@ -366,6 +360,15 @@ The page consists of excerpts from readings and people alike that just hit home.
 
 
 - The years teach much which the days never know.
+
+
+##### Reddit
+
+
+- [(On free food and shelter) We give these things to prisoners because they are considered basic human rights. Makes you wonder why we don’t provide them to everyone else.](https://www.reddit.com/r/Showerthoughts/comments/kbemzj/you_get_given_free_food_and_shelter_for_life_for/gfh7yvm?utm_source=share&utm_medium=web2x&context=3)
+
+
+- [You cannot pull yourself by the bootstrap if you do not have any fucking boots](https://www.reddit.com/r/Philippines/comments/v3nyao/para_sa_mga_nagsasabing_kahit_sino_pa_ang_nakaupo/iazukzy/?utm_source=share&utm_medium=web2x&context=3)
 
 
 ##### Robert Greene
