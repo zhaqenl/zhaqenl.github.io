@@ -78,7 +78,7 @@ The page consists of excerpts from readings and people alike that just hit home.
 ##### Deadmau5
 
 
-- [There are more lawyers in Disney than animators.](https://youtu.be/OZ9jjyDp0Ko?t=54)
+- [Source](https://youtu.be/OZ9jjyDp0Ko?t=54): There are more lawyers in Disney than animators.
 
 
 ##### Denzel Washington
@@ -102,7 +102,7 @@ The page consists of excerpts from readings and people alike that just hit home.
   railroad tracks of stupidity.
 
 
-- [The hottest place in Hell is reserved for those who in time of crisis remain neutral.](https://quoteinvestigator.com/2015/01/14/hottest/)
+- [Source](https://quoteinvestigator.com/2015/01/14/hottest/): The hottest place in Hell is reserved for those who in time of crisis remain neutral.
 
 
 - Rational thought produces beliefs which are themselves evidence.
@@ -183,7 +183,7 @@ The page consists of excerpts from readings and people alike that just hit home.
 ##### Feng Chen Wang
 
 
-- ([On Deconstructing Stereotypes](https://youtu.be/sVCIhaAT83M?t=85)) A
+- [Source](https://youtu.be/sVCIhaAT83M?t=85): (On Deconstructing Stereotypes) A
   definition is just an arbitrary word. It doesn’t necessarily exist. I think
   definitions are just waiting to be shattered.<br><br>Take fashion for
   example. We often segment clothes by season or gender out of habit. That just
@@ -213,7 +213,7 @@ The page consists of excerpts from readings and people alike that just hit home.
 ##### Janina Vela
 
 
-- [The retelling of the oppression of the Marcoses does not negate the oppression from any other political family.<br><br>The fight for #NeverAgain, #NeverForget is not about the condemnation of one family, nor the glorification of another. This is about the fight for the justice that Filipinos never got.](https://www.youtube.com/watch?v=1Wjnbl2hzJo)
+- [Source](https://www.youtube.com/watch?v=1Wjnbl2hzJo): The retelling of the oppression of the Marcoses does not negate the oppression from any other political family.<br><br>The fight for #NeverAgain, #NeverForget is not about the condemnation of one family, nor the glorification of another. This is about the fight for the justice that Filipinos never got.
 
 
 ##### Jason Stoddard
@@ -462,10 +462,10 @@ The page consists of excerpts from readings and people alike that just hit home.
 ##### Teddy Baldassarre
 
 
-- [There’s minimalism as a pursuit, and then there’s minimalism as a way of absence of thought, so it’s not intended minimalism, it’s just minimalism based on the fact that there is no thought going into the design...](https://youtu.be/M27ZJx4B994?t=942)
+- [Source](https://youtu.be/M27ZJx4B994?t=942): There’s minimalism as a pursuit, and then there’s minimalism as a way of absence of thought, so it’s not intended minimalism, it’s just minimalism based on the fact that there is no thought going into the design...
 
 
-- [The world lies to you all the time, I don’t think it’s ever a good idea to lie to yourself...](https://youtu.be/PFjYt66h_i4?t=1510)
+- [Source](https://youtu.be/PFjYt66h_i4?t=1510): The world lies to you all the time, I don’t think it’s ever a good idea to lie to yourself...
 
 
 ##### The I Ching
@@ -484,7 +484,7 @@ The page consists of excerpts from readings and people alike that just hit home.
 ##### Tom Scott
 
 
-- [Entropy will get us all in the end.](https://youtu.be/BxV14h0kFs0?t=555)
+- [Source](https://youtu.be/BxV14h0kFs0?t=555): Entropy will get us all in the end.
 
 
 ##### Walter Kotschnig
