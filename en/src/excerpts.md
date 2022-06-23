@@ -1,7 +1,7 @@
 Excerpts
 ========
 
-<div class="center">Last updated: June 4, 2022</div>
+<div class="center">Last updated: June 23, 2022</div>
 
 The page consists of excerpts from readings and people alike that just hit home.
 
@@ -294,6 +294,14 @@ The page consists of excerpts from readings and people alike that just hit home.
 
 - You are not a Bayesian homunculus whose reasoning is “corrupted” by cognitive
   biases. You just *are* cognitive biases.
+
+
+##### Malcolm Gladwell
+
+
+- You believe someone not because you have no doubts about them. Belief is not
+  the absence of doubt. You believe someone because you don’t have enough doubts
+  about them.
 
 
 ##### Marc Stiegler
