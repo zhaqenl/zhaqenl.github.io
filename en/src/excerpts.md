@@ -1,7 +1,7 @@
 Excerpts
 ========
 
-<div class="center">Last updated: June 23, 2022</div>
+<div class="center">Last updated: July 13, 2022</div>
 
 The page consists of excerpts from readings and people alike that just hit home.
 
@@ -507,6 +507,19 @@ The page consists of excerpts from readings and people alike that just hit home.
 
 
 - [Source](https://youtu.be/BxV14h0kFs0?t=555): Entropy will get us all in the end.
+
+
+##### VigorousSteve
+
+
+- [Source](https://youtu.be/XbHQca3vzQM?t=58): [On Passive Incomes] ...the only
+  real passive income that exists is being born to very wealthy parents, where
+  you already got your unlimited credit cards when you were still in the cradle,
+  and even then, you still have to pretend or at least try to love them so that
+  income stream stays the same, because the last thing you want is to fuck up
+  when your parents are very very rich, and then they cut off the tap and now
+  you’ve developed no skills, and you can’t really do anything and then you have
+  to go off the deep end...
 
 
 ##### Walter Kotschnig
