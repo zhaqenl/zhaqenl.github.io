@@ -1,7 +1,7 @@
 Excerpts
 ========
 
-<div class="center">Last updated: July 13, 2022</div>
+<div class="center">Last updated: July 16, 2022</div>
 
 The page consists of excerpts from readings and people alike that just hit home.
 
@@ -302,6 +302,11 @@ The page consists of excerpts from readings and people alike that just hit home.
 - You believe someone not because you have no doubts about them. Belief is not
   the absence of doubt. You believe someone because you don’t have enough doubts
   about them.
+
+
+- ...we have built a world that systematically discriminates against a class of
+  people who, through no fault of their own, violate our ridiculous ideas about
+  transparency.
 
 
 ##### Marc Stiegler
