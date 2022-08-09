@@ -1,7 +1,7 @@
 Excerpts
 ========
 
-<div class="center">Last updated: July 16, 2022</div>
+<div class="center">Last updated: August 9, 2022</div>
 
 The page consists of excerpts from readings and people alike that just hit home.
 
@@ -30,6 +30,16 @@ The page consists of excerpts from readings and people alike that just hit home.
 
 - Don’t spike dopamine prior to engaging in effort, and don’t spike dopamine
   after engaging in effort. Learn to spike dopamine from effort itself.
+
+
+##### Anonymous
+
+
+- It is not a justice system, it is a legal system.
+
+
+- The man who loves walking will walk further than the man who loves the
+  destination.
 
 
 ##### Antoine de Saint-Exupéry
@@ -545,9 +555,3 @@ The page consists of excerpts from readings and people alike that just hit home.
 
 - A wheel that can be turned though nothing else moves with it, is not part of
   the mechanism.
-
-
-##### ???
-
-
-- It is not a justice system, it is a legal system.
