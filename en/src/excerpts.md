@@ -1,7 +1,7 @@
 Excerpts
 ========
 
-<div class="center">Last updated: August 9, 2022</div>
+<div class="center">Last updated: September 8, 2022</div>
 
 The page consists of excerpts from readings and people alike that just hit home.
 
@@ -40,6 +40,9 @@ The page consists of excerpts from readings and people alike that just hit home.
 
 - The man who loves walking will walk further than the man who loves the
   destination.
+
+
+- Don't steal a candle to read the Bible.
 
 
 ##### Antoine de Saint-Exupéry
