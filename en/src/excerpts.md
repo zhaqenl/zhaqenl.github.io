@@ -1,7 +1,7 @@
 Excerpts
 ========
 
-<div class="center">Last updated: September 8, 2022</div>
+<div class="center">Last updated: September 14, 2022</div>
 
 The page consists of excerpts from readings and people alike that just hit home.
 
@@ -273,6 +273,12 @@ The page consists of excerpts from readings and people alike that just hit home.
   hold fast to the cliches of our forebears. We subject all facts to a
   prefabricated set of interpretations. We enjoy the comfort of opinion without
   the discomfort of thought.
+
+
+##### Keith Richards
+
+
+- All the contortions we go through just not to be ourselves for a few hours.
 
 
 ##### Kevin Simler & Robin Hanson (The Elephant in the Brain)
