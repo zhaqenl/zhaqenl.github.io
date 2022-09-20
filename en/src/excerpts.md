@@ -1,7 +1,7 @@
 Excerpts
 ========
 
-<div class="center">Last updated: September 14, 2022</div>
+<div class="center">Last updated: September 20, 2022</div>
 
 The page consists of excerpts from readings and people alike that just hit home.
 
@@ -415,6 +415,12 @@ The page consists of excerpts from readings and people alike that just hit home.
 
 
 - [Source](https://www.reddit.com/r/Philippines/comments/v3nyao/para_sa_mga_nagsasabing_kahit_sino_pa_ang_nakaupo/iazukzy/?utm_source=share&utm_medium=web2x&context=3): You cannot pull yourself by the bootstrap if you do not have any fucking boots
+
+
+##### Rollo Tomassi
+
+
+- ...behavior is the only reliable evidence of motivation.
 
 
 ##### Robert Greene
