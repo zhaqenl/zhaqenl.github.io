@@ -229,6 +229,24 @@ The page consists of excerpts from readings and people alike that just hit home.
 - But the worst enemy you can meet will always be yourself.
 
 
+##### Gabor Maté
+
+
+- The usual conception of trauma conjures up notions of catastrophic events:
+  hurricanes, abuse, egregious neglect, and war. This has the unintended and
+  misleading effect of relegating trauma to the realm of the abnormal, the
+  unusual, and the exceptional.<br><br>If there exists a class of people we call
+  “traumatized”, that must mean that most of us are not. Here we miss the mark
+  by a wide margin.<br><br>Trauma pervades our culture, from personal
+  functioning through social relationships, parenting, education, popular
+  culture, economics, and politics. In fact, someone *without* the marks of
+  trauma would be an outlier in our society.<br><br>We are closer to the truth
+  when we ask: Where do we each fit on the broad and surprisingly inclusive
+  trauma spectrum? Which of its many marks has each of us carried all (or most)
+  of our lives, and what have the impacts been? And what possibilities would
+  open up were we to become more familiar, even intimate, with them?
+
+
 ##### Hacker News
 
 
