@@ -232,6 +232,9 @@ The page consists of excerpts from readings and people alike that just hit home.
 ##### Gabor Maté
 
 
+- Trauma is not what happens to you but what happens *inside* you.
+
+
 - The usual conception of trauma conjures up notions of catastrophic events:
   hurricanes, abuse, egregious neglect, and war. This has the unintended and
   misleading effect of relegating trauma to the realm of the abnormal, the
