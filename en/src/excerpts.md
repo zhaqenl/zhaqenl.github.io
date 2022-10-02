@@ -417,6 +417,10 @@ The page consists of excerpts from readings and people alike that just hit home.
   that moves us in ways the conscious mind can only begin to imagine.
 
 
+- Trauma is perhaps the most avoided, ignored, belittled, denied, misunderstood,
+  and untreated cause of human suffering.
+
+
 ##### Pooh-Bah, in Gilbert and Sullivan’s *The Mikado*
 
 
