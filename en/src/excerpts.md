@@ -235,6 +235,12 @@ The page consists of excerpts from readings and people alike that just hit home.
 - Trauma is not what happens to you but what happens *inside* you.
 
 
+- Children, especially highly sensitive children, can be wounded in multiple
+  ways: by bad things happening, yes, but also by good things not happening,
+  such as their emotional needs for attunement not being met, or the experience
+  of not being seen and accepted, even by loving parents.
+
+
 - The usual conception of trauma conjures up notions of catastrophic events:
   hurricanes, abuse, egregious neglect, and war. This has the unintended and
   misleading effect of relegating trauma to the realm of the abnormal, the
