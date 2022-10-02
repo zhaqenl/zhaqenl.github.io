@@ -388,6 +388,14 @@ The page consists of excerpts from readings and people alike that just hit home.
 - What I fear is not the enemy’s strategy, but our own mistakes.
 
 
+##### Peter Levine
+
+
+- Conscious, *explicit* memory is only the proverbial tip of a very deep and
+  mighty iceberg. It barely hints at the submerged strata of *primal implicit experience*
+  that moves us in ways the conscious mind can only begin to imagine.
+
+
 ##### Pooh-Bah, in Gilbert and Sullivan’s *The Mikado*
 
 
