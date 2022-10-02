@@ -382,17 +382,17 @@ The page consists of excerpts from readings and people alike that just hit home.
 - Everything in moderation, including moderation.
 
 
+##### Pericles
+
+
+- What I fear is not the enemy’s strategy, but our own mistakes.
+
+
 ##### Pooh-Bah, in Gilbert and Sullivan’s *The Mikado*
 
 
 - Merely corroborative detail, intended to give artistic verisimilitude to an
   otherwise bald and unconvincing narrative . . .
-
-
-##### Pericles
-
-
-- What I fear is not the enemy’s strategy, but our own mistakes.
 
 
 ##### Quentin Crisp
