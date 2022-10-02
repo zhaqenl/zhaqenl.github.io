@@ -241,6 +241,10 @@ The page consists of excerpts from readings and people alike that just hit home.
   of not being seen and accepted, even by loving parents.
 
 
+- If, despite decades of evidence, “big-*T* trauma” has barely registered on the
+  medical radar screen, small-*t* trauma does not even cause a blip.
+
+
 - The usual conception of trauma conjures up notions of catastrophic events:
   hurricanes, abuse, egregious neglect, and war. This has the unintended and
   misleading effect of relegating trauma to the realm of the abnormal, the
