@@ -58,6 +58,9 @@ The page consists of excerpts from readings and people alike that just hit home.
 - All trauma is preverbal.
 
 
+- Trauma is when we are not seen and known.
+
+
 ##### Bryce Krawczyk
 
 
