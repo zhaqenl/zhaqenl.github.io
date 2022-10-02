@@ -1,7 +1,7 @@
 Excerpts
 ========
 
-<div class="center">Last updated: September 20, 2022</div>
+<div class="center">Last updated: October 2, 2022</div>
 
 The page consists of excerpts from readings and people alike that just hit home.
 
@@ -50,6 +50,12 @@ The page consists of excerpts from readings and people alike that just hit home.
 
 - Perfection is achieved not when there is nothing more to add, but when there
   is nothing left to subtract.
+
+
+##### Bessel van der Kolk
+
+
+- All trauma is preverbal.
 
 
 ##### Bryce Krawczyk
