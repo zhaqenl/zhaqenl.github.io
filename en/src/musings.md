@@ -5,6 +5,9 @@ Musings
 
 Musings I come up with, more often than not, during random moments.
 
+- Conflict breeds growth—positive and/or negative.<br>
+
+
 - Tolerance first, capacity later.<br>
 
 
