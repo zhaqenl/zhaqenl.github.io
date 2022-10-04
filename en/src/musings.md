@@ -1,11 +1,11 @@
 Musings
 =======
 
-<div class="center">Last updated: March 28, 2022</div>
+<div class="center">Last updated: October 4, 2022</div>
 
 Musings I come up with, more often than not, during random moments.
 
-- Capacity first, tolerance later.<br>
+- Tolerance first, capacity later.<br>
 
 
 - Playing fairly in a place where injustice is one of the rules, you’ll always
