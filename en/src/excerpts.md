@@ -1,7 +1,7 @@
 Excerpts
 ========
 
-<div class="center">Last updated: October 2, 2022</div>
+<div class="center">Last updated: October 5, 2022</div>
 
 The page consists of excerpts from readings and people alike that just hit home.
 
@@ -432,6 +432,10 @@ The page consists of excerpts from readings and people alike that just hit home.
 
 - Trauma is perhaps the most avoided, ignored, belittled, denied, misunderstood,
   and untreated cause of human suffering.
+
+
+- Certainly, all traumatic events are stressful, but not all stressful events
+  are traumatic.
 
 
 ##### Pooh-Bah, in Gilbert and Sullivan’s *The Mikado*
