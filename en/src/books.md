@@ -1,9 +1,12 @@
 Books
 =====
 
-<div class="center">Last updated: March 30, 2022</div>
+<div class="center">Last updated: October 5, 2022</div>
 
 Here’s a long-overdue list of book recommendations from yours truly.
+
+- [The Myth of Normal](https://drgabormate.com/book/the-myth-of-normal/)
+
 
 - [Breath: The New Science of a Lost Art](https://www.goodreads.com/en/book/show/48890486-breath)
 
