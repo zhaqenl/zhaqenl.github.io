@@ -263,6 +263,12 @@ The page consists of excerpts from readings and people alike that just hit home.
   open up were we to become more familiar, even intimate, with them?
 
 
+- It is sobering to realize that who we take ourselves to be and the ways we
+  habitually act, including many of our seeming “strengths”—the least and the
+  most functional aspects of our “normal” selves—are often, in part, the wages
+  of traumatic loss.
+
+
 ##### Hacker News
 
 
