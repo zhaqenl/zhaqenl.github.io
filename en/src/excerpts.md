@@ -1,7 +1,7 @@
 Excerpts
 ========
 
-<div class="center">Last updated: October 5, 2022</div>
+<div class="center">Last updated: October 6, 2022</div>
 
 The page consists of excerpts from readings and people alike that just hit home.
 
@@ -319,6 +319,12 @@ The page consists of excerpts from readings and people alike that just hit home.
   hold fast to the cliches of our forebears. We subject all facts to a
   prefabricated set of interpretations. We enjoy the comfort of opinion without
   the discomfort of thought.
+
+
+##### Karel Saquing
+
+
+- Don’t learn more than you can actually apply.
 
 
 ##### Keith Richards
