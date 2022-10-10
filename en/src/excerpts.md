@@ -1,7 +1,7 @@
 Excerpts
 ========
 
-<div class="center">Last updated: October 6, 2022</div>
+<div class="center">Last updated: October 10, 2022</div>
 
 The page consists of excerpts from readings and people alike that just hit home.
 
@@ -325,6 +325,9 @@ The page consists of excerpts from readings and people alike that just hit home.
 
 
 - Don’t learn more than you can actually apply.
+
+
+- Good-looking people sometimes don’t know how or why they look good.
 
 
 ##### Keith Richards
