@@ -17,6 +17,9 @@ Here’s a long-overdue list of book recommendations from yours truly.
 - [Dopamine Nation: Finding Balance in the Age of Indulgence](https://www.penguinrandomhouse.com/books/624957/dopamine-nation-by-anna-lembke-md/)
 
 
+- [The Molecule of More](https://www.goodreads.com/book/show/38728977-the-molecule-of-more)
+
+
 - [Rationality: From AI to Zombies](https://intelligence.org/rationality-ai-zombies/)
 
 
