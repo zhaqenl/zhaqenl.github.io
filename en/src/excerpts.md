@@ -202,6 +202,12 @@ The page consists of excerpts from readings and people alike that just hit home.
   of a good time. Sometimes this makes planning my day difficult.
 
 
+##### Eric Hoffer
+
+
+- Rudeness is the weak man’s imitation of strength.
+
+
 ##### Feng Chen Wang
 
 
