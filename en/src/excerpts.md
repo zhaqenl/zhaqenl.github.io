@@ -1,7 +1,7 @@
 Excerpts
 ========
 
-<div class="center">Last updated: October 10, 2022</div>
+<div class="center">Last updated: October 22, 2022</div>
 
 The page consists of excerpts from readings and people alike that just hit home.
 
