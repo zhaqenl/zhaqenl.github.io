@@ -1,7 +1,7 @@
 Musings
 =======
 
-<div class="center">Last updated: October 4, 2022</div>
+<div class="center">Last updated: March 9, 2023</div>
 
 Musings I come up with, more often than not, during random moments.
 
@@ -59,19 +59,10 @@ Musings I come up with, more often than not, during random moments.
   not please everyone”. As an adage says—“If you please everyone, you please no one.”
 
 
-- Our addictions have always been the result of chasing a certain hormonal profile.
-
-
 - Having too early of a dominance robs the fun out of it, even undermines it.
 
 
-- Change lives, business follows.
-
-
 - We’re not always the good guys.
-
-
-- Tell me ‘how’ and ‘when’ you spike your dopamine, and I’ll tell you who you are.
 
 
 - Over-application of one thing tends to imply under-application of another, and
