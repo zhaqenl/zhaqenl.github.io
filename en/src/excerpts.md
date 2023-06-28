@@ -1,7 +1,7 @@
 Excerpts
 ========
 
-<div class="center">Last updated: March 9, 2023</div>
+<div class="center">Last updated: June 28, 2023</div>
 
 The page consists of excerpts from readings and people alike that just hit home.
 
@@ -449,6 +449,14 @@ The page consists of excerpts from readings and people alike that just hit home.
 - What I fear is not the enemy’s strategy, but our own mistakes.
 
 
+##### Peter Attia
+
+
+- These trials take heterogeneous inputs (the people in the study or studies)
+  and come up with homogeneous results (the average result across all those
+  people).
+
+
 ##### Peter Levine
 
 
@@ -586,6 +594,13 @@ The page consists of excerpts from readings and people alike that just hit home.
 
 
 - Darkness must fall before we are aware of the majesty of the stars above our heads.
+
+
+##### Sun Tzu
+
+
+- Strategy without tactics is the slowest route to victory. Tactics without
+  strategy is the noise before defeat.
 
 
 ##### Susan Plummer (The Equalizer)
