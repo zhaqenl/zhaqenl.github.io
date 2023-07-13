@@ -1,11 +1,14 @@
 Musings
 =======
 
-<div class="center">Last updated: March 16, 2023</div>
+<div class="center">Last updated: July 14, 2023</div>
 
 Musings I come up with, more often than not, during random moments.
 
 - The most expensive lessons are the ones you learnt nothing from.<br>
+
+
+- Creativity is harnessed chaos.<br>
 
 
 - Conflict breeds growth—positive and/or negative.<br>
