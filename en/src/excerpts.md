@@ -1,7 +1,7 @@
 Excerpts
 ========
 
-<div class="center">Last updated: June 28, 2023</div>
+<div class="center">Last updated: September 13, 2024</div>
 
 The page consists of excerpts from readings and people alike that just hit home.
 
@@ -206,6 +206,12 @@ The page consists of excerpts from readings and people alike that just hit home.
 
 - I get up every morning determined to both change the world and have one hell
   of a good time. Sometimes this makes planning my day difficult.
+
+
+##### Eric Helms
+
+
+- Being maximally flexible or being maximally accurate prevents the other from occurring.
 
 
 ##### Eric Hoffer
