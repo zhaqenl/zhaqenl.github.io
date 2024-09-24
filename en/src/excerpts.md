@@ -1,7 +1,7 @@
 Excerpts
 ========
 
-<div class="center">Last updated: September 13, 2024</div>
+<div class="center">Last updated: September 24, 2024</div>
 
 The page consists of excerpts from readings and people alike that just hit home.
 
@@ -101,6 +101,12 @@ The page consists of excerpts from readings and people alike that just hit home.
 
 
 - ...the beginning is where the end gets born.
+
+
+##### Christopher Hitchens
+
+
+- What can be asserted without evidence can also be dismissed without evidence.
 
 
 ##### Deadmau5
