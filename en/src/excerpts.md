@@ -1,7 +1,7 @@
 Excerpts
 ========
 
-<div class="center">Last updated: September 24, 2024</div>
+<div class="center">Last updated: June 19, 2025</div>
 
 The page consists of excerpts from readings and people alike that just hit home.
 
@@ -81,6 +81,14 @@ The page consists of excerpts from readings and people alike that just hit home.
 
 - Your sword has no blade. It has only your intention. When that goes astray you
   have no weapon.
+
+
+##### Candace Pert
+
+
+- Unless we can measure something, science won’t concede it exists, which is why
+  science refuses to deal with such “nonthings” as the emotions, the mind, the
+  soul, or the spirit.
 
 
 ##### Carl Jung
