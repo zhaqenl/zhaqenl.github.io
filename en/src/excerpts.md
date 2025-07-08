@@ -1,7 +1,7 @@
 Excerpts
 ========
 
-<div class="center">Last updated: June 19, 2025</div>
+<div class="center">Last updated: July 8, 2025</div>
 
 The page consists of excerpts from readings and people alike that just hit home.
 
@@ -115,6 +115,17 @@ The page consists of excerpts from readings and people alike that just hit home.
 
 
 - What can be asserted without evidence can also be dismissed without evidence.
+
+
+##### David Smithers
+
+
+- Cancer is no more a disease of cells than a traffic jam is a disease
+  of cars. A lifetime study of the internal-combustion engine would
+  not help anyone to understand our traffic problems... A traffic jam
+  is due to a failure of the normal relationship between driven cars
+  and their environment and can occur whether they themselves are
+  running normally or not. (Lancet, 1962)
 
 
 ##### Deadmau5
