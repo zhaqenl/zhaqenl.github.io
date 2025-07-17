@@ -539,12 +539,6 @@ The page consists of excerpts from readings and people alike that just hit home.
 - [Source](https://www.reddit.com/r/Philippines/comments/v3nyao/para_sa_mga_nagsasabing_kahit_sino_pa_ang_nakaupo/iazukzy/?utm_source=share&utm_medium=web2x&context=3): You cannot pull yourself by the bootstrap if you do not have any fucking boots
 
 
-##### Rollo Tomassi
-
-
-- ...behavior is the only reliable evidence of motivation.
-
-
 ##### Robert Greene
 
 
@@ -567,6 +561,12 @@ The page consists of excerpts from readings and people alike that just hit home.
   may have the right to do so. But your beliefs are not about you; beliefs are
   about the world. Your beliefs should be your best available estimate of the
   way things are; anything else is a lie.
+
+
+##### Rollo Tomassi
+
+
+- ...behavior is the only reliable evidence of motivation.
 
 
 ##### Rommel MARTINEZ
