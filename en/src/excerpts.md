@@ -1,7 +1,7 @@
 Excerpts
 ========
 
-<div class="center">Last updated: July 8, 2025</div>
+<div class="center">Last updated: July 18, 2025</div>
 
 The page consists of excerpts from readings and people alike that just hit home.
 
@@ -109,6 +109,13 @@ The page consists of excerpts from readings and people alike that just hit home.
 
 
 - ...the beginning is where the end gets born.
+
+
+##### Charles Goodhart
+
+
+- Any observed statistical regularity will tend to collapse once
+  pressure is placed upon it for control purposes.
 
 
 ##### Christopher Hitchens
@@ -459,6 +466,13 @@ The page consists of excerpts from readings and people alike that just hit home.
   valuable guide to identifying what you can’t change.
 
 
+##### Michel Odent
+
+
+- At the beginning of the twenty-first century, we have to rehumanize
+  birth, realizing there are limits to our domination of Nature.
+
+
 ##### [Nibble Stew](https://nibblestew.blogspot.com)
 
 
@@ -544,6 +558,15 @@ The page consists of excerpts from readings and people alike that just hit home.
 
 - To waste your time in battles not of your choosing is more than just a
   mistake, it is stupidity of the highest order.
+
+
+##### Robert Sapolsky
+
+
+- Environment does not begin at birth; environment begins as soon as
+  you have an environment—As soon as you’re a fetus, you are subject
+  to whatever information is coming through Mom’s circulation, hormone
+  levels, and nutrients.
 
 
 ##### Robert Wright
