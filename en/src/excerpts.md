@@ -19,6 +19,15 @@ The page consists of excerpts from readings and people alike that just hit home.
 - It’s the assumption of the developers that goes to production.
 
 
+##### Aldous Huxley
+
+
+- “And that,” put in the Director sententiously, “that is the secret
+  of happiness and virtue—liking what you’ve got to do. All
+  conditioning aims at making people like their inescapable social
+  destiny.”
+
+
 ##### Anonymous
 
 
