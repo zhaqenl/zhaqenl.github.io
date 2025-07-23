@@ -1,7 +1,7 @@
 Excerpts
 ========
 
-<div class="center">Last updated: July 18, 2025</div>
+<div class="center">Last updated: July 24, 2025</div>
 
 The page consists of excerpts from readings and people alike that just hit home.
 
@@ -17,19 +17,6 @@ The page consists of excerpts from readings and people alike that just hit home.
 
 
 - It’s the assumption of the developers that goes to production.
-
-
-##### Andrew Huberman
-
-
-- Addiction is a progressive narrowing of the things that bring you pleasure.
-
-
-- Indeed, dopamine lies at the heart of addiction to all things.
-
-
-- Don’t spike dopamine prior to engaging in effort, and don’t spike dopamine
-  after engaging in effort. Learn to spike dopamine from effort itself.
 
 
 ##### Anonymous
