@@ -1,7 +1,7 @@
 Excerpts
 ========
 
-<div class="center">Last updated: July 24, 2025</div>
+<div class="center">Last updated: October 11, 2025</div>
 
 The page consists of excerpts from readings and people alike that just hit home.
 
@@ -112,6 +112,15 @@ The page consists of excerpts from readings and people alike that just hit home.
 
 - Any observed statistical regularity will tend to collapse once
   pressure is placed upon it for control purposes.
+
+
+##### Charlotte Brontë, Jane Eyre
+
+
+- Laws and principles are not for the times when there is no
+  temptation: they are for such moments as this, when body and soul
+  rise in mutiny against their rigour ... If at my convenience I might
+  break them, what would be their worth?
 
 
 ##### Christopher Hitchens
